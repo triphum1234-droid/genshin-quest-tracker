@@ -173,8 +173,10 @@
     /* ── Toolbar ── */
     .toolbar {
       display: flex; gap: 12px; padding: 16px 24px;
-      background: var(--bg); border-bottom: 1px solid var(--border);
+      background: rgba(18, 18, 18, 0.95); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
       align-items: center; flex-wrap: wrap;
+      position: sticky; top: 59px; z-index: 98;
     }
     .search-wrap { flex: 1; min-width: 200px; position: relative; }
     .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--text-dim); pointer-events: none; }
@@ -197,6 +199,7 @@
     .filter-btn.active-done   { border-color: var(--done);   color: var(--done);   background: color-mix(in srgb, var(--done) 15%, transparent); }
     .filter-btn.active-inprog { border-color: var(--inprog); color: var(--inprog); background: color-mix(in srgb, var(--inprog) 15%, transparent); }
     .filter-btn.active-none   { border-color: var(--text-dim); color: var(--text); background: color-mix(in srgb, var(--text-dim) 15%, transparent); }
+    .filter-btn.active-root { border-color: #6da3b5; color: #6da3b5; background: rgba(109, 163, 181, 0.15); }
     .fbadge {
       display: inline-block; min-width: 18px; height: 18px;
       background: var(--panel2); border-radius: 9px;
@@ -277,6 +280,29 @@
     .quest-card[data-region="Dragonspine"]::before { background-image: url('https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Emblem_Dragonspine_White.png'); }
     .quest-card[data-region="Enkanomiya"]::before { background-image: url('https://static.wikia.nocookie.net/gensin-impact/images/f/f2/Emblem_Enkanomiya_White.png'); }
     .quest-card[data-region="Snezhnaya"]::before { background-image: url('https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Emblem_Snezhnaya_White.png'); }
+
+    /* Type Watermarks (on top of region, slightly more visible) */
+    .quest-card::after {
+      content: '';
+      position: absolute;
+      bottom: -10px; right: -10px;
+      width: 80px; height: 80px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.07;
+      pointer-events: none;
+      z-index: -1;
+    }
+    .quest-card[data-type="archon"]::after     { background-image: url('https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Icon_Archon_Quest.png/revision/latest?cb=20210615060053'); }
+    .quest-card[data-type="story"]::after      { background-image: url('https://static.wikia.nocookie.net/gensin-impact/images/5/5c/Icon_Story_Quest.png/revision/latest?cb=20210615060301'); }
+    .quest-card[data-type="hangout"]::after    { background-image: url('https://static.wikia.nocookie.net/gensin-impact/images/f/f3/System_Hangout_Event.png/revision/latest?cb=20210911040808'); }
+    .quest-card[data-type="world"]::after      { background-image: url('https://static.wikia.nocookie.net/gensin-impact/images/6/67/Icon_World_Quest.png/revision/latest?cb=20210615060104'); }
+    .quest-card[data-type="commission"]::after { background-image: url('https://static.wikia.nocookie.net/gensin-impact/images/6/62/Icon_Commission.svg/revision/latest?cb=20201127234019'); }
+    .quest-card[data-type="anecdote"]::after   { background-image: url('https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Icon_Anecdote_Chronicles.png/revision/latest?cb=20250922124512'); }
+    .quest-card[data-type="event"]::after      { background-image: url('https://static.wikia.nocookie.net/gensin-impact/images/c/cd/Icon_Event_Quest.png/revision/latest?cb=20210615060103'); }
+    .quest-card[data-type="random"]::after     { background-image: url('https://static.wikia.nocookie.net/gensin-impact/images/8/89/Icon_Random_Event.png/revision/latest?cb=20221223010923'); }
+
     .quest-card[data-region="Khaenriah"]::before, .quest-card[data-region="Other"]::before { background-image: url('https://static.wikia.nocookie.net/gensin-impact/images/6/69/Emblem_Nation_Unknown_White.png'); }
     
     .quest-card:hover { background: var(--panel2); }
@@ -302,7 +328,10 @@
     .quest-region-tag { font-size: 0.65rem; color: #666; margin-top: 6px; display: flex; align-items: center; }
     .primo-reward { display: inline-flex; align-items: center; margin-left: 8px; font-weight: 500; color: var(--gold); }
     .primo-reward img { height: 12px; margin-right: 3px; }
-    .series-badge {
+    
+      .type-icon { width: 14px; height: 14px; object-fit: contain; }
+
+      .series-badge {
       display: inline-flex; align-items: center; gap: 4px;
       background: rgba(255, 255, 255, 0.05); color: #b3b3b3; border: 1px solid rgba(255, 255, 255, 0.15);
       padding: 2px 6px; border-radius: 4px; font-size: 0.65rem; margin-top: 6px; width: fit-content;
@@ -413,7 +442,27 @@
       .quest-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 480px) { .sidebar { display: none; } }
-  </style>
+  
+.custom-select-wrapper { position: relative; margin: 0 12px 20px; }
+.custom-select {
+  background: var(--panel2); border: 1px solid var(--border); color: var(--text);
+  padding: 8px 12px; border-radius: 8px; font-size: 0.85rem; cursor: pointer;
+  display: flex; align-items: center; gap: 8px; user-select: none;
+}
+.custom-select img, .custom-option img { width: 18px; height: 18px; object-fit: contain; }
+.custom-options {
+  position: absolute; top: 100%; left: 0; right: 0; background: var(--panel2);
+  border: 1px solid var(--border); border-radius: 8px; margin-top: 4px;
+  z-index: 100; display: none; max-height: 300px; overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+.custom-options.open { display: block; }
+.custom-option {
+  padding: 8px 12px; display: flex; align-items: center; gap: 8px;
+  cursor: pointer; font-size: 0.85rem; color: var(--text);
+}
+.custom-option:hover { background: rgba(255,255,255,0.1); }
+</style>
 </head>
 <body>
 
@@ -459,6 +508,14 @@
     <button class="btn-header btn-update" id="btn-update" title="ตรวจสอบ Quest ใหม่จาก Wiki">
       🔄 <span>อัพเดท</span>
     </button>
+    <!-- Changelog -->
+    <button class="btn-header" id="btn-changelog" title="ดูประวัติการอัปเดตทั้งหมด" onclick="document.getElementById('changelog-modal').classList.add('open')">
+      📋 <span>ประวัติ</span>
+    </button>
+      <!-- Donate -->
+      <button class="btn-header" id="btn-donate" style="color: #ff8e8e; border-color: rgba(255, 142, 142, 0.4); background: rgba(255, 142, 142, 0.05);" title="สนับสนุนผู้พัฒนา">
+        💖 <span>โดเนท</span>
+      </button>
   </div>
 </header>
 
@@ -474,14 +531,29 @@
   <!-- Sidebar -->
   <nav class="sidebar" id="sidebar">
     <div class="sidebar-title" style="margin-top:0;">ประเภท Quest</div>
-    <select id="type-select" style="width: calc(100% - 24px); margin: 0 12px 20px; background: var(--panel2); border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 8px; font-size: 0.85rem; outline: none; cursor:pointer;">
-        <option value="all">📁 รวมทั้งหมด</option>
-        <option value="archon">🌟 Archon Quests</option>
-        <option value="story">📖 Story Quests</option>
-        <option value="world" selected>🌍 World Quests</option>
-        <option value="commission">📋 Commissions</option>
-        <option value="event">🎪 Event Quests</option>
-    </select>
+    
+    <div class="custom-select-wrapper" id="custom-type-select-wrapper">
+      <div class="custom-select" id="custom-type-select">
+        <span id="custom-type-select-icon"></span>
+        <span id="custom-type-select-text">World Quests</span>
+        <span style="margin-left:auto; font-size:10px;">▼</span>
+      </div>
+      <div class="custom-options" id="custom-type-options">
+        <div class="custom-option" data-value="all"><span style="width:18px;display:inline-block;text-align:center;">🌐</span> <span class="opt-text">ทั้งหมด</span></div>
+        <div class="custom-option" data-value="archon"><img src="https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Icon_Archon_Quest.png/revision/latest?cb=20210615060053" /> <span class="opt-text">Archon Quests</span></div>
+        <div class="custom-option" data-value="story"><img src="https://static.wikia.nocookie.net/gensin-impact/images/5/5c/Icon_Story_Quest.png/revision/latest?cb=20210615060301" /> <span class="opt-text">Story Quests</span></div>
+        <div class="custom-option" data-value="hangout"><img src="https://static.wikia.nocookie.net/gensin-impact/images/f/f3/System_Hangout_Event.png/revision/latest?cb=20210911040808" /> <span class="opt-text">Hangout Events</span></div>
+        <div class="custom-option" data-value="world"><img src="https://static.wikia.nocookie.net/gensin-impact/images/6/67/Icon_World_Quest.png/revision/latest?cb=20210615060104" /> <span class="opt-text">World Quests</span></div>
+        <div class="custom-option" data-value="commission"><img src="https://static.wikia.nocookie.net/gensin-impact/images/6/62/Icon_Commission.svg/revision/latest?cb=20201127234019" /> <span class="opt-text">Commissions</span></div>
+        <div class="custom-option" data-value="anecdote"><img src="https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Icon_Anecdote_Chronicles.png/revision/latest?cb=20250922124512" /> <span class="opt-text">Anecdote Quests</span></div>
+        <div class="custom-option" data-value="event"><img src="https://static.wikia.nocookie.net/gensin-impact/images/c/cd/Icon_Event_Quest.png/revision/latest?cb=20210615060103" /> <span class="opt-text">Event Quests</span></div>
+        <div class="custom-option" data-value="random"><img src="https://static.wikia.nocookie.net/gensin-impact/images/8/89/Icon_Random_Event.png/revision/latest?cb=20221223010923" /> <span class="opt-text">Random Events</span></div>
+        <div class="custom-option" data-value="hidden"><img src="https://static.wikia.nocookie.net/gensin-impact/images/6/67/Icon_World_Quest.png/revision/latest?cb=20210615060104" /> <span class="opt-text">Hidden Exploration Objectives</span></div>
+        <div class="custom-option" data-value="lore"><img src="https://static.wikia.nocookie.net/gensin-impact/images/6/65/Icon_Archive_Books.png/revision/latest?cb=20220120074207" /> <span class="opt-text">Lore</span></div>
+      </div>
+      <input type="hidden" id="type-select" value="world" />
+    </div>
+
     <div class="sidebar-title">ภูมิภาค</div>
   </nav>
 
@@ -492,20 +564,21 @@
         <span class="search-icon">🔍</span>
         <input type="search" id="search" placeholder="ค้นหาชื่อ Quest (EN/TH)..." autocomplete="off" />
       </div>
-      <button class="filter-btn" id="f-done"   data-filter="done">✅ เสร็จ <span class="fbadge" id="fb-done"></span></button>
-      <button class="filter-btn" id="f-inprog" data-filter="inprog">⏳ กำลังทำ <span class="fbadge" id="fb-inprog"></span></button>
-      <button class="filter-btn" id="f-none"   data-filter="none">📋 ยังไม่เริ่ม <span class="fbadge" id="fb-none"></span></button>
+      <button class="filter-btn" id="f-done"   data-filter="done"  title="กรองเฉพาะเควสที่ทำเสร็จแล้ว">✅ เสร็จ <span class="fbadge" id="fb-done"></span></button>
+      <button class="filter-btn" id="f-inprog" data-filter="inprog" title="กรองเฉพาะเควสที่กำลังทำอยู่">⏳ กำลังทำ <span class="fbadge" id="fb-inprog"></span></button>
+      <button class="filter-btn" id="f-none"   data-filter="none"  title="กรองเฉพาะเควสที่ยังไม่ได้เริ่มทำ">📋 ยังไม่เริ่ม <span class="fbadge" id="fb-none"></span></button>
+        <button class="filter-btn" id="f-root" style="margin-left: 10px;" title="แสดงเฉพาะเควสต้นสาย (Root Quest) ที่ไม่มีเควสก่อนหน้า">🌟 เฉพาะต้นสาย</button>
       <div class="primo-toggle">
-        <button class="pt-btn active" data-val="all">ทั้งหมด</button>
-        <button class="pt-btn" data-val="yes"><img src="https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Item_Primogem.png" alt="Primo"> มีรางวัล</button>
-        <button class="pt-btn" data-val="no">ไม่มีรางวัล</button>
+        <button class="pt-btn active" data-val="all"   title="แสดงเควสทั้งหมด ไม่กรองตามรางวัลเพชร">ทั้งหมด</button>
+        <button class="pt-btn" data-val="yes"          title="แสดงเฉพาะเควสที่มีรางวัลเพชร (Primogem)"><img src="https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Item_Primogem.png" alt="Primo"> มีรางวัล</button>
+        <button class="pt-btn" data-val="no"           title="แสดงเฉพาะเควสที่ไม่มีรางวัลเพชร">ไม่มีรางวัล</button>
       </div>
-      <select class="sort-select" id="series-filter-select">
+      <select class="sort-select" id="series-filter-select" title="กรองตามรูปแบบเควส: ทั้งหมด / เฉพาะเควสต่อเนื่อง (มี Series) / เฉพาะเควสเดี่ยว">
         <option value="all">รูปแบบ: ทั้งหมด</option>
         <option value="series">เฉพาะเควสต่อเนื่อง</option>
         <option value="single">เฉพาะเควสเดี่ยว</option>
       </select>
-      <select class="sort-select" id="sort-select">
+      <select class="sort-select" id="sort-select" title="เลือกวิธีเรียงลำดับเควสในรายการ">
         <option value="name">ชื่อ A–Z</option>
         <option value="name-z">ชื่อ Z–A</option>
         <option value="primo-desc">เพชร: มากไปน้อย</option>
@@ -514,7 +587,7 @@
         <option value="region">ภูมิภาค</option>
         <option value="status">Status</option>
       </select>
-      <button class="btn-reset" id="btn-reset-filter">✕ ล้าง</button>
+      <button class="btn-reset" id="btn-reset-filter" title="ล้างตัวกรองและการค้นหาทั้งหมด กลับสู่สถานะเริ่มต้น">✕ ล้าง</button>
     </div>
 
     <div class="results-info" id="results-info">กำลังโหลด...</div>
@@ -554,6 +627,7 @@
 
 <script src="quest-data.js?v=20260926-4"></script>
 <script>
+
 // ─── Constants ───────────────────────────────────────────────────────
 const STORAGE_KEY   = 'genshin_quest_progress';
 const NEW_KEY       = 'genshin_new_quests';   // extra quests added via update
@@ -576,7 +650,22 @@ const REGION_ICONS = {
   Snezhnaya: '<img class="region-icon" src="https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Emblem_Snezhnaya_White.png" alt="Snezhnaya">',
   Khaenriah: '<img class="region-icon" src="https://static.wikia.nocookie.net/gensin-impact/images/6/69/Emblem_Nation_Unknown_White.png" alt="Khaenriah">',
   Other: '<img class="region-icon" src="https://static.wikia.nocookie.net/gensin-impact/images/6/69/Emblem_Nation_Unknown_White.png" alt="Other">'
+}
+
+const TYPE_ICONS = {
+  all:        '<img class="type-icon" src="https://static.wikia.nocookie.net/gensin-impact/images/6/67/Icon_World_Quest.png" alt="all">',
+  archon:     '<img class="type-icon" src="https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Icon_Archon_Quest.png" alt="archon">',
+  story:      '<img class="type-icon" src="https://static.wikia.nocookie.net/gensin-impact/images/5/5c/Icon_Story_Quest.png" alt="story">',
+  hangout:    '<img class="type-icon" src="https://static.wikia.nocookie.net/gensin-impact/images/f/f3/System_Hangout_Event.png" alt="hangout">',
+  world:      '<img class="type-icon" src="https://static.wikia.nocookie.net/gensin-impact/images/6/67/Icon_World_Quest.png" alt="world">',
+  commission: '<img class="type-icon" src="https://static.wikia.nocookie.net/gensin-impact/images/6/62/Icon_Commission.svg" alt="commission">',
+  anecdote:   '<img class="type-icon" src="https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Icon_Anecdote_Chronicles.png" alt="anecdote">',
+  event:      '<img class="type-icon" src="https://static.wikia.nocookie.net/gensin-impact/images/c/cd/Icon_Event_Quest.png" alt="event">',
+  random:     '<img class="type-icon" src="https://static.wikia.nocookie.net/gensin-impact/images/8/89/Icon_Random_Event.png" alt="random">',
+  hidden:     '<img class="type-icon" src="https://static.wikia.nocookie.net/gensin-impact/images/6/67/Icon_World_Quest.png" alt="hidden">',
+  lore:       '<img class="type-icon" src="https://static.wikia.nocookie.net/gensin-impact/images/6/65/Icon_Archive_Books.png" alt="lore">',
 };
+;
 const WIKI_API = 'https://genshin-impact.fandom.com/api.php';
 const REGION_CATS = {
   Mondstadt:'Mondstadt Quests', Liyue:'Liyue Quests',
@@ -596,6 +685,7 @@ let searchQuery   = '';
 let sortMode      = 'series';
 let activePrimoFilter = 'all';
 let activeSeriesFilter = 'all';
+  let activeRootFilter = false;
 let activeType    = 'world'; // 'world', 'event', 'all'
 let allQuests     = [];   // combined QUEST_DATA + extraQuests
 
@@ -694,6 +784,7 @@ function buildSidebar() {
   if (activeFilters.size > 0) pool = pool.filter(q => activeFilters.has(getStatus(q.name)));
   if (activeSeriesFilter === 'series') pool = pool.filter(q => q.series);
   if (activeSeriesFilter === 'single') pool = pool.filter(q => !q.series);
+  if (activeRootFilter) pool = pool.filter(q => q.isRoot);
   if (activePrimoFilter === 'yes') pool = pool.filter(q => q.primogems > 0);
   if (activePrimoFilter === 'no') pool = pool.filter(q => !q.primogems || q.primogems === 0);
   
@@ -736,6 +827,7 @@ function getFilteredQuests() {
   if (activeFilters.size > 0) quests = quests.filter(q => activeFilters.has(getStatus(q.name)));
     if (activeSeriesFilter === 'series') quests = quests.filter(q => q.series);
     if (activeSeriesFilter === 'single') quests = quests.filter(q => !q.series);
+    if (activeRootFilter) quests = quests.filter(q => q.isRoot);
     if (activePrimoFilter === 'yes') quests = quests.filter(q => q.primogems > 0);
   if (activePrimoFilter === 'no') quests = quests.filter(q => !q.primogems || q.primogems === 0);
 
@@ -749,9 +841,15 @@ function getFilteredQuests() {
     return ((b.primogems || 0) - (a.primogems || 0)) || a.name.localeCompare(b.name);
   });
     else if (sortMode === 'series') quests.sort((a,b) => {
-      const sA = a.series || '\uFFFF';
-      const sB = b.series || '\uFFFF';
-      if (sA !== sB) return sA.localeCompare(sB);
+      const sA = a.series || '';
+      const sB = b.series || '';
+      if (sA && !sB) return -1;
+      if (!sA && sB) return 1;
+      const cmp = sA.localeCompare(sB);
+      if (cmp !== 0) return cmp;
+      const ordA = a.chainOrder || 0;
+      const ordB = b.chainOrder || 0;
+      if (ordA !== ordB) return ordA - ordB;
       return a.name.localeCompare(b.name);
     });
   else if (sortMode === 'primo-asc') quests.sort((a,b) => {
@@ -836,15 +934,20 @@ function questCardHTML(q) {
     ? `<span class="primo-reward"><img src="https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Item_Primogem.png" alt="Primogem"> ${q.primogems}</span>`
     : '';
   return `
-    <div class="quest-card status-${status}${isNew?' is-new':''}" data-name="${escHtml(q.name)}" data-region="${q.region}">
+    <div class="quest-card status-${status}${isNew?' is-new':''}" data-name="${escHtml(q.name)}" data-region="${q.region}" data-type="${q.type||'world'}">
       <div class="quest-name">
         <div class="quest-name-en">
           <span class="text-truncate" title="${escHtml(q.name)}">${escHtml(q.name)}</span>
           <a href="https://genshin-impact.fandom.com/wiki/${encodeURIComponent(q.name.replace(/ /g, '_'))}" target="_blank" class="wiki-link" title="อ่านไกด์/ข้อมูลเควสบน Wiki">🔗</a>
         </div>
         ${thaiDisplay}
-          ${q.series ? `<div class="series-badge">📚 ${escHtml(q.series)}</div>` : ''}
-        <div class="quest-region-tag">
+          ${q.series ? `<div class="series-badge">${TYPE_ICONS[q.type||'world']||''}  ${escHtml(q.series)}</div>` : ''}
+                  <div class="quest-prereq">
+            ${q.isRoot ? `<span style="color: #6da3b5; font-weight: bold;">🌟 เควสเริ่มต้นสาย (Root Quest)</span>` : ''}
+            ${q.req && q.req.length > 0 ? `<span>🔑 <b>ต้องทำก่อน:</b> ${q.req.map(r => `<a href="#" onclick="scrollToQuest('${r.replace(/'/g, "\'")}'); return false;" style="color:inherit; text-decoration:underline;">${getQuestDisplayName(r)}</a>`).join('<br>&nbsp;&nbsp;&nbsp;&nbsp;')}</span>` : ''}
+            ${q.root && (!q.req || !q.req.includes(q.root)) ? `<span>🌱 <b>ต้นสายแรกสุด:</b> <a href="#" onclick="scrollToQuest('${q.root.replace(/'/g, "\'")}'); return false;" style="color:inherit; text-decoration:underline;">${getQuestDisplayName(q.root)}</a></span>` : ''}
+          </div>
+          <div class="quest-region-tag">
           ${REGION_ICONS[q.region]||'✦'} ${q.region}
           ${primoHtml}
         </div>
@@ -874,8 +977,33 @@ function attachCardEvents(container) {
         card.style.transform = 'scale(0.95)';
         card.style.marginBottom = `-${card.offsetHeight}px`;
         setTimeout(() => {
+          const grid = card.closest('.quest-grid');
+          const container = document.getElementById('quest-list');
           card.remove();
-          // We don't re-render entire list so user doesn't lose scroll pos, but we must update counts.
+          // If the group is now empty, hide its section-header too
+          if (grid && grid.querySelectorAll('.quest-card').length === 0) {
+            const header = grid.previousElementSibling;
+            if (header && header.classList.contains('section-header')) {
+              header.style.transition = 'all 0.3s ease';
+              header.style.opacity = '0';
+              setTimeout(() => {
+                header.remove();
+                grid.remove();
+                // Check if the whole list is now empty
+                if (container && container.querySelectorAll('.quest-card').length === 0) {
+                  container.innerHTML = `<div class="empty-state"><div class="icon">🔍</div><p>ไม่มี Quest ที่ตรงกับเงื่อนไขที่เลือก</p></div>`;
+                }
+              }, 300);
+            } else {
+              grid.remove();
+              // Check if the whole list is now empty
+              if (container && container.querySelectorAll('.quest-card').length === 0) {
+                container.innerHTML = `<div class="empty-state"><div class="icon">🔍</div><p>ไม่มี Quest ที่ตรงกับเงื่อนไขที่เลือก</p></div>`;
+              }
+            }
+          }
+          updateFilterBadges();
+          updateFilterBar();
         }, 300);
       } else {
         card.className = `quest-card status-${s}${newQuestNames.has(name)?' is-new':''}`;
@@ -888,6 +1016,57 @@ function attachCardEvents(container) {
 function escHtml(s) {
   return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
+
+
+function scrollToQuest(enName) {
+  const q = allQuests.find(x => x.name === enName);
+  if (!q) return;
+  
+  // Clear all filters to ensure it's visible
+  searchQuery = '';
+  document.getElementById('search').value = '';
+  activeFilters.clear();
+  activePrimoFilter = 'all';
+  activeSeriesFilter = 'all';
+  activeRootFilter = false;
+  
+  // Reset UI for filters
+  document.querySelectorAll('.filter-btn[data-filter]').forEach(b => b.classList.remove('active-done', 'active-inprog', 'active-none'));
+  document.getElementById('f-root').classList.remove('active-root');
+  document.querySelectorAll('.pt-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector('.pt-btn[data-val="all"]').classList.add('active');
+  document.getElementById('series-filter-select').value = 'all';
+  
+  // Set region and type
+  activeType = q.type || 'world';
+  document.getElementById('type-select').value = activeType;
+  activeRegion = q.region;
+  
+  buildSidebar();
+  renderList();
+  
+  setTimeout(() => {
+    const safeName = enName.replace(/"/g, '\\"');
+    const el = document.querySelector(`.quest-card[data-name="${safeName}"]`);
+    if (el) {
+      el.scrollIntoView({behavior: 'smooth', block: 'center'});
+      const oldBg = el.style.background;
+      el.style.background = 'rgba(109, 163, 181, 0.2)';
+      el.style.border = '1px solid #6da3b5';
+      setTimeout(() => {
+        el.style.background = oldBg;
+        el.style.border = '1px solid transparent';
+      }, 2500);
+    }
+  }, 100);
+}
+
+function getQuestDisplayName(enName) {
+  const q = allQuests.find(x => x.name === enName);
+  if (q && q.thaiName) return `${escHtml(q.thaiName)} (${escHtml(enName)})`;
+  return escHtml(enName);
+}
+
 
 // ─── Update Functionality ─────────────────────────────────────────────
 let fetchedNewQuests = [];
@@ -1030,7 +1209,6 @@ function showToast(msg, duration = 3000) {
 
 // ─── Filter badge counts ─────────────────────────────────────────────
 function updateFilterBadges() {
-  // Count per status across ALL quests in current region scope
   let countDone = 0, countInprog = 0, countNone = 0;
   const activePool = getActiveTypePool();
   let pool = activeRegion === 'All' ? activePool : activePool.filter(q => q.region === activeRegion);
@@ -1041,19 +1219,21 @@ function updateFilterBadges() {
       (q.thaiName && q.thaiName.toLowerCase().includes(sq))
     );
   }
-    if (activeSeriesFilter === 'series') quests = quests.filter(q => q.series);
-    if (activeSeriesFilter === 'single') quests = quests.filter(q => !q.series);
-    if (activePrimoFilter === 'yes') pool = pool.filter(q => q.primogems > 0);
+  if (activeSeriesFilter === 'series') pool = pool.filter(q => q.series);
+  if (activeSeriesFilter === 'single') pool = pool.filter(q => !q.series);
+  if (activeRootFilter) pool = pool.filter(q => q.isRoot);
+  if (activePrimoFilter === 'yes') pool = pool.filter(q => q.primogems > 0);
   if (activePrimoFilter === 'no') pool = pool.filter(q => !q.primogems || q.primogems === 0);
+
   pool.forEach(q => {
     const s = getStatus(q.name);
     if (s === 'done') countDone++;
     else if (s === 'inprog') countInprog++;
     else countNone++;
   });
-  document.getElementById('fb-done').textContent   = countDone   > 0 ? countDone   : '';
-  document.getElementById('fb-inprog').textContent = countInprog > 0 ? countInprog : '';
-  document.getElementById('fb-none').textContent   = countNone   > 0 ? countNone   : '';
+  document.getElementById('fb-done').textContent   = countDone;
+  document.getElementById('fb-inprog').textContent = countInprog;
+  document.getElementById('fb-none').textContent   = countNone;
 }
 
 function updateFilterBar() {
@@ -1068,9 +1248,9 @@ function updateFilterBar() {
     if (searchQuery) parts.push(`🔍 "${searchQuery}"`);
     if (active) parts.push(active);
     label.textContent = parts.join('  ·  ');
-    bar.classList.add('show');
+    bar.classList.add('open');
   } else {
-    bar.classList.remove('show');
+    bar.classList.remove('open');
   }
 }
 
@@ -1080,6 +1260,10 @@ function clearAllFilters() {
   searchQuery = '';
   activeRegion = 'All';
   document.getElementById('search').value = '';
+  activeRootFilter = false;
+  const froot = document.getElementById('f-root');
+  if(froot) froot.classList.remove('active-root');
+  
   document.querySelectorAll('.filter-btn[data-filter]').forEach(b => {
     const f = b.dataset.filter;
     b.classList.remove('active-done', 'active-inprog', 'active-none', `active-${f}`);
@@ -1092,7 +1276,16 @@ function clearAllFilters() {
   renderList();
 }
 
-// ─── Toolbar events ───────────────────────────────────────────────────
+// Toolbar events
+
+document.getElementById('f-root').addEventListener('click', (e) => {
+  activeRootFilter = !activeRootFilter;
+  if (activeRootFilter) e.currentTarget.classList.add('active-root');
+  else e.currentTarget.classList.remove('active-root');
+  buildSidebar();
+  renderList();
+});
+
 document.querySelectorAll('.filter-btn[data-filter]').forEach(btn => {
   btn.addEventListener('click', () => {
     const f = btn.dataset.filter;
@@ -1145,6 +1338,46 @@ document.getElementById('sort-select').addEventListener('change', e => {
     });
   }
 
+
+  // Custom select logic
+  const typeSelectWrapper = document.getElementById('custom-type-select-wrapper');
+  const typeSelect = document.getElementById('custom-type-select');
+  const typeOptions = document.getElementById('custom-type-options');
+  const typeInput = document.getElementById('type-select');
+  
+  function updateCustomSelectUI(val) {
+    const opt = document.querySelector(`.custom-option[data-value="${val}"]`);
+    if (opt) {
+      document.getElementById('custom-type-select-icon').innerHTML = opt.querySelector('img, span') ? opt.querySelector('img, span').outerHTML : '';
+      const optText = opt.querySelector('.opt-text');
+        document.getElementById('custom-type-select-text').textContent = optText ? optText.textContent.trim() : opt.textContent.trim();
+    }
+  }
+
+  if (typeSelect) {
+    typeSelect.addEventListener('click', (e) => {
+      typeOptions.classList.toggle('open');
+      e.stopPropagation();
+    });
+    
+    document.addEventListener('click', (e) => {
+      if (!typeSelectWrapper.contains(e.target)) {
+        typeOptions.classList.remove('open');
+      }
+    });
+
+    document.querySelectorAll('.custom-option').forEach(opt => {
+      opt.addEventListener('click', () => {
+        const val = opt.dataset.value;
+        typeInput.value = val;
+        updateCustomSelectUI(val);
+        typeOptions.classList.remove('open');
+        typeInput.dispatchEvent(new Event('change'));
+      });
+    });
+    updateCustomSelectUI(typeInput.value);
+  }
+
 document.getElementById('type-select').addEventListener('change', e => {
   activeType = e.target.value;
   let subtitle = 'All Quests';
@@ -1153,6 +1386,11 @@ document.getElementById('type-select').addEventListener('change', e => {
   if (activeType === 'archon') subtitle = 'Archon Quests';
   if (activeType === 'story') subtitle = 'Story Quests';
   if (activeType === 'commission') subtitle = 'Commissions';
+    if (activeType === 'anecdote') subtitle = 'Anecdote Quests';
+    if (activeType === 'hangout') subtitle = 'Hangout Events';
+    if (activeType === 'random') subtitle = 'Random Events';
+    if (activeType === 'hidden') subtitle = 'Hidden Exploration Objectives';
+    if (activeType === 'lore') subtitle = 'Lore';
   document.getElementById('header-subtitle').textContent = `Genshin Impact — ${subtitle}`;
   buildSidebar();
   updateProgressBar();
@@ -1221,6 +1459,194 @@ buildSidebar();
 updateProgressBar();
 updateFilterBadges();
 renderList();
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('btn-donate').addEventListener('click', () => {
+      document.getElementById('donate-modal').classList.add('open');
+    });
+    document.getElementById('donate-modal').addEventListener('click', (e) => {
+      if (e.target === e.currentTarget) {
+        document.getElementById('donate-modal').classList.remove('open');
+      }
+    });
+  });
+
 </script>
+
+  <!-- Donate Modal -->
+  <div class="modal-overlay" id="donate-modal">
+    <div class="modal" style="max-width: 400px; text-align: center;">
+      <h3 style="margin-top:0; color:var(--text); display:flex; align-items:center; justify-content:center; gap:8px;">💖 สนับสนุนผู้พัฒนา</h3>
+      <p style="color:var(--text-dim); font-size:0.9rem; line-height:1.5; margin-bottom: 20px;">
+        ถ้าแอปนี้มีประโยชน์กับคุณ สามารถช่วยสนับสนุนค่ากาแฟเล็กๆ น้อยๆ ได้นะครับ ขอบคุณมากครับ! 🥰
+      </p>
+      
+      <!-- PromptPay QR -->
+      <div style="background: white; padding: 16px; border-radius: 12px; display: inline-block; margin-bottom: 20px;">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACU0lEQVR42u3bQY7DIBAEwPz/07sPiEJ6ZgxxouJkWVpMcQC2hzz+fro98PDw8PDw8PDwbsZ7xO35r56fX/W5/qv1V8pjw8PDwzvCe7PUBphrn3tjw8PDwzvPSxb0nD1/3xsbHh4e3nfx8kX/VW94eHh4v8erDjoKXouBBR4eHt59ePk//BPAekvobSd4eHh453l5ken889H6Hh4eHl7Amyz0688kQUav6PVmbHh4eHibefPQoXrpKr/OlXwFDw8P77O8yfZQ3RL2Bcd4eHh4u3n5Ut47WOc95JhCAQwPDw9vA6/3Q6b1oPMYYv5jgGjfw8PDw9vM68GqR/M8sKiC8fDw8HbzJp0mk1J9nsTHeHh4eGd40dX5eBCTQ/ZVB3c8PDy8k7y8096lgWRTSd6/iYbx8PDwDvKqb3Ycpnt4PDw8vJO8apn/WsCWy7J4eHh4R3jJclyNX5Peqsfo9ajw8PDwzvDmRa9kspJpqh61LyiA4eHh4bV41YW7ulg3L05Nymx4eHh4R3jlItPyfbXNwws8PDy8k7xJkNpb3HvFs0IpDg8PD28zLzmk9jaD+eG4OU48PDy8zby8TJUHu+sC1fySwZuv4+Hh4W3mVdvkAkFvssrlNzw8PLzNvGrYmhfP5gHExZeu8PDw8C7lVSOAXrCbbyf5GPDw8PA+y+sV9Xvh7PzSAB4eHt638KqFsSqsN9F4eHh4d+ZNLmklQcYksMDDw8M7z6su/b2IYTKJh7IWPDw8vEsLYMmBuwfrBRx4eHh453m/1/Dw8PDw8PDw8G7Q/gHjZrWphTRwrwAAAABJRU5ErkJggg==" alt="PromptPay QR" style="width: 200px; height: 200px; image-rendering: pixelated;" id="donate-qr-img">
+        <div style="color: black; font-weight: bold; margin-top: 8px; font-size: 0.9rem;">แสกนผ่านแอพธนาคารได้เลยครับ</div>
+      </div>
+      
+      <div style="text-align: right;">
+        <button class="btn-cancel" onclick="document.getElementById('donate-modal').classList.remove('open')" style="width: 100%; justify-content: center;">ปิดหน้าต่าง</button>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer style="
+  background: var(--panel2);
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+  padding: 24px 32px;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  text-align: center;
+  line-height: 1.8;
+">
+  <div style="max-width: 860px; margin: 0 auto;">
+
+    <div style="margin-bottom: 12px; font-size: 0.82rem; font-weight: 600; color: var(--text); letter-spacing: 0.05em;">
+      🗂️ แหล่งข้อมูล (Data Sources)
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 16px;">
+      <a href="https://genshin-impact.fandom.com" target="_blank" rel="noopener" style="
+        display: flex; align-items: center; gap: 6px;
+        background: rgba(255,255,255,0.05);
+        border: 1px solid var(--border);
+        border-radius: 8px; padding: 6px 14px;
+        color: var(--gold); text-decoration: none;
+        transition: background 0.2s;
+      " onmouseover="this.style.background='rgba(255,255,255,0.10)'" onmouseout="this.style.background='rgba(255,255,255,0.05)'">
+        <img src="https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Item_Primogem.png" style="width:16px;height:16px;object-fit:contain;" />
+        Genshin Impact Wiki (fandom.com)
+      </a>
+      <a href="https://genshindb.org" target="_blank" rel="noopener" style="
+        display: flex; align-items: center; gap: 6px;
+        background: rgba(255,255,255,0.05);
+        border: 1px solid var(--border);
+        border-radius: 8px; padding: 6px 14px;
+        color: var(--gold); text-decoration: none;
+        transition: background 0.2s;
+      " onmouseover="this.style.background='rgba(255,255,255,0.10)'" onmouseout="this.style.background='rgba(255,255,255,0.05)'">
+        📦 GenshinDB.org
+      </a>
+    </div>
+
+    <div style="border-top: 1px solid var(--border); padding-top: 14px; color: var(--text-dim);">
+      <div style="margin-bottom: 4px;">
+        ⚠️ ข้อมูลเควสและสินทรัพย์ภายในเกม (ไอคอน ชื่อเควส ฯลฯ) เป็นลิขสิทธิ์ของ
+        <a href="https://www.hoyoverse.com" target="_blank" style="color: var(--gold); text-decoration: none;">HoYoverse (miHoYo)</a>
+      </div>
+      <div style="margin-top: 10px; display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap;">
+        <span style="font-size: 0.8rem; color: var(--text);">
+          &copy; 2026 <a href="https://github.com/triphum1234-droid" target="_blank" rel="noopener" style="color: var(--gold); text-decoration: none;">triphum1234-droid</a>
+          &mdash; Quest Tracker Web App &mdash; All rights reserved
+        </span>
+        <span style="
+          background: rgba(211,188,142,0.15); color: var(--gold);
+          border: 1px solid rgba(211,188,142,0.4);
+          border-radius: 20px; padding: 2px 10px;
+          font-size: 0.75rem; font-weight: 600; letter-spacing: 0.03em;
+        ">v1.5.0</span>
+      </div>
+      <div style="margin-top: 4px; font-size: 0.72rem; opacity: 0.6;">
+        This is a fan-made project and is not affiliated with or endorsed by HoYoverse.
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Changelog Modal -->
+<div class="modal-overlay" id="changelog-modal" style="display:none;" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal" style="max-width: 560px; max-height: 80vh; overflow-y: auto;">
+    <h3 style="margin-top:0; color:var(--text); display:flex; align-items:center; gap:8px;">
+      📋 ประวัติการอัปเดต
+      <span style="margin-left:auto; background:rgba(211,188,142,0.15); color:var(--gold); border:1px solid rgba(211,188,142,0.4); border-radius:20px; padding:2px 10px; font-size:0.75rem;">v1.5.0</span>
+    </h3>
+
+    <div style="display:flex; flex-direction:column; gap:18px; font-size:0.85rem; line-height:1.6;">
+
+      <div>
+        <div style="color:var(--gold); font-weight:700; margin-bottom:6px;">🆕 v1.5.0 — กันยายน 2026</div>
+        <ul style="margin:0; padding-left:18px; color:var(--text-dim);">
+          <li>เพิ่มประเภทเควส <b>Anecdote Quests</b>, <b>Hangout Events</b>, <b>Random Events</b>, <b>Hidden Exploration Objectives</b>, <b>Lore</b></li>
+          <li>เปลี่ยน Dropdown ประเภทเควสเป็น Custom Dropdown พร้อมไอคอน Official จากวิกิ</li>
+          <li>เพิ่มลายน้ำ icon ประเภทเควสบน Quest Card (มุมล่างขวา)</li>
+          <li>เพิ่ม Tooltip คำอธิบายเมื่อ Hover ที่ปุ่มกรอง</li>
+          <li>เพิ่ม Footer: แหล่งข้อมูล, Copyright, ปุ่มดู Changelog</li>
+        </ul>
+      </div>
+
+      <div>
+        <div style="color:var(--gold); font-weight:700; margin-bottom:6px;">v1.4.0 — กันยายน 2026</div>
+        <ul style="margin:0; padding-left:18px; color:var(--text-dim);">
+          <li>เพิ่มปุ่ม <b>Donation</b> พร้อม PromptPay QR Code</li>
+          <li>เพิ่มปุ่ม <b>🌟 เฉพาะต้นสาย</b> กรองเฉพาะ Root Quest</li>
+          <li>กดลิงก์ เควสต้นสาย / ต้องทำก่อน แล้ว Scroll ไปยังเควสนั้นได้</li>
+          <li>Badge (เสร็จ / กำลังทำ / ยังไม่เริ่ม) แสดงตัวเลขเป็น 0 เมื่อไม่มีเควส</li>
+        </ul>
+      </div>
+
+      <div>
+        <div style="color:var(--gold); font-weight:700; margin-bottom:6px;">v1.3.0 — กันยายน 2026</div>
+        <ul style="margin:0; padding-left:18px; color:var(--text-dim);">
+          <li>เรียงลำดับเควสตาม Prerequisite Chain (Root ขึ้นก่อน)</li>
+          <li>แสดง <b>ต้นสายแรกสุด</b> และ <b>ต้องทำก่อน</b> บนการ์ดเควส</li>
+          <li>เพิ่ม Filter <b>มีรางวัลเพชร / ไม่มีรางวัลเพชร</b></li>
+        </ul>
+      </div>
+
+      <div>
+        <div style="color:var(--gold); font-weight:700; margin-bottom:6px;">v1.2.0 — กันยายน 2026</div>
+        <ul style="margin:0; padding-left:18px; color:var(--text-dim);">
+          <li>Sticky Filter Bar (แถบกรองติดหน้าจอขณะเลื่อน)</li>
+          <li>เพิ่มการ Group เควสตาม Series</li>
+          <li>ลายน้ำ Emblem ภูมิภาคบน Quest Card</li>
+        </ul>
+      </div>
+
+      <div>
+        <div style="color:var(--gold); font-weight:700; margin-bottom:6px;">v1.1.0 — กันยายน 2026</div>
+        <ul style="margin:0; padding-left:18px; color:var(--text-dim);">
+          <li>เพิ่มข้อมูล Prerequisite Quest จาก Genshin Wiki</li>
+          <li>แสดงจำนวน Primogem บนการ์ดเควส</li>
+          <li>เพิ่ม Progress Bar แสดงเปอร์เซ็นต์ความสำเร็จ</li>
+        </ul>
+      </div>
+
+      <div>
+        <div style="color:var(--gold); font-weight:700; margin-bottom:6px;">v1.0.0 — กันยายน 2026</div>
+        <ul style="margin:0; padding-left:18px; color:var(--text-dim);">
+          <li>เปิดตัวแอป Genshin Quest Tracker ครั้งแรก</li>
+          <li>ติดตามสถานะเควส: เสร็จ / กำลังทำ / ยังไม่เริ่ม</li>
+          <li>กรองตามภูมิภาค และประเภทเควส (Archon, Story, World, Commission, Event)</li>
+          <li>ค้นหาเควสด้วยชื่อภาษาอังกฤษ / ไทย</li>
+          <li>บันทึกข้อมูลอัตโนมัติใน LocalStorage</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div style="text-align:right; margin-top:20px;">
+      <button class="btn-cancel" onclick="document.getElementById('changelog-modal').classList.remove('open')" style="width:100%; justify-content:center;">ปิด</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Make changelog modal work with display toggle
+  const changelogModal = document.getElementById('changelog-modal');
+  if (changelogModal) {
+    changelogModal.style.display = '';
+    const observer = new MutationObserver(() => {
+      changelogModal.style.display = changelogModal.classList.contains('open') ? 'flex' : 'none';
+    });
+    observer.observe(changelogModal, { attributes: true, attributeFilter: ['class'] });
+  }
+</script>
+
 </body>
 </html>
