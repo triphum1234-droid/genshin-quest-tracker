@@ -9,7 +9,8 @@
 - **ติดตามสถานะเควสต์** — ตั้งแต่ละรายการเป็นเสร็จแล้ว, กำลังทำ หรือยังไม่เริ่ม กดสถานะเดิมซ้ำเพื่อกลับเป็นยังไม่เริ่ม
 - **เลือกประเภทและภูมิภาค** — ดูทั้งหมด หรือกรองตาม Archon, Story, World, Commission และ Event Quest รวมถึงภูมิภาคต่าง ๆ ในเกม
 - **ค้นหาและกรองรายการ** — ค้นหาด้วยชื่อภาษาอังกฤษหรือชื่อไทย กรองตามสถานะหรือรายการที่มี/ไม่มีรางวัล Primogem และล้างตัวกรองได้
-- **เรียงลำดับ** — ตามชื่อ, ภูมิภาค, สถานะ หรือจำนวน Primogem
+- **กรองเควสต์ต่อเนื่อง** — เลือกดูเฉพาะเควสต์ที่อยู่ในชุดต่อเนื่อง หรือดูเฉพาะเควสต์เดี่ยว การ์ดของเควสต์ต่อเนื่องจะแสดงชื่อชุดไว้ด้วย
+- **เรียงและจัดกลุ่ม** — ตามชื่อ, ภูมิภาค, สถานะ, จำนวน Primogem หรือชุดเควสต์ต่อเนื่อง
 - **ดูสถิติและรางวัล** — แสดงจำนวนเควสต์แต่ละสถานะ แถบความคืบหน้า และประมาณการ Primogem ที่ยังไม่ได้รับในประเภทเควสต์ที่เลือก
 - **แสดงชื่อไทย** — สลับแสดงชื่อเควสต์ภาษาไทยทางการเมื่อมีข้อมูล
 - **เปิดข้อมูลเควสต์** — ลิงก์จากแต่ละรายการไปยังหน้าเควสต์บน Genshin Impact Wiki
@@ -20,7 +21,7 @@
 
 1. เปิด [เว็บแอป](https://triphum1234-droid.github.io/genshin-quest-tracker/index.html) หรือเปิด `index.html` ในเบราว์เซอร์สมัยใหม่
 2. เลือกประเภทเควสต์และภูมิภาคจากแถบด้านซ้าย
-3. ใช้ช่องค้นหา ตัวกรองสถานะ/Primogem และตัวเลือกเรียงลำดับเพื่อหารายการที่ต้องการ
+3. ใช้ช่องค้นหา ตัวกรองสถานะ/Primogem/เควสต์ต่อเนื่อง และตัวเลือกเรียงลำดับเพื่อหารายการที่ต้องการ
 4. กดปุ่ม ✅, ⏳ หรือ 📋 บนการ์ดเควสต์เพื่อเปลี่ยนสถานะ
 5. กดปุ่ม 📤 เพื่อดาวน์โหลดข้อมูลสำรอง และปุ่ม 📥 เพื่อนำเข้าไฟล์สำรอง
 
@@ -48,7 +49,8 @@ Genshin Impact Quest Tracker is a static browser app for tracking quest progress
 
 - Track quests as **Done**, **In progress**, or **Not started**.
 - Browse by quest type and region; search English or Thai names; filter by status or Primogem reward.
-- Sort by name, region, status, or Primogem amount.
+- Filter for quest chains or single quests; quest cards show their series name when available.
+- Sort and group by name, region, status, Primogem amount, or quest series.
 - View status counts, a progress bar, and estimated unclaimed Primogems for the selected quest type.
 - Toggle official Thai quest names when available and open each quest's Wiki page.
 - Export a JSON backup and import it later to restore progress and extra quests.
