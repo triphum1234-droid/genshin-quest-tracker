@@ -225,6 +225,7 @@
       border: 1px solid var(--border); border-radius: 20px;
       color: var(--text-dim); font-size: 0.8rem; cursor: pointer; outline: none;
     }
+    .sort-select option { background: var(--panel2); color: var(--text); }
     .primo-toggle { display: flex; background: transparent; border-radius: 20px; border: 1px solid var(--border); overflow: hidden; align-items: center; }
     .pt-btn { background: transparent; color: var(--text-dim); padding: 6px 12px; font-size: 0.8rem; cursor: pointer; border: none; display: flex; align-items: center; transition: all 0.2s; outline: none; }
     .pt-btn img { height: 14px; margin-right: 6px; }
@@ -301,6 +302,17 @@
     .quest-region-tag { font-size: 0.65rem; color: #666; margin-top: 6px; display: flex; align-items: center; }
     .primo-reward { display: inline-flex; align-items: center; margin-left: 8px; font-weight: 500; color: var(--gold); }
     .primo-reward img { height: 12px; margin-right: 3px; }
+    .series-badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      background: rgba(255, 255, 255, 0.05); color: #b3b3b3; border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 2px 6px; border-radius: 4px; font-size: 0.65rem; margin-top: 6px; width: fit-content;
+    }
+    .quest-prereq {
+      font-size: 0.65rem; color: #b59b6d; margin-top: 4px; 
+      display: flex; flex-direction: column; gap: 2px;
+    }
+    .quest-prereq span { display: block; }
+
 
     /* ── Segmented Control Status toggle ── */
     .status-toggle {
@@ -488,11 +500,17 @@
         <button class="pt-btn" data-val="yes"><img src="https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Item_Primogem.png" alt="Primo"> มีรางวัล</button>
         <button class="pt-btn" data-val="no">ไม่มีรางวัล</button>
       </div>
+      <select class="sort-select" id="series-filter-select">
+        <option value="all">รูปแบบ: ทั้งหมด</option>
+        <option value="series">เฉพาะเควสต่อเนื่อง</option>
+        <option value="single">เฉพาะเควสเดี่ยว</option>
+      </select>
       <select class="sort-select" id="sort-select">
         <option value="name">ชื่อ A–Z</option>
         <option value="name-z">ชื่อ Z–A</option>
         <option value="primo-desc">เพชร: มากไปน้อย</option>
         <option value="primo-asc">เพชร: น้อยไปมาก</option>
+        <option value="series" selected>หมวดหมู่: เควสต่อเนื่อง</option>
         <option value="region">ภูมิภาค</option>
         <option value="status">Status</option>
       </select>
@@ -534,7 +552,7 @@
   </div>
 </div>
 
-<script src="quest-data.js?v=20260926-2"></script>
+<script src="quest-data.js?v=20260926-4"></script>
 <script>
 // ─── Constants ───────────────────────────────────────────────────────
 const STORAGE_KEY   = 'genshin_quest_progress';
@@ -575,8 +593,9 @@ let showThai      = false;
 let activeRegion  = 'All';
 let activeFilters = new Set();
 let searchQuery   = '';
-let sortMode      = 'name';
+let sortMode      = 'series';
 let activePrimoFilter = 'all';
+let activeSeriesFilter = 'all';
 let activeType    = 'world'; // 'world', 'event', 'all'
 let allQuests     = [];   // combined QUEST_DATA + extraQuests
 
@@ -673,6 +692,8 @@ function buildSidebar() {
     pool = pool.filter(q => q.name.toLowerCase().includes(sq) || (q.thaiName && q.thaiName.toLowerCase().includes(sq)));
   }
   if (activeFilters.size > 0) pool = pool.filter(q => activeFilters.has(getStatus(q.name)));
+  if (activeSeriesFilter === 'series') pool = pool.filter(q => q.series);
+  if (activeSeriesFilter === 'single') pool = pool.filter(q => !q.series);
   if (activePrimoFilter === 'yes') pool = pool.filter(q => q.primogems > 0);
   if (activePrimoFilter === 'no') pool = pool.filter(q => !q.primogems || q.primogems === 0);
   
@@ -713,8 +734,9 @@ function getFilteredQuests() {
     );
   }
   if (activeFilters.size > 0) quests = quests.filter(q => activeFilters.has(getStatus(q.name)));
-  
-  if (activePrimoFilter === 'yes') quests = quests.filter(q => q.primogems > 0);
+    if (activeSeriesFilter === 'series') quests = quests.filter(q => q.series);
+    if (activeSeriesFilter === 'single') quests = quests.filter(q => !q.series);
+    if (activePrimoFilter === 'yes') quests = quests.filter(q => q.primogems > 0);
   if (activePrimoFilter === 'no') quests = quests.filter(q => !q.primogems || q.primogems === 0);
 
   const statusOrder = { done: 0, inprog: 1, none: 2 };
@@ -726,6 +748,12 @@ function getFilteredQuests() {
   else if (sortMode === 'primo-desc') quests.sort((a,b) => {
     return ((b.primogems || 0) - (a.primogems || 0)) || a.name.localeCompare(b.name);
   });
+    else if (sortMode === 'series') quests.sort((a,b) => {
+      const sA = a.series || '\uFFFF';
+      const sB = b.series || '\uFFFF';
+      if (sA !== sB) return sA.localeCompare(sB);
+      return a.name.localeCompare(b.name);
+    });
   else if (sortMode === 'primo-asc') quests.sort((a,b) => {
     return ((a.primogems || 0) - (b.primogems || 0)) || a.name.localeCompare(b.name);
   });
@@ -751,20 +779,44 @@ function renderList() {
     return;
   }
 
-  const shouldGroup = activeRegion === 'All' && sortMode === 'region';
+  const shouldGroupRegion = activeRegion === 'All' && sortMode === 'region';
+  const shouldGroupSeries = sortMode === 'series';
 
-  if (shouldGroup) {
+  if (shouldGroupRegion || shouldGroupSeries) {
     const grouped = {};
-    quests.forEach(q => { (grouped[q.region] = grouped[q.region] || []).push(q); });
     let html = '';
-    REGIONS_ORDER.forEach(region => {
-      if (region === 'All' || !grouped[region]) return;
-      const list = grouped[region];
-      html += `<div class="section-header">${REGION_ICONS[region]||'✦'} ${region} (${list.length})</div>`;
-      html += `<div class="quest-grid">`;
-      list.forEach(q => { html += questCardHTML(q); });
-      html += `</div>`;
-    });
+    
+    if (shouldGroupRegion) {
+      quests.forEach(q => { (grouped[q.region] = grouped[q.region] || []).push(q); });
+      REGIONS_ORDER.forEach(region => {
+        if (region === 'All' || !grouped[region]) return;
+        const list = grouped[region];
+        html += `<div class="section-header">${REGION_ICONS[region]||'🌍'} ${region} (${list.length})</div>`;
+        html += `<div class="quest-grid">`;
+        list.forEach(q => { html += questCardHTML(q); });
+        html += `</div>`;
+      });
+    } else {
+      let groupOrder = [];
+      quests.forEach(q => {
+        const k = q.series || 'เควสเดี่ยว (Single Quests)';
+        if (!grouped[k]) { grouped[k] = []; groupOrder.push(k); }
+        grouped[k].push(q);
+      });
+      groupOrder.sort((a,b) => {
+        if (a === 'เควสเดี่ยว (Single Quests)') return 1;
+        if (b === 'เควสเดี่ยว (Single Quests)') return -1;
+        return a.localeCompare(b);
+      });
+      groupOrder.forEach(k => {
+        const list = grouped[k];
+        const icon = k === 'เควสเดี่ยว (Single Quests)' ? '📌' : '📚';
+        html += `<div class="section-header" style="background: rgba(255,255,255,0.05); font-size: 0.95rem;">${icon} ${k} <span style="font-size:0.75rem; color:#888; font-weight:normal;">(${list.length})</span></div>`;
+        html += `<div class="quest-grid">`;
+        list.forEach(q => { html += questCardHTML(q); });
+        html += `</div>`;
+      });
+    }
     container.innerHTML = html;
   } else {
     container.innerHTML = `<div class="quest-grid">${quests.map(questCardHTML).join('')}</div>`;
@@ -791,6 +843,7 @@ function questCardHTML(q) {
           <a href="https://genshin-impact.fandom.com/wiki/${encodeURIComponent(q.name.replace(/ /g, '_'))}" target="_blank" class="wiki-link" title="อ่านไกด์/ข้อมูลเควสบน Wiki">🔗</a>
         </div>
         ${thaiDisplay}
+          ${q.series ? `<div class="series-badge">📚 ${escHtml(q.series)}</div>` : ''}
         <div class="quest-region-tag">
           ${REGION_ICONS[q.region]||'✦'} ${q.region}
           ${primoHtml}
@@ -988,7 +1041,9 @@ function updateFilterBadges() {
       (q.thaiName && q.thaiName.toLowerCase().includes(sq))
     );
   }
-  if (activePrimoFilter === 'yes') pool = pool.filter(q => q.primogems > 0);
+    if (activeSeriesFilter === 'series') quests = quests.filter(q => q.series);
+    if (activeSeriesFilter === 'single') quests = quests.filter(q => !q.series);
+    if (activePrimoFilter === 'yes') pool = pool.filter(q => q.primogems > 0);
   if (activePrimoFilter === 'no') pool = pool.filter(q => !q.primogems || q.primogems === 0);
   pool.forEach(q => {
     const s = getStatus(q.name);
@@ -1081,6 +1136,14 @@ document.getElementById('sort-select').addEventListener('change', e => {
   sortMode = e.target.value;
   renderList();
 });
+  
+  const seriesFilterEl = document.getElementById('series-filter-select');
+  if (seriesFilterEl) {
+    seriesFilterEl.addEventListener('change', e => {
+      activeSeriesFilter = e.target.value;
+      renderList();
+    });
+  }
 
 document.getElementById('type-select').addEventListener('change', e => {
   activeType = e.target.value;

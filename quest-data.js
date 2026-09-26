@@ -4,56 +4,73 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "\"ลมเหนือแสนกล้าหาญ\"",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "The Story Begins in a Forest Without Rain"
+    ],
+    "root": "The Story Begins in a Forest Without Rain"
   },
   {
     "name": "\"Eye of Watatsumi\"",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "The Moon-Bathed Deep"
   },
   {
     "name": "\"Fang of Watatsumi\"",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "The Moon-Bathed Deep"
   },
   {
     "name": "\"Fin of Watatsumi\"",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "The Moon-Bathed Deep"
   },
   {
     "name": "\"Flying Hatter\"",
     "region": "Other",
     "thaiName": "\"ช่างทำหมวกลอยฟ้า\"",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "They Once Walked the Starry Sky"
+    ],
+    "root": "They Once Walked the Starry Sky"
   },
   {
     "name": "\"Good Shelf\"",
     "region": "Other",
     "thaiName": "\"ชั้นวางอย่างดี\"",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "The Story Begins in a Forest Without Rain"
+    ],
+    "root": "The Story Begins in a Forest Without Rain"
   },
   {
     "name": "\"Heart of Watatsumi\"",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "The Moon-Bathed Deep"
   },
   {
     "name": "\"Hello,\" \"Thank You,\" and the Final \"Goodbye\"",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka"
   },
   {
     "name": "\"Hey, This Isn't Pumpkin Soup...\"",
@@ -67,28 +84,42 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Film Notes",
+    "req": [
+      "\"The Seventh Samurai\""
+    ],
+    "root": "\"The Seventh Samurai\""
   },
   {
     "name": "\"Owl Musician\"",
     "region": "Other",
     "thaiName": "\"นักดนตรีนกฮูก\"",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "They Once Walked the Starry Sky"
+    ],
+    "root": "They Once Walked the Starry Sky"
   },
   {
     "name": "\"Quiet, please, this is a library!\"",
     "region": "Mondstadt",
     "thaiName": "ห้ามส่งเสียงในห้องสมุดนะ!",
     "primogems": 20,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Ode to Flower and Cloud"
+    ],
+    "root": "Ode to Flower and Cloud"
   },
   {
     "name": "\"Tail of Watatsumi\"",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "The Moon-Bathed Deep"
   },
   {
     "name": "\"That Guy\"'s Scheme",
@@ -102,7 +133,11 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "\"เรื่องเมื่อยี่สิบปีก่อน\"",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Opening Festivities"
+    ],
+    "root": "Opening Festivities"
   },
   {
     "name": "\"The Falcon's Hunt\"",
@@ -172,14 +207,19 @@ const QUEST_DATA = [
     "region": "Dragonspine",
     "thaiName": "สนทนากลางภูเขาหิมะ",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Lady's Invitation"
+    ],
+    "root": "A Lady's Invitation"
   },
   {
     "name": "A Child Wandering the World",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Homework"
   },
   {
     "name": "A Clash Between the First and the Latest!",
@@ -207,21 +247,24 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 60,
-    "type": "world"
+    "type": "world",
+    "series": "A Long Day in the Mountains"
   },
   {
     "name": "A Defensive Strategy",
     "region": "Liyue",
     "thaiName": "แผนการป้องกัน",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Stygian Onslaught"
   },
   {
     "name": "A Delicacy for Nara",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "An Unwavering Culinary Dream"
   },
   {
     "name": "A Dish Beyond Mortal Ken",
@@ -235,35 +278,52 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Homework"
   },
   {
     "name": "A Feast for the Senses",
     "region": "Natlan",
     "thaiName": "แสงสีเสียงระเบิดเจิดจ้า",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "The Surprise That Awaits Us All!"
+    ],
+    "root": "The Surprise That Awaits Us All!"
   },
   {
     "name": "A Festive First Adventure",
     "region": "Liyue",
     "thaiName": "ประสบการณ์การผจญภัยครั้งแรกอันแสนสบาย",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "City of Chores"
+    ],
+    "root": "The Origin of the Lanterns"
   },
   {
     "name": "A Few Words in the Foreground",
     "region": "Liyue",
     "thaiName": "คำพูดสองสามคำก่อนเข้าฉาก",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "A Thousand Miles for an Enigmatic Tune"
+    ],
+    "root": "A Thousand Miles for an Enigmatic Tune"
   },
   {
     "name": "A Fine Opportunity?",
     "region": "Mondstadt",
     "thaiName": "โอกาสที่ฟ้าประทาน?",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Dragon Storm"
+    ],
+    "root": "Dragon Storm"
   },
   {
     "name": "A Fontainian Message",
@@ -277,14 +337,23 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "สังสรรค์ในสวน",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Lady's Invitation"
+    ],
+    "root": "A Lady's Invitation"
   },
   {
     "name": "A Gift From Her",
     "region": "Other",
     "thaiName": "ของขวัญจากเธอ",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "Where Does the Moon Hide?"
+    ],
+    "root": "Come Play With the Moon"
   },
   {
     "name": "A Gift From the Sea Spirits",
@@ -312,42 +381,51 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "กุหลาบแด่ใครบางคน: บทเพลงจากอดีต",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "A Gifted Rose"
   },
   {
     "name": "A Gifted Rose: Can Stones Bloom",
     "region": "Sumeru",
     "thaiName": "กุหลาบแด่ใครบางคน: ก้อนหินผลิดอกได้หรือไม่",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "A Gifted Rose"
   },
   {
     "name": "A Gifted Rose: Long Day Ahead",
     "region": "Sumeru",
     "thaiName": "กุหลาบแด่ใครบางคน: วิธีพ้นผ่านเวลาอันยาวนาน",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "A Gifted Rose"
   },
   {
     "name": "A Gifted Rose: Prickly as Thorns",
     "region": "Sumeru",
     "thaiName": "กุหลาบแด่ใครบางคน: ทิ่มแทงดั่งหนามแหลม",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "A Gifted Rose"
   },
   {
     "name": "A Gifted Rose: Some People Never Fade Away",
     "region": "Sumeru",
     "thaiName": "กุหลาบแด่ใครบางคน: ผู้ที่เคยเอาชนะการจากไป",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "A Gifted Rose"
   },
   {
     "name": "A Glimpse Into the Pale Night",
     "region": "Enkanomiya",
     "thaiName": "มองเข้าไปในราตรีสีขาว",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "The Subterranean Trials of Drake and Serpent"
+    ],
+    "root": "The Subterranean Trials of Drake and Serpent"
   },
   {
     "name": "A Great Heart Fettered by Slender Chains",
@@ -452,7 +530,11 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "การพบกันของ \"หุ่นเชิด\"",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Lady's Invitation"
+    ],
+    "root": "A Lady's Invitation"
   },
   {
     "name": "A Message From the Junior",
@@ -515,14 +597,16 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Through the Mists"
   },
   {
     "name": "A Prayer for Rain on the Fecund Land",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Varuna Gatha"
   },
   {
     "name": "A Promise to Share Our Tips...",
@@ -536,7 +620,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Homework"
   },
   {
     "name": "A Provisional Arrangement",
@@ -564,7 +649,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "In the Footsteps of the Chosen of Dragons"
   },
   {
     "name": "A Saurian Returns to the Nest",
@@ -592,14 +678,22 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "ความพยายามเล็ก ๆ",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Lady's Invitation"
+    ],
+    "root": "A Lady's Invitation"
   },
   {
     "name": "A Small Token",
     "region": "Natlan",
     "thaiName": "น้ำใจเล็ก ๆ น้อย ๆ",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Lady's Invitation"
+    ],
+    "root": "A Lady's Invitation"
   },
   {
     "name": "A Small Venture",
@@ -634,7 +728,8 @@ const QUEST_DATA = [
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "In the Dwelling of Life"
   },
   {
     "name": "A Starry Night, as Remembered",
@@ -655,7 +750,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "เรื่องราวแห่ง Konda",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Sacred Sakura Cleansing Ritual"
   },
   {
     "name": "A Style-Fusion Symposium",
@@ -697,7 +793,11 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "กาหยกแสนละมุน-2",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Teapot to Call Home: Part I"
+    ],
+    "root": "A Teapot to Call Home: Part I"
   },
   {
     "name": "A Thread of Dawn-Light",
@@ -725,21 +825,35 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "ดื่มด่ำใต้แสงจันทร์",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "The Artist By the Moon's Side (III)"
+    ],
+    "root": "The Dark Side of Memory"
   },
   {
     "name": "A Toast Beneath the Moon (Part 2)",
     "region": "Other",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "A Gift From Her"
+    ],
+    "root": "Come Play With the Moon"
   },
   {
     "name": "A Tour of Wonders",
     "region": "Mondstadt",
     "thaiName": "เส้นทางมหัศจรรย์",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Commence! A Suspect Genesis"
+    ],
+    "root": "Commence! A Suspect Genesis"
   },
   {
     "name": "A Trip Through Fog and Wind",
@@ -753,7 +867,11 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "ปัญหาเล็กน้อยในช่วงเทศกาล",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Wangshu Once Again"
+    ],
+    "root": "Currents Deep Beneath the Lanterns"
   },
   {
     "name": "A Very Fishy Encounter",
@@ -872,7 +990,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Lost Traveler in the Ashen Realm"
   },
   {
     "name": "Adventure Rank Ascension 1",
@@ -914,7 +1033,11 @@ const QUEST_DATA = [
     "region": "Dragonspine",
     "thaiName": "ดอกไม้สายลมกับนักผจญภัย",
     "primogems": 20,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Ode to Flower and Cloud"
+    ],
+    "root": "Ode to Flower and Cloud"
   },
   {
     "name": "Adventurers of Teyvat: Grand Showdown!",
@@ -956,14 +1079,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Homework"
   },
   {
     "name": "Alan Smithee, Author of Fischl: Epilogue",
     "region": "Liyue",
     "thaiName": "Alan Smithee ผู้เขียนของ Fischl บทส่งท้าย",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Homework"
   },
   {
     "name": "Alfred's Bouquet",
@@ -1040,28 +1165,38 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "From One Case to Another"
   },
   {
     "name": "An Ancient Sacrifice of Sacred Brocade",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Chenyu's Blessings of Sunken Jade"
   },
   {
     "name": "An Ark That Used to Be a Soul",
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Gunfire in the Silent Lands"
+    ],
+    "root": "Gunfire in the Silent Lands"
   },
   {
     "name": "An Artist Adrift (Part 1)",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "The Splendorous Sky That Day"
+    ],
+    "root": "The Splendorous Sky That Day"
   },
   {
     "name": "An Artist Adrift (Part 2)",
@@ -1096,7 +1231,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Unfinished Comedy"
   },
   {
     "name": "An Instant of Intoxication, A Meeting by Moonlight",
@@ -1110,7 +1246,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Golden Slumber"
   },
   {
     "name": "An Invasion on Hold",
@@ -1159,7 +1296,12 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "An Unwavering Culinary Dream",
+    "req": [
+      "The World of Aranara"
+    ],
+    "root": "The World of Aranara"
   },
   {
     "name": "Ancient Wind",
@@ -1208,56 +1350,67 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Ann of the Narzissenkreuz"
   },
   {
     "name": "Ann, Mary-Ann, and Marionette",
     "region": "Fontaine",
     "thaiName": "Ann กับ Mary-Ann และ Marionette",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Lady's Invitation"
+    ],
+    "root": "A Lady's Invitation"
   },
   {
     "name": "Anomaly: Inazuma",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "The Anomaly"
   },
   {
     "name": "Anomaly: Liyue",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "The Anomaly"
   },
   {
     "name": "Anomaly: Mondstadt",
     "region": "Dragonspine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "The Anomaly"
   },
   {
     "name": "Anomaly: Natlan",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "The Anomaly"
   },
   {
     "name": "Anomaly: Snezhnaya",
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "The Anomaly"
   },
   {
     "name": "Anomaly: Sumeru",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "The Anomaly"
   },
   {
     "name": "Another Home There May Yet Be",
@@ -1278,7 +1431,11 @@ const QUEST_DATA = [
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Great Deeds on the Tundra"
+    ],
+    "root": "Great Deeds on the Tundra"
   },
   {
     "name": "Answer Me This, Outlander",
@@ -1299,21 +1456,33 @@ const QUEST_DATA = [
     "region": "Enkanomiya",
     "thaiName": "Antigonus",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "The Subterranean Trials of Drake and Serpent"
+    ],
+    "root": "The Subterranean Trials of Drake and Serpent"
   },
   {
     "name": "Antiquity Hunt",
     "region": "Sumeru",
     "thaiName": "ขุดค้นทางโบราณคดี",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Opening Festivities"
+    ],
+    "root": "Opening Festivities"
   },
   {
     "name": "Antiquity Hunt: Conclusion",
     "region": "Sumeru",
     "thaiName": "ขุดค้นทางโบราณคดี - ส่งท้าย",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Opening Festivities"
+    ],
+    "root": "Opening Festivities"
   },
   {
     "name": "Any Unsolved Mysteries?",
@@ -1376,7 +1545,11 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "นกกระจอกน่ารักที่สุดใช่มั้ย!",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Fairground Gathering, Summer Lights Illuminated"
+    ],
+    "root": "Fairground Gathering, Summer Lights Illuminated"
   },
   {
     "name": "Arina's Nilotpala Lotuses",
@@ -1390,35 +1563,40 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Chronicler of the Crumbling City"
   },
   {
     "name": "As the Khvarena's Light Shows",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 60,
-    "type": "world"
+    "type": "world",
+    "series": "Khvarena of Good and Evil"
   },
   {
     "name": "As the Khvarena's Light Shows: Dukkha",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Khvarena of Good and Evil"
   },
   {
     "name": "As the Khvarena's Light Shows: Nirodha",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 60,
-    "type": "world"
+    "type": "world",
+    "series": "Khvarena of Good and Evil"
   },
   {
     "name": "As the Khvarena's Light Shows: Samudaya",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Khvarena of Good and Evil"
   },
   {
     "name": "Ascension Challenge I",
@@ -1453,7 +1631,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Khvarena of Good and Evil"
   },
   {
     "name": "Atop the Floating Snow",
@@ -1509,84 +1688,96 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Pale Fire"
   },
   {
     "name": "Awaken the Residual Pari in the Fravashi Trees (East Tunigi Hollow)",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Pale Fire"
   },
   {
     "name": "Awaken the Residual Pari in the Fravashi Trees (Hangeh Afrasiyab)",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Pale Fire"
   },
   {
     "name": "Awaken the Residual Pari in the Fravashi Trees (Madinat al-Nuhas)",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Pale Fire"
   },
   {
     "name": "Awaken the Residual Pari in the Fravashi Trees (North Tunigi Hollow 1)",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Pale Fire"
   },
   {
     "name": "Awaken the Residual Pari in the Fravashi Trees (North Tunigi Hollow 2)",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Pale Fire"
   },
   {
     "name": "Awaken the Residual Pari in the Fravashi Trees (North Tunigi Hollow 3)",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Pale Fire"
   },
   {
     "name": "Awaken the Residual Pari in the Fravashi Trees (Northwest Tunigi Hollow)",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Pale Fire"
   },
   {
     "name": "Awaken the Residual Pari in the Fravashi Trees (West Temir Mountains 1)",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Pale Fire"
   },
   {
     "name": "Awaken the Residual Pari in the Fravashi Trees (West Temir Mountains 2)",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Pale Fire"
   },
   {
     "name": "Awakening's Real Sound",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Khvarena of Good and Evil"
   },
   {
     "name": "Back on One's Feet",
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "In the Dwelling of Life"
   },
   {
     "name": "Backstage Helpers",
@@ -1614,14 +1805,22 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "Bake-Danuki ผู้กระหายการเดินทาง",
     "primogems": 40,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "As the Courtyard in Spring Once Appeared (Part 3)"
+    ],
+    "root": "As the Courtyard in Spring Once Appeared (Part 3)"
   },
   {
     "name": "Ballads of Breeze (Invitation of Windblume)",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Ode to Flower and Cloud"
+    ],
+    "root": "Ode to Flower and Cloud"
   },
   {
     "name": "Ballads of Breeze (Windblume's Breath)",
@@ -1670,21 +1869,30 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "การต่อสู้นัดล้างตา",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "An Art to Be Honed"
+    ],
+    "root": "An Art to Be Honed"
   },
   {
     "name": "Beat the Clock: 24 Hours",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "From One Case to Another"
   },
   {
     "name": "Behind the Scenes (Event Quest)",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "A Thousand Miles for an Enigmatic Tune"
+    ],
+    "root": "A Thousand Miles for an Enigmatic Tune"
   },
   {
     "name": "Behold the Grandeur, Seize the Splendor",
@@ -1698,21 +1906,24 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Her Foes Rage Like Great Waters..."
   },
   {
     "name": "Bell Ringing at Dusk",
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Hesperides of Love and Hate"
   },
   {
     "name": "Beneath the Crystal Rock",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Shadows of the Mountains"
   },
   {
     "name": "Beneath the Lunar Sea",
@@ -1803,7 +2014,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Colors of Emptiness"
   },
   {
     "name": "Boiling Over!",
@@ -1831,7 +2043,11 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "หมัดคู่สติปัญญา",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "An Eye for an Eye"
+    ],
+    "root": "An Eye for an Eye"
   },
   {
     "name": "Bough Keeper: Dainsleif",
@@ -1887,14 +2103,19 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Ode to Flower and Cloud"
+    ],
+    "root": "Ode to Flower and Cloud"
   },
   {
     "name": "Burn the Storehouses and the Stables",
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Mean Streets of the Despicable"
   },
   {
     "name": "Busy Adventurers' Guild",
@@ -1929,7 +2150,11 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "แมวเหมียวกับฟันเฟือง",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Lady's Invitation"
+    ],
+    "root": "A Lady's Invitation"
   },
   {
     "name": "Chance Commission",
@@ -1971,7 +2196,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "The Chasm Delvers"
   },
   {
     "name": "Childhood Happiness",
@@ -1985,7 +2211,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka"
   },
   {
     "name": "Chili Con Cloudy",
@@ -1999,7 +2226,11 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Ritou Escape Plan"
+    ],
+    "root": "Ritou Escape Plan"
   },
   {
     "name": "Chloris' Flora Studies",
@@ -2013,7 +2244,8 @@ const QUEST_DATA = [
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "In the Dwelling of Life"
   },
   {
     "name": "Chubby Crisis",
@@ -2027,7 +2259,11 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "เรื่องราวในเมืองใหญ่",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "The Origin of the Lanterns"
+    ],
+    "root": "The Origin of the Lanterns"
   },
   {
     "name": "Clean House",
@@ -2041,7 +2277,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 60,
-    "type": "world"
+    "type": "world",
+    "series": "Sacred Sakura Cleansing Ritual"
   },
   {
     "name": "Cleanup At Dawn",
@@ -2069,14 +2306,23 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "คำขอความร่วมมือ",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "The Man Who Once Lied",
+      "They Who Abandoned the Past"
+    ],
+    "root": "The Man Who Once Lied"
   },
   {
     "name": "Collection of Dragons and Snakes",
     "region": "Enkanomiya",
     "thaiName": "คอลเลกชันของมังกรและงู",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "The Subterranean Trials of Drake and Serpent"
+    ],
+    "root": "The Subterranean Trials of Drake and Serpent"
   },
   {
     "name": "Collector of Anemo Sigils",
@@ -2090,7 +2336,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Colors of Emptiness"
   },
   {
     "name": "Come Fly With Me",
@@ -2104,7 +2351,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "เล่นกับดวงจันทร์",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles"
   },
   {
     "name": "Come Try Genius Invokation TCG!",
@@ -2132,7 +2380,11 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "รูปแบบการตอบสนองต่อยา",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Opening Festivities"
+    ],
+    "root": "Opening Festivities"
   },
   {
     "name": "Connor's Brew",
@@ -2153,21 +2405,33 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "เครื่องกลทำอาหาร I",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "One for the Foodies, Two for the Show"
+    ],
+    "root": "One for the Foodies, Two for the Show"
   },
   {
     "name": "Contraption-Contrived Cooking Course: Part II",
     "region": "Mondstadt",
     "thaiName": "เครื่องกลทำอาหาร II",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "One for the Foodies, Two for the Show"
+    ],
+    "root": "One for the Foodies, Two for the Show"
   },
   {
     "name": "Contraption-Contrived Cooking Course: Part III",
     "region": "Dragonspine",
     "thaiName": "เครื่องกลทำอาหาร III",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "One for the Foodies, Two for the Show"
+    ],
+    "root": "One for the Foodies, Two for the Show"
   },
   {
     "name": "Controllable Explosion",
@@ -2181,56 +2445,77 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "An Unwavering Culinary Dream"
   },
   {
     "name": "Cooking, the Aroma of Homecoming",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "An Unwavering Culinary Dream"
   },
   {
     "name": "Cooking, the Beauty of Sharing",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "An Unwavering Culinary Dream"
   },
   {
     "name": "Cooking, the Flavor of Nature",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "An Unwavering Culinary Dream",
+    "req": [
+      "The World of Aranara"
+    ],
+    "root": "The World of Aranara"
   },
   {
     "name": "Corps of Thirty Recruitment",
     "region": "Sumeru",
     "thaiName": "การรับสมัครของ \"กลุ่มภาคี 30\"",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Dawn (Quest)"
+    ],
+    "root": "Dawn (Quest)"
   },
   {
     "name": "Cost-Effective Hook",
     "region": "Sumeru",
     "thaiName": "การตกปลาที่คุ้มค่า",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Supreme Hookshot?"
+    ],
+    "root": "Supreme Hookshot?"
   },
   {
     "name": "Counterfeit Classics",
     "region": "Other",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "A Long Day in the Mountains"
   },
   {
     "name": "Courage Is in the Heart",
     "region": "Sumeru",
     "thaiName": "ความกล้าหาญอยู่ที่ใจ",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Static Views"
+    ],
+    "root": "The World of Aranara"
   },
   {
     "name": "Covert Investigation, Dirty Money Misdeeds (Part 1)",
@@ -2265,7 +2550,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Colors of Emptiness"
   },
   {
     "name": "Crisis Management Unit, Fully Operational!",
@@ -2286,7 +2572,11 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "จระเข้? ปืนน้ำ? การต่อสู้ครั้งใหญ่!",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Fairground Gathering, Summer Lights Illuminated"
+    ],
+    "root": "Fairground Gathering, Summer Lights Illuminated"
   },
   {
     "name": "Crossing Unknown Storm Clouds",
@@ -2300,14 +2590,19 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "In the Wake of Narcissus"
   },
   {
     "name": "Custom Gift Envelope No. 1",
     "region": "Liyue",
     "thaiName": "การ์ดอวยพร 1",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+    ],
+    "root": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
   },
   {
     "name": "Custom Gift Envelope No. 2",
@@ -2356,7 +2651,11 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 20,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Treehouse Theater: Candlelit Shadows Dancing"
+    ],
+    "root": "Treehouse Theater: Candlelit Shadows Dancing"
   },
   {
     "name": "Dance Exchanges — A Beautiful Start",
@@ -2377,7 +2676,12 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "Dandelion, Rose, Windwheel Aster",
     "primogems": 60,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "When They Take Off Their Armor",
+      "Fine Wine From Yesterday"
+    ],
+    "root": "When They Take Off Their Armor"
   },
   {
     "name": "Danger Lurks Everywhere in Fontaine",
@@ -2405,7 +2709,11 @@ const QUEST_DATA = [
     "region": "Enkanomiya",
     "thaiName": "การท้าทายของ Date",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "The Subterranean Trials of Drake and Serpent"
+    ],
+    "root": "The Subterranean Trials of Drake and Serpent"
   },
   {
     "name": "Daybreak After the Snow",
@@ -2419,14 +2727,23 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "จินตนาการเหนือกาลเวลาและอวกาศ",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "For Yesterday and Tomorrow"
+    ],
+    "root": "Fortune Plango Vulnera"
   },
   {
     "name": "Delicious Riddle",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka",
+    "req": [
+      "Festival Utsava"
+    ],
+    "root": "Festival Utsava"
   },
   {
     "name": "Deliciousness Knows No Borders",
@@ -2440,14 +2757,19 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Old Notes and New Friends"
   },
   {
     "name": "Determined and Elegant Battle Dance?",
     "region": "Other",
     "thaiName": "ระบำต่อสู้อันมุ่งมั่นและสง่างาม?",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Fairground Gathering, Summer Lights Illuminated"
+    ],
+    "root": "Fairground Gathering, Summer Lights Illuminated"
   },
   {
     "name": "Dimming Mushroom's Call for Help",
@@ -2468,7 +2790,8 @@ const QUEST_DATA = [
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Mean Streets of the Despicable"
   },
   {
     "name": "Divine Ingenuity (Quest)",
@@ -2489,7 +2812,11 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "พืชมหัศจรรย์จากห้วงลึกใต้ท้องทะเล",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Ritou Escape Plan"
+    ],
+    "root": "Ritou Escape Plan"
   },
   {
     "name": "Docked on a Moonlit Night",
@@ -2517,7 +2844,8 @@ const QUEST_DATA = [
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "In the Dwelling of Life"
   },
   {
     "name": "Dr. Edith's Transport Request",
@@ -2538,7 +2866,11 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "บทละครแห่ง Phantasmagoria - บันทึกดาบแห่งเจ้าหญิง!",
     "primogems": 40,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Immernachtreich Apokalypse (Part 3)"
+    ],
+    "root": "Immernachtreich Apokalypse (Part 3)"
   },
   {
     "name": "Dreamlike",
@@ -2552,21 +2884,27 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Golden Slumber"
   },
   {
     "name": "Dreams in the Gaps",
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "From Dusk to Dawn in Byakuyakoku"
   },
   {
     "name": "Dreams of Bloom (Quest)",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Ritou Escape Plan"
+    ],
+    "root": "Ritou Escape Plan"
   },
   {
     "name": "Dreams of Sword Art",
@@ -2601,35 +2939,43 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "ประชันใต้แสงไฟ",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
+    ],
+    "root": "Liyue Celebrates and Eight Adepts Face a Hidden Calamity"
   },
   {
     "name": "Dual Evidence",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 60,
-    "type": "world"
+    "type": "world",
+    "series": "Old Notes and New Friends"
   },
   {
     "name": "Dune-Entombed Fecundity: Part I",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "The Dirge of Bilqis"
   },
   {
     "name": "Dune-Entombed Fecundity: Part II",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "The Dirge of Bilqis"
   },
   {
     "name": "Dune-Entombed Fecundity: Part III",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "The Dirge of Bilqis"
   },
   {
     "name": "Dwarkanath's White Iron Chunks",
@@ -2650,7 +2996,12 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Polkka Beneath the Moon's Oracle",
+    "req": [
+      "For a Green Island..."
+    ],
+    "root": "For a Green Island..."
   },
   {
     "name": "Echoes of the Ancient World",
@@ -2678,7 +3029,11 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "ทริปแห่งขุนเขาและท้องทะเลทั้งแปด: วิวแสนงามแห่งบึงน้ำ",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Exploding Population"
+    ],
+    "root": "Exploding Population"
   },
   {
     "name": "Eight Locales Over Mountains and Seas: Snowswept Fairytale",
@@ -2741,14 +3096,23 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "บทเพลงกลางพนาลัย",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka",
+    "req": [
+      "The World of Aranara"
+    ],
+    "root": "The World of Aranara"
   },
   {
     "name": "Encounters Always Happen on a Holiday",
     "region": "Natlan",
     "thaiName": "การพบพานโดยบังเอิญมักเกิดขึ้นในเวลาว่างเสมอ",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "To a Carefree Vacation!"
+    ],
+    "root": "To a Carefree Vacation!"
   },
   {
     "name": "End of a Leisurely Holiday",
@@ -2804,7 +3168,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "ดั่งแสงจันทร์นิรันดร์",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles"
   },
   {
     "name": "Evermotion Mechanical Painting (Quest)",
@@ -2825,7 +3190,11 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "ภาพเครื่องจักรนิรันดร์: บทแห่งเจ็ดอัจฉริยะ",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Commence! A Suspect Genesis"
+    ],
+    "root": "Commence! A Suspect Genesis"
   },
   {
     "name": "Every Aspect of a Warrior",
@@ -2888,7 +3257,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "From One Case to Another"
   },
   {
     "name": "Farmland Fugitives",
@@ -2902,7 +3272,11 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "ชะตาของนักสู้",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "In the Name of the Resistance"
+    ],
+    "root": "In the Name of the Resistance"
   },
   {
     "name": "Fatuous Farce (Inazuma)",
@@ -2951,7 +3325,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "In the Footsteps of the Chosen of Dragons"
   },
   {
     "name": "Fertilizer... Salesperson?",
@@ -2972,14 +3347,19 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka"
   },
   {
     "name": "Fieldwise Mastery, Unyielding Progress!",
     "region": "Sumeru",
     "thaiName": "ศูนย์เรียนรู้และปฏิบัติอย่างมั่นคง เตรียมพร้อมลุย!",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Return From the Mysterious Realm"
+    ],
+    "root": "Return From the Mysterious Realm"
   },
   {
     "name": "Fight for Academic Reputation!",
@@ -3035,14 +3415,19 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "ไฟและน้ำแข็ง",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Lady's Invitation"
+    ],
+    "root": "A Lady's Invitation"
   },
   {
     "name": "First Miasmic Contact",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "The Chasm Delvers"
   },
   {
     "name": "Fisharium Open For Business!",
@@ -3070,7 +3455,11 @@ const QUEST_DATA = [
     "region": "Dragonspine",
     "thaiName": "รสชาติแห่ง \"สายลม\"",
     "primogems": 20,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Ode to Flower and Cloud"
+    ],
+    "root": "Ode to Flower and Cloud"
   },
   {
     "name": "Flighty Flora... and Flora",
@@ -3084,7 +3473,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Chenyu's Blessings of Sunken Jade"
   },
   {
     "name": "Floating Spirits — The Investigation Begins",
@@ -3112,7 +3502,11 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "ดอกไม้ในเวหา",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Ode to Flower and Cloud"
+    ],
+    "root": "Ode to Flower and Cloud"
   },
   {
     "name": "Floral Pursuit",
@@ -3140,49 +3534,59 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Nightingale's Song"
   },
   {
     "name": "Focal Point of Ancient Array (II)",
     "region": "Other",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Nightingale's Song"
   },
   {
     "name": "Focal Point of Ancient Array (III)",
     "region": "Other",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Nightingale's Song"
   },
   {
     "name": "Foggy Forest Path (Quest)",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "The Wild Fairy of Erinnyes"
   },
   {
     "name": "Fontaine Research Institute, Stagnating in the Rubble",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 60,
-    "type": "world"
+    "type": "world",
+    "series": "Fontaine Research Institute Chronicles"
   },
   {
     "name": "Food Matters",
     "region": "Other",
     "thaiName": "เรื่องกินเรื่องใหญ่",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Where the Moon Rises"
+    ],
+    "root": "Where the Moon Rises"
   },
   {
     "name": "For A Better Reunion",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka"
   },
   {
     "name": "For a Dream I Tarry",
@@ -3196,14 +3600,16 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Polkka Beneath the Moon's Oracle"
   },
   {
     "name": "For All Children Who Long for Life",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka"
   },
   {
     "name": "For an Ice Mirror Fragment",
@@ -3217,28 +3623,35 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "เพื่อ Fontaine!",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Lady's Invitation"
+    ],
+    "root": "A Lady's Invitation"
   },
   {
     "name": "For Fruits, Seeds, and Trees",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka"
   },
   {
     "name": "For Her Judgment Reaches to the Skies...",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Her Foes Rage Like Great Waters..."
   },
   {
     "name": "For the Children of the Past",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 60,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka"
   },
   {
     "name": "For the Future's Sake, Experiment!",
@@ -3252,14 +3665,19 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "เพื่ออดีตและวันพรุ่งนี้",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Fortune Plango Vulnera"
+    ],
+    "root": "Fortune Plango Vulnera"
   },
   {
     "name": "Forbidding Doors of Melancholy",
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "In the Dwelling of Life"
   },
   {
     "name": "Forest Boar Pauses for the Bloom",
@@ -3280,7 +3698,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Canticles of Harmony"
   },
   {
     "name": "Free Verse",
@@ -3301,7 +3720,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "In the Footsteps of the Chosen of Dragons"
   },
   {
     "name": "Friends of Moleyvalley",
@@ -3350,7 +3770,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "The Wild Fairy of Erinnyes"
   },
   {
     "name": "Galathee's Salt Solicitation",
@@ -3364,7 +3785,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Unfinished Comedy"
   },
   {
     "name": "Garcia's Paean",
@@ -3385,21 +3807,34 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka",
+    "req": [
+      "Festival Utsava"
+    ],
+    "root": "Festival Utsava"
   },
   {
     "name": "Gathering of Stars",
     "region": "Sumeru",
     "thaiName": "การรวมตัวของหมู่ดาว",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Opening Festivities"
+    ],
+    "root": "Opening Festivities"
   },
   {
     "name": "Gazing Three Thousand Miles Away",
     "region": "Inazuma",
     "thaiName": "เฝ้ามองสามพันลี้",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Ritou Escape Plan"
+    ],
+    "root": "Ritou Escape Plan"
   },
   {
     "name": "Geri's Gastro-Nostalgia",
@@ -3413,21 +3848,27 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Polkka Beneath the Moon's Oracle"
   },
   {
     "name": "Gifts and Gifts in Return",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "In the Footsteps of the Chosen of Dragons"
   },
   {
     "name": "Giving Flowers",
     "region": "Sumeru",
     "thaiName": "ให้ดอกไม้",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "The Rhythm that Reveals the Beastly Trail"
+    ],
+    "root": "The World of Aranara"
   },
   {
     "name": "Gliding Challenge: New Heights",
@@ -3455,21 +3896,27 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "คณะสำรวจ Saurian ออกเดินทาง!",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "For Our Saurian Companion"
+    ],
+    "root": "For Our Saurian Companion"
   },
   {
     "name": "Go to the Institute Dormitories and retrieve the Anchor",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Fontaine Research Institute Chronicles"
   },
   {
     "name": "Go to the Institute of Clockwork Applications and retrieve the Anchor",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Fontaine Research Institute Chronicles"
   },
   {
     "name": "Goal: Counter the \"Phantom Blubberbeast!\"",
@@ -3483,14 +3930,16 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Canticles of Harmony"
   },
   {
     "name": "Golden Aqueduct Reconstruction: Part II",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Canticles of Harmony"
   },
   {
     "name": "Good as New",
@@ -3553,21 +4002,28 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "ทีมสุดยอดนักชิม!",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "The Gourmet Supremos",
+    "req": [
+      "Ritou Escape Plan"
+    ],
+    "root": "Ritou Escape Plan"
   },
   {
     "name": "Gourmet Supremos: Within Our Duties",
     "region": "Sumeru",
     "thaiName": "ทีมสุดยอดนักชิม - สิ่งที่อยู่ในความรับผิดชอบ",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "The Gourmet Supremos"
   },
   {
     "name": "Gradus ad Capitolium",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Canticles of Harmony"
   },
   {
     "name": "Great Future Star",
@@ -3588,21 +4044,33 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "ผู้ปกป้องนอกเมือง",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Guests in Qingce"
+    ],
+    "root": "Light Upon the Sea"
   },
   {
     "name": "Guests in Qingce",
     "region": "Liyue",
     "thaiName": "Qingce กับแขกผู้มาเยือน",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Light Upon the Sea"
+    ],
+    "root": "Light Upon the Sea"
   },
   {
     "name": "Hammer and Wrench",
     "region": "Liyue",
     "thaiName": "ประแจกับค้อน",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "City of Chores"
+    ],
+    "root": "The Origin of the Lanterns"
   },
   {
     "name": "Hanfeng's Iron-Mongering",
@@ -3616,21 +4084,33 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "สุขสันต์วันเกิด",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Upon a Flowery Field of Grass"
+    ],
+    "root": "Upon a Flowery Field of Grass"
   },
   {
     "name": "Heart of Amrita",
     "region": "Sumeru",
     "thaiName": "ดวงใจหยาดอมฤต",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "The Splendorous Sky That Day"
+    ],
+    "root": "The Splendorous Sky That Day"
   },
   {
     "name": "Heart of the Dice",
     "region": "Mondstadt",
     "thaiName": "ลูกเต๋ากลลับ",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Commence! A Suspect Genesis"
+    ],
+    "root": "Commence! A Suspect Genesis"
   },
   {
     "name": "Helen's Special Blend",
@@ -3644,7 +4124,12 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "อดีตของเธอ",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "The Dark Side of Memory"
+    ],
+    "root": "The Dark Side of Memory"
   },
   {
     "name": "Herbalist's Forage",
@@ -3658,35 +4143,40 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Unfinished Comedy"
   },
   {
     "name": "Hereafter: All is Well",
     "region": "Liyue",
     "thaiName": "เรื่องราวหลังการจากไป: ทุกสิ่งราบรื่น",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Hereafter"
   },
   {
     "name": "Hereafter: Return to the Mountains",
     "region": "Liyue",
     "thaiName": "เรื่องราวหลังการจากไป: หวนคืนสู่ขุนเขา",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Hereafter"
   },
   {
     "name": "Hereafter: The Trail of Pervases",
     "region": "Liyue",
     "thaiName": "เรื่องราวหลังการจากไป: รอยเท้าของ Pervases",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Hereafter"
   },
   {
     "name": "Hidden Mercenaries",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Old Notes and New Friends"
   },
   {
     "name": "Hilichurl Hullaballoo (Inazuma)",
@@ -3721,21 +4211,35 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "ผู้พิทักษ์แห่ง Hiromi",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "The Chi of Yore",
+      "Ritou Escape Plan"
+    ],
+    "root": "The Chi of Yore"
   },
   {
     "name": "Home Lies Over the Ocean",
     "region": "Inazuma",
     "thaiName": "อีกฟากฝั่งทะเลคือบ้านเกิด",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Ritou Escape Plan"
+    ],
+    "root": "Ritou Escape Plan"
   },
   {
     "name": "Homecoming's Faint Glow",
     "region": "Other",
     "thaiName": "แสงสลัวแห่งการหวนกลับ",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "Moonlight Sonata"
+    ],
+    "root": "The Dark Side of Memory"
   },
   {
     "name": "Honorary Knight's Notes on Mixology",
@@ -3756,7 +4260,8 @@ const QUEST_DATA = [
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Hesperides of Love and Hate"
   },
   {
     "name": "Housein's Harra Fruits",
@@ -3791,7 +4296,12 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "\"ร้อยใจรวมเป็นหนึ่ง - พายุแห่งทองคำ\"",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Archon Quest",
+      "Ritou Escape Plan"
+    ],
+    "root": "Archon Quest"
   },
   {
     "name": "Hyakunin Ikki: Narukami Arena",
@@ -3805,7 +4315,11 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "\"ร้อยใจรวมเป็นหนึ่ง: งานประลองสุดแกร่ง\"",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Ritou Escape Plan"
+    ],
+    "root": "Ritou Escape Plan"
   },
   {
     "name": "Hydro Phantasm Havoc",
@@ -3819,14 +4333,23 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "สำรวจสิ่งแวดล้อมทางน้ำ",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Chasm Spelunkers"
+    ],
+    "root": "Chasm Spelunkers"
   },
   {
     "name": "Hyperion's Dirge (Quest)",
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Hyperion's Dirge",
+    "req": [
+      "The Subterranean Trials of Drake and Serpent"
+    ],
+    "root": "The Subterranean Trials of Drake and Serpent"
   },
   {
     "name": "I, Researcher",
@@ -3847,7 +4370,11 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "เรื่องอลเวงในกาน้ำชา",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Teapot to Call Home: Part II"
+    ],
+    "root": "A Teapot to Call Home: Part I"
   },
   {
     "name": "Imaginary Maze of True Heroes",
@@ -3889,7 +4416,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Chronicler of the Crumbling City"
   },
   {
     "name": "In Search of Lost Time",
@@ -3945,14 +4473,19 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "แสวงหาความจริง",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Opening Festivities"
+    ],
+    "root": "Opening Festivities"
   },
   {
     "name": "Incidents Are Ever Sudden",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "From One Case to Another"
   },
   {
     "name": "Increasing Danger (Random Event)",
@@ -3987,21 +4520,27 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "บันทึกการเดินทางของนานาประเทศ",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Ritou Escape Plan"
+    ],
+    "root": "Ritou Escape Plan"
   },
   {
     "name": "Into the Woods",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka"
   },
   {
     "name": "Investigate the Fatui Camps Marked by Sosi",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Monumental Study"
   },
   {
     "name": "Investigator of Ancient Ruins",
@@ -4015,14 +4554,16 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Old Notes and New Friends"
   },
   {
     "name": "Irate Iron Chunk",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Varuna Gatha"
   },
   {
     "name": "Iridescent Cloud-Striding",
@@ -4057,14 +4598,19 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "Iron Ingot ได้เจอกับ Ziwei...",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "City of Chores"
+    ],
+    "root": "The Origin of the Lanterns"
   },
   {
     "name": "Is \"Intensity\" Really the Key?",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "In the Footsteps of the Chosen of Dragons"
   },
   {
     "name": "Ismenor's Bulle Fruit Bulletin",
@@ -4092,7 +4638,11 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "การเดินทางสู่เกาะ Tsurumi",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "A Flower Blooms in a Prison"
+    ],
+    "root": "A Flower Blooms in a Prison"
   },
   {
     "name": "Just a 30% Cut!",
@@ -4113,7 +4663,11 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "เหมือนเช่นวันวาน",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Lady's Invitation"
+    ],
+    "root": "A Lady's Invitation"
   },
   {
     "name": "Just Wushou Dance!",
@@ -4162,14 +4716,22 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Ritou Escape Plan"
+    ],
+    "root": "Ritou Escape Plan"
   },
   {
     "name": "Keeping Wanmin's Patrons Fed",
     "region": "Liyue",
     "thaiName": "ลูกค้าผู้มีอุปการคุณแห่งภัตตาคาร Wanmin",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "City of Chores"
+    ],
+    "root": "The Origin of the Lanterns"
   },
   {
     "name": "Key Supplies",
@@ -4204,7 +4766,8 @@ const QUEST_DATA = [
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Erebos' Secret"
   },
   {
     "name": "Kurious Kamera (Quest)",
@@ -4225,7 +4788,11 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "Lantern Rite... การค้าเฟื่องฟู?",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Wangshu Once Again"
+    ],
+    "root": "Currents Deep Beneath the Lanterns"
   },
   {
     "name": "Last Ride of the Bugbuster Squad",
@@ -4260,7 +4827,11 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "Leroy - แสงสุดท้าย",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Impromptu Poem of the Crimson Dawn"
+    ],
+    "root": "Impromptu Poem of the Crimson Dawn"
   },
   {
     "name": "Leroy: Firing Squad",
@@ -4302,7 +4873,11 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "งานประลองบุปผาบาน เริ่มขึ้นแล้ว!",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "For Our Saurian Companion"
+    ],
+    "root": "For Our Saurian Companion"
   },
   {
     "name": "Let's Go, Saury-Saury Scout!",
@@ -4330,7 +4905,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "In the Footsteps of the Chosen of Dragons"
   },
   {
     "name": "Life Flows On (I)",
@@ -4372,7 +4948,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "In the Footsteps of the Chosen of Dragons"
   },
   {
     "name": "Like a Labyrinth Imprisons Her Servants",
@@ -4407,14 +4984,19 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "Fungus มายามหัศจรรย์!",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Archon Quest"
+    ],
+    "root": "Archon Quest"
   },
   {
     "name": "Limner, Dreamer, and Robotic Dog",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Ancient Colors"
   },
   {
     "name": "Lingering Malady",
@@ -4428,7 +5010,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "A Long Day in the Mountains"
   },
   {
     "name": "Liquidation",
@@ -4449,7 +5032,11 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "โคม Xiao กับความหวังเล็ก ๆ น้อย ๆ",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "City of Chores"
+    ],
+    "root": "The Origin of the Lanterns"
   },
   {
     "name": "Lofty Gourmet",
@@ -4463,7 +5050,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "A Long Day in the Mountains"
   },
   {
     "name": "Looming Shadows: Part I",
@@ -4512,21 +5100,24 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Lost in a Foreign Land"
   },
   {
     "name": "Lost in a Foreign Land: Seeking",
     "region": "Liyue",
     "thaiName": "แขกจากแดนไกลผู้พลัดหลง - แกะรอย",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Lost in a Foreign Land"
   },
   {
     "name": "Lost in the Sands",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Golden Slumber"
   },
   {
     "name": "Lost in the Snow",
@@ -4540,14 +5131,19 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Between Pledge and Forgettance"
   },
   {
     "name": "Lotus Eater",
     "region": "Enkanomiya",
     "thaiName": "นักกินดอกบัว",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "The Subterranean Trials of Drake and Serpent"
+    ],
+    "root": "The Subterranean Trials of Drake and Serpent"
   },
   {
     "name": "Low-Temperature Warning",
@@ -4575,7 +5171,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Her Foes Rage Like Great Waters..."
   },
   {
     "name": "Manly Jack's Manly Journey of Manliness",
@@ -4610,7 +5207,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Ann of the Narzissenkreuz"
   },
   {
     "name": "Master Zhang's Metal Mission",
@@ -4631,14 +5229,20 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "แสงจันทร์เชื่อมโยงเรา",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "Homecoming's Faint Glow"
+    ],
+    "root": "The Dark Side of Memory"
   },
   {
     "name": "Meeting New People... and Foiling Some Bandits",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "The Chasm Delvers"
   },
   {
     "name": "Meka Mess",
@@ -4659,7 +5263,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Varuna Gatha"
   },
   {
     "name": "Memory's Final Chapter",
@@ -4680,14 +5285,19 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "In the Wake of Narcissus"
   },
   {
     "name": "Mimetic Replication",
     "region": "Sumeru",
     "thaiName": "ทดลองเป็นสิ่งมีชีวิต",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Opening Festivities"
+    ],
+    "root": "Opening Festivities"
   },
   {
     "name": "Mimi Tomo (Quest)",
@@ -4771,7 +5381,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Lost Traveler in the Ashen Realm"
   },
   {
     "name": "Mondstadt and its Archon",
@@ -4785,7 +5396,11 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "ชาว Mondstadt ใน Liyue",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "City of Chores"
+    ],
+    "root": "The Origin of the Lanterns"
   },
   {
     "name": "Monster Mayhem",
@@ -4799,21 +5414,36 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Monumental Study",
+    "req": [
+      "As the Khvarena's Light Shows"
+    ],
+    "root": "As the Khvarena's Light Shows"
   },
   {
     "name": "Moonlight Sonata",
     "region": "Other",
     "thaiName": "โซนาตาแห่งแสงจันทร์",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "The Artist By the Moon's Side (I)"
+    ],
+    "root": "The Dark Side of Memory"
   },
   {
     "name": "Moonlight Sonata: Lingering Resonance",
     "region": "Other",
     "thaiName": "โซนาตาแห่งแสงจันทร์ - เสียงเพรียกจากอดีต",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "Shifting Moonlight"
+    ],
+    "root": "The Dark Side of Memory"
   },
   {
     "name": "Moonlit Patrol Exercise (Quest)",
@@ -4862,14 +5492,16 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "In the Wake of Narcissus"
   },
   {
     "name": "Mushounin",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Film Notes"
   },
   {
     "name": "Mutual Exchange",
@@ -4883,7 +5515,11 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "สำรวจเห็ดใน Chasm",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Chasm Spelunkers"
+    ],
+    "root": "Chasm Spelunkers"
   },
   {
     "name": "Mysterious Fish? A Booming Adventure!",
@@ -4925,7 +5561,12 @@ const QUEST_DATA = [
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Hyperion's Dirge",
+    "req": [
+      "The Subterranean Trials of Drake and Serpent"
+    ],
+    "root": "The Subterranean Trials of Drake and Serpent"
   },
   {
     "name": "Necessary Procedures",
@@ -4939,63 +5580,76 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "Neko คือเจ้าเหมียวน้อย: \"เรื่องดี ๆ\" ที่มาช้าไปหน่อย",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Neko Is a Cat"
   },
   {
     "name": "Neko Is a Cat: Cat and Stone",
     "region": "Inazuma",
     "thaiName": "Neko คือเจ้าเหมียวน้อย: ก้อนหินและแมวเหมียว",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Neko Is a Cat"
   },
   {
     "name": "Neko Is a Cat: Ding-a-Ling Metal Ball",
     "region": "Inazuma",
     "thaiName": "Neko คือเจ้าเหมียวน้อย: กระพรวนลูกบอลเหล็ก",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Neko Is a Cat"
   },
   {
     "name": "Neko Is a Cat: Shrine Canteen",
     "region": "Inazuma",
     "thaiName": "Neko คือเจ้าเหมียวน้อย: โรงอาหารของศาลเจ้า",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Neko Is a Cat"
   },
   {
     "name": "Neko Is a Cat: Shrine Cleanup",
     "region": "Inazuma",
     "thaiName": "Neko คือเจ้าเหมียวน้อย - การทำความสะอาดศาลเจ้าครั้งใหญ่",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Neko Is a Cat",
+    "req": [
+      "Seirai Stormchasers: Part IV"
+    ],
+    "root": "Seirai Stormchasers: Part IV"
   },
   {
     "name": "Neko Is a Cat: Shrine Recipe",
     "region": "Inazuma",
     "thaiName": "Neko คือเจ้าเหมียวน้อย: สูตรอาหารของศาลเจ้า",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Neko Is a Cat"
   },
   {
     "name": "Neko Is a Cat: Stone Human's Troubles",
     "region": "Inazuma",
     "thaiName": "Neko คือเจ้าเหมียวน้อย: ความยุ่งยากของก้อนหินและมนุษย์",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Neko Is a Cat"
   },
   {
     "name": "Neko Is a Cat: The Children",
     "region": "Inazuma",
     "thaiName": "Neko คือเจ้าเหมียวน้อย: เด็ก ๆ ทั้งหลาย",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Neko Is a Cat"
   },
   {
     "name": "Neko Is a Cat: Wooden Shelf",
     "region": "Inazuma",
     "thaiName": "Neko คือเจ้าเหมียวน้อย: กรอบไม้",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Neko Is a Cat"
   },
   {
     "name": "New Horizons of Adventure",
@@ -5016,7 +5670,11 @@ const QUEST_DATA = [
     "region": "Snezhnaya",
     "thaiName": "ผู้มาเยือนบนผืนหิมะใหม่",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Daybreak After the Snow"
+    ],
+    "root": "Daybreak After the Snow"
   },
   {
     "name": "Next Time, On King of Invokations...",
@@ -5065,7 +5723,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Through the Mists"
   },
   {
     "name": "Of Drink A-Dreaming (Quest)",
@@ -5086,7 +5745,8 @@ const QUEST_DATA = [
     "region": "Dragonspine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Homework"
   },
   {
     "name": "Old Friends, New Game",
@@ -5135,7 +5795,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Chronicler of the Crumbling City"
   },
   {
     "name": "One Giant Step for Alchemy?",
@@ -5170,42 +5831,48 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Orobashi's Legacy"
   },
   {
     "name": "Orobashi's Legacy: Part II",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Orobashi's Legacy"
   },
   {
     "name": "Orobashi's Legacy: Part III",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Orobashi's Legacy"
   },
   {
     "name": "Orobashi's Legacy: Part IV",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Orobashi's Legacy"
   },
   {
     "name": "Orobashi's Legacy: Part V",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Orobashi's Legacy"
   },
   {
     "name": "Orobashi's Legacy: Prologue",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Orobashi's Legacy"
   },
   {
     "name": "Our Animal Friends",
@@ -5261,7 +5928,11 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "ความแน่นอนของ Linling",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "City of Chores"
+    ],
+    "root": "The Origin of the Lanterns"
   },
   {
     "name": "Over the Moon",
@@ -5296,21 +5967,27 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Lost Traveler in the Ashen Realm"
   },
   {
     "name": "Pale Fire (Quest)",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Pale Fire"
   },
   {
     "name": "Paleontological Investigation in The Chasm",
     "region": "Liyue",
     "thaiName": "ตรวจสอบสิ่งมีชีวิตโบราณ",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Chasm Spelunkers"
+    ],
+    "root": "Chasm Spelunkers"
   },
   {
     "name": "Pallad's Dilemma",
@@ -5338,21 +6015,30 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Shadows of the Mountains"
   },
   {
     "name": "Peculiar Wonderland (Quest)",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Ode to Flower and Cloud"
+    ],
+    "root": "Ode to Flower and Cloud"
   },
   {
     "name": "Pen Pals, Book Reviews, and the Super Lucky General",
     "region": "Inazuma",
     "thaiName": "เพื่อนทางจดหมาย, ชื่นชมนวนิยายและนายพลผู้โชคดี",
     "primogems": 40,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "The Five Colors' True Form"
+    ],
+    "root": "The Five Colors' True Form"
   },
   {
     "name": "Perfect Shot",
@@ -5366,7 +6052,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "The Chasm Delvers"
   },
   {
     "name": "Peseng's Zaytun Peaches",
@@ -5401,14 +6088,16 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Moon Gazing"
   },
   {
     "name": "Pioneers (Part 2)",
     "region": "Other",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Moon Gazing"
   },
   {
     "name": "Pizza From Another Land",
@@ -5499,49 +6188,65 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "ปัญหาของหุ่นยนต์คัดแยก",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Where the Moon Rises"
+    ],
+    "root": "Where the Moon Rises"
   },
   {
     "name": "Procrustes' Iron Bed",
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Hesperides of Love and Hate"
   },
   {
     "name": "Project Connectivity",
     "region": "Sumeru",
     "thaiName": "แผนเส้นทางสัญจร",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Opening Festivities"
+    ],
+    "root": "Opening Festivities"
   },
   {
     "name": "Project Moongazer (Part 1)",
     "region": "Other",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Moon Gazing"
   },
   {
     "name": "Project Moongazer (Part 2)",
     "region": "Other",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Moon Gazing"
   },
   {
     "name": "Promises Remembered as Lanterns Rise",
     "region": "Liyue",
     "thaiName": "สัญญาแห่งวันวานกับเทศกาลที่มาถึง",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Wangshu Once Again"
+    ],
+    "root": "Currents Deep Beneath the Lanterns"
   },
   {
     "name": "Proof of Strength",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Homework"
   },
   {
     "name": "Provisionally Perpetual Beetle Battle!",
@@ -5569,14 +6274,22 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "คำสอนแห่ง Purbiruni",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Solitary Sea-Beast"
+    ],
+    "root": "Solitary Sea-Beast"
   },
   {
     "name": "Pursuit (Part 1)",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Through the Looking Glass"
+    ],
+    "root": "Through the Looking Glass"
   },
   {
     "name": "Pursuit (Part 2)",
@@ -5590,21 +6303,31 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Chenyu's Blessings of Sunken Jade"
   },
   {
     "name": "Qiaoying, the Village of Many Tales",
     "region": "Liyue",
     "thaiName": "สารพันเรื่องราวของหมู่บ้าน Qiaoying",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Qiaoying of the Sacred Mountain"
+    ],
+    "root": "Qiaoying of the Sacred Mountain"
   },
   {
     "name": "Qingce's Lanterns",
     "region": "Liyue",
     "thaiName": "โคม Xiao กับ Qingce Village",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Guests in Qingce",
+      "Guardians of the Countryside"
+    ],
+    "root": "Light Upon the Sea"
   },
   {
     "name": "Question and Answer",
@@ -5618,7 +6341,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Questioning Melusine and Answering Machine"
   },
   {
     "name": "Radiant Harvest: Cause and Effect",
@@ -5639,7 +6363,11 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "แสงระยิบซิ่งระยับ",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "A Thousand Miles for an Enigmatic Tune"
+    ],
+    "root": "A Thousand Miles for an Enigmatic Tune"
   },
   {
     "name": "Rapid Restitution to the Raging Fish...",
@@ -5695,21 +6423,33 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "สมบัติโบราณแห่งเกาะ Seirai",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Ritou Escape Plan"
+    ],
+    "root": "Ritou Escape Plan"
   },
   {
     "name": "Reminiscence of Seirai",
     "region": "Inazuma",
     "thaiName": "ความทรงจำเก่า ๆ บนเกาะ Seirai",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Ritou Escape Plan"
+    ],
+    "root": "Ritou Escape Plan"
   },
   {
     "name": "Remnants of the Shadow Realm (Part 1)",
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Hunter on the Snowfields"
+    ],
+    "root": "Hunter on the Snowfields"
   },
   {
     "name": "Remnants of the Shadow Realm (Part 2)",
@@ -5765,7 +6505,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "East of the Moon, West of the Sun"
   },
   {
     "name": "Returning Curios",
@@ -5786,14 +6527,16 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "คำพยากรณ์โดยบังเอิญ",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Revelation"
   },
   {
     "name": "Revelations from the Past",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Between Pledge and Forgettance"
   },
   {
     "name": "Reverberation of Heroic Spirits",
@@ -5835,21 +6578,32 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Agnihotra Sutra",
+    "req": [
+      "The World of Aranara"
+    ],
+    "root": "The World of Aranara"
   },
   {
     "name": "Rishboland Tiger, Roaaar",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka",
+    "req": [
+      "Festival Utsava"
+    ],
+    "root": "Festival Utsava"
   },
   {
     "name": "Rite of the Bold",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Between Pledge and Forgettance"
   },
   {
     "name": "Road to the Singularity",
@@ -5870,21 +6624,24 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "In the Wake of Narcissus"
   },
   {
     "name": "Royinjan's Chapter: Linga",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Vimana Agama"
   },
   {
     "name": "Royinjan's Chapter: Yoni",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Vimana Agama"
   },
   {
     "name": "Ruin Drake Maelstrom (Fontaine)",
@@ -5912,14 +6669,19 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Sacred Sakura Cleansing Ritual"
   },
   {
     "name": "Sakura Arborism",
     "region": "Inazuma",
     "thaiName": "การดูแลซากุระ",
     "primogems": 60,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Tatara Tales (Quest)"
+    ],
+    "root": "Tatara Tales (Quest)"
   },
   {
     "name": "Sanden's Resource Request",
@@ -5940,21 +6702,27 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "In the Footsteps of the Chosen of Dragons"
   },
   {
     "name": "Savior's Wake (Quest)",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "In the Wake of Narcissus"
   },
   {
     "name": "Says He Who Seeks Stone",
     "region": "Liyue",
     "thaiName": "เรื่องเล่านักสะสมหิน",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Surreptitious Seven-Star Seal Sundering"
+    ],
+    "root": "Surreptitious Seven-Star Seal Sundering"
   },
   {
     "name": "Scenarios for Study",
@@ -5968,84 +6736,108 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Scenes from Life in Meropide",
+    "req": [
+      "Scenes from Life in Meropide: Dead End"
+    ],
+    "root": "Scenes from Life in Meropide: Dead End"
   },
   {
     "name": "Scenes from Life in Meropide: An Actor's Training",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Scenes from Life in Meropide"
   },
   {
     "name": "Scenes from Life in Meropide: Chit-Chat",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Scenes from Life in Meropide"
   },
   {
     "name": "Scenes from Life in Meropide: Dead End",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Scenes from Life in Meropide"
   },
   {
     "name": "Scenes from Life in Meropide: Every Debt has a Creditor",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Scenes from Life in Meropide",
+    "req": [
+      "An Eye for an Eye"
+    ],
+    "root": "An Eye for an Eye"
   },
   {
     "name": "Scenes from Life in Meropide: Fists of Fury",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Scenes from Life in Meropide"
   },
   {
     "name": "Scenes from Life in Meropide: Memories",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Scenes from Life in Meropide"
   },
   {
     "name": "Scenes from Life in Meropide: Safe Operation",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Scenes from Life in Meropide"
   },
   {
     "name": "Scenes from Life in Meropide: The Art of Negotiation",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Scenes from Life in Meropide"
   },
   {
     "name": "Scenes from Life in Meropide: Treat the Symptoms",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Scenes from Life in Meropide"
   },
   {
     "name": "Scenes from Life in Meropide: Unfinished Task",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Scenes from Life in Meropide"
   },
   {
     "name": "Scenes from Life in Meropide: Visible Hands",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Scenes from Life in Meropide",
+    "req": [
+      "Scenes from Life in Meropide: Every Debt has a Creditor"
+    ],
+    "root": "An Eye for an Eye"
   },
   {
     "name": "Scent on the Wind",
@@ -6066,7 +6858,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Chronicler of the Crumbling City"
   },
   {
     "name": "Search Chronicle: Afterword",
@@ -6115,7 +6908,12 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 60,
-    "type": "world"
+    "type": "world",
+    "series": "In the Wake of Narcissus",
+    "req": [
+      "Initial Facts"
+    ],
+    "root": "Initial Facts"
   },
   {
     "name": "Secret Forest Shadow",
@@ -6129,35 +6927,40 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Tale of Dreams Plucked From Fire"
   },
   {
     "name": "Seirai Stormchasers: Part I",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Seirai Stormchasers"
   },
   {
     "name": "Seirai Stormchasers: Part II",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Seirai Stormchasers"
   },
   {
     "name": "Seirai Stormchasers: Part III",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Seirai Stormchasers"
   },
   {
     "name": "Seirai Stormchasers: Part IV",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Seirai Stormchasers"
   },
   {
     "name": "Selling Like Hot Carvings",
@@ -6185,7 +6988,12 @@ const QUEST_DATA = [
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Hyperion's Dirge",
+    "req": [
+      "The Subterranean Trials of Drake and Serpent"
+    ],
+    "root": "The Subterranean Trials of Drake and Serpent"
   },
   {
     "name": "Settling Debts",
@@ -6220,7 +7028,12 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "แสงจันทร์พันโฉม",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "The Moon Adorning the Night"
+    ],
+    "root": "The Dark Side of Memory"
   },
   {
     "name": "Shine On, Pipilpan Idol!",
@@ -6241,7 +7054,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "The Very Special Fortune Slip"
   },
   {
     "name": "Sightlines and Camera Tricks",
@@ -6353,7 +7167,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Varuna Gatha"
   },
   {
     "name": "Small Jack Frost, Big Problems",
@@ -6395,14 +7210,20 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Old Notes and New Friends"
   },
   {
     "name": "Solid Ice, Soluble in Wine",
     "region": "Mondstadt",
     "thaiName": "น้ำแข็งที่ละลายในไวน์ได้ง่าย",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Dandelion, Rose, and Windwheel Aster",
+      "Surrounded by the Aroma of Tea"
+    ],
+    "root": "When They Take Off Their Armor"
   },
   {
     "name": "Solitary Sea-Beast",
@@ -6416,14 +7237,19 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "ตกอยู่ในอันตรายเพียงลำพัง",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Fine Opportunity?"
+    ],
+    "root": "Dragon Storm"
   },
   {
     "name": "Someday, We All Must Walk Alone",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "In the Footsteps of the Chosen of Dragons"
   },
   {
     "name": "Something's Wrong With the Water",
@@ -6437,7 +7263,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "In the Footsteps of the Chosen of Dragons"
   },
   {
     "name": "Special Lighting and the Stars of Tomorrow!",
@@ -6521,7 +7348,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka"
   },
   {
     "name": "Stand by Me (Quest)",
@@ -6535,21 +7363,34 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Agnihotra Sutra",
+    "req": [
+      "The World of Aranara"
+    ],
+    "root": "The World of Aranara"
   },
   {
     "name": "Static Views",
     "region": "Sumeru",
     "thaiName": "ทิวทัศน์แสนนิ่งสงบ",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "The World of Aranara"
+    ],
+    "root": "The World of Aranara"
   },
   {
     "name": "Static Views, Part 2",
     "region": "Sumeru",
     "thaiName": "ทิวทัศน์แสนนิ่งสงบ (II)",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Static Views"
+    ],
+    "root": "The World of Aranara"
   },
   {
     "name": "Steambird Interview",
@@ -6570,42 +7411,61 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "หวนคืนสู่เจ้าของครั้งแล้วครั้งเล่า",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Surreptitious Seven-Star Seal Sundering"
+    ],
+    "root": "Surreptitious Seven-Star Seal Sundering"
   },
   {
     "name": "Stones, Coconuts, and Saurian Traffickers",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "In the Footsteps of the Chosen of Dragons"
   },
   {
     "name": "Stories Make the Best Pastries",
     "region": "Fontaine",
     "thaiName": "เรื่องราวคือของว่างยามจิบชาที่ดีที่สุด",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Lady's Invitation"
+    ],
+    "root": "A Lady's Invitation"
   },
   {
     "name": "Stories of the Past",
     "region": "Fontaine",
     "thaiName": "เรื่องราวในอดีต",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Lady's Invitation"
+    ],
+    "root": "A Lady's Invitation"
   },
   {
     "name": "Stories to Sate the Glass and Scroll",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Homework"
   },
   {
     "name": "Storytelling Method",
     "region": "Inazuma",
     "thaiName": "การสร้างเนื้อเรื่อง",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "This Novel... Seems Familiar?",
+      "This Novel Seems... Problematic?"
+    ],
+    "root": "This Novel... Seems Familiar?"
   },
   {
     "name": "Strange Encounter of the Tete Isle Kind",
@@ -6668,7 +7528,11 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "ซุ่มยิงในพายุ",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "To a Carefree Vacation!"
+    ],
+    "root": "To a Carefree Vacation!"
   },
   {
     "name": "Stronghold Guard: Hoard Guard Unit!",
@@ -6689,7 +7553,11 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "มังกรซ่อนหงส์เหินทะยาน",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Long Live Life"
+    ],
+    "root": "Long Live Life"
   },
   {
     "name": "Summer Gift",
@@ -6703,14 +7571,20 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "The Chasm Delvers"
   },
   {
     "name": "Surrounded by the Aroma of Tea",
     "region": "Mondstadt",
     "thaiName": "กลิ่นชาที่หอมอบอวล",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "When They Take Off Their Armor",
+      "Fine Wine From Yesterday"
+    ],
+    "root": "When They Take Off Their Armor"
   },
   {
     "name": "Sylvie's Beryl Conch Commission",
@@ -6738,14 +7612,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Homework"
   },
   {
     "name": "Tanuki-Bayashi in the Forest",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Sacred Sakura Cleansing Ritual"
   },
   {
     "name": "Target: Master of the Snowy Peaks!",
@@ -6759,63 +7635,76 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka",
+    "req": [
+      "Festival Utsava"
+    ],
+    "root": "Festival Utsava"
   },
   {
     "name": "Tatara Tales (Quest)",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Tatara Tales"
   },
   {
     "name": "Tatara Tales: Data Collection",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Tatara Tales"
   },
   {
     "name": "Tatara Tales: Final Preparations",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Tatara Tales"
   },
   {
     "name": "Tatara Tales: Functional Test",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Tatara Tales"
   },
   {
     "name": "Tatara Tales: Priority Investigation",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Tatara Tales"
   },
   {
     "name": "Tatara Tales: Process Is Everything",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Tatara Tales"
   },
   {
     "name": "Tatara Tales: Purification Device",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Tatara Tales"
   },
   {
     "name": "Tatara Tales: The Last Act",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Tatara Tales"
   },
   {
     "name": "Tea or Bulle Fruit?",
@@ -6941,28 +7830,42 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "\"Temari Game\"",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Ritou Escape Plan"
+    ],
+    "root": "Ritou Escape Plan"
   },
   {
     "name": "Temple Inquiry",
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Hyperion's Dirge",
+    "req": [
+      "The Subterranean Trials of Drake and Serpent"
+    ],
+    "root": "The Subterranean Trials of Drake and Serpent"
   },
   {
     "name": "Temporary Acclimatization",
     "region": "Liyue",
     "thaiName": "จัดการน้ำและดินได้ชั่วคราว",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Qiaoying of the Sacred Mountain"
+    ],
+    "root": "Qiaoying of the Sacred Mountain"
   },
   {
     "name": "Tepetlisaurus Hide-and-Seek",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "In the Footsteps of the Chosen of Dragons"
   },
   {
     "name": "Terminate This Treacherous Transport!",
@@ -6983,7 +7886,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "In the Wake of Narcissus"
   },
   {
     "name": "That Which Fell From the Sky",
@@ -7032,7 +7936,11 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "เคล็ดลับการปรุงอาหาร",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Going Upon the Breeze"
+    ],
+    "root": "Going Upon the Breeze"
   },
   {
     "name": "The Art of Horticulture",
@@ -7053,28 +7961,48 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "จิตรกรน้อยเคียงจันทร์ I",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "Her Past"
+    ],
+    "root": "The Dark Side of Memory"
   },
   {
     "name": "The Artist By the Moon's Side (II)",
     "region": "Other",
     "thaiName": "จิตรกรน้อยเคียงจันทร์ II",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "May the Moonlight Connect Us"
+    ],
+    "root": "The Dark Side of Memory"
   },
   {
     "name": "The Artist By the Moon's Side (III)",
     "region": "Other",
     "thaiName": "จิตรกรน้อยเคียงจันทร์ III",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "Moonlight Sonata: Lingering Resonance"
+    ],
+    "root": "The Dark Side of Memory"
   },
   {
     "name": "The Artist By the Moon's Side (IV)",
     "region": "Other",
     "thaiName": "จิตรกรน้อยเคียงจันทร์ IV",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "The Homebound Moon"
+    ],
+    "root": "Come Play With the Moon"
   },
   {
     "name": "The Attack of the... Purple Tepetlisaurus?",
@@ -7123,7 +8051,11 @@ const QUEST_DATA = [
     "region": "Enkanomiya",
     "thaiName": "ปริศนา Bunkoku",
     "primogems": 40,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Three Realms Gateway Offering: The Eve"
+    ],
+    "root": "Three Realms Gateway Offering: The Eve"
   },
   {
     "name": "The Call of Mystical Martial Arts",
@@ -7158,14 +8090,19 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "The Chasm Delvers"
   },
   {
     "name": "The Chasm's Bounty",
     "region": "Liyue",
     "thaiName": "ของขวัญจาก Chasm",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Wherefore Did the Spiritstone Descend?"
+    ],
+    "root": "Wherefore Did the Spiritstone Descend?"
   },
   {
     "name": "The Chef's Tale",
@@ -7193,14 +8130,16 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka"
   },
   {
     "name": "The Chosen One's Promise (Quest)",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Lost Traveler in the Ashen Realm"
   },
   {
     "name": "The Churlish Chase",
@@ -7221,21 +8160,33 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "ที่อยู่ของมณีราค ผ้าทอร่วงโรยสู่เมฆา",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "An Ancient Sacrifice of Sacred Brocade"
+    ],
+    "root": "An Ancient Sacrifice of Sacred Brocade"
   },
   {
     "name": "The Commission's Commission",
     "region": "Inazuma",
     "thaiName": "คำขอจากสำนัก Yashiro",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Flower Blooms in a Prison"
+    ],
+    "root": "A Flower Blooms in a Prison"
   },
   {
     "name": "The Contestant",
     "region": "Sumeru",
     "thaiName": "\"ผู้เข้าชิงคนนั้นเมื่อปีนั้น\"",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Suspicions Aroused"
+    ],
+    "root": "Suspicions Aroused"
   },
   {
     "name": "The Culling of the Worms: Body",
@@ -7347,35 +8298,40 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Chronicler of the Crumbling City"
   },
   {
     "name": "The Entrance to Tokoyo",
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "From Dusk to Dawn in Byakuyakoku"
   },
   {
     "name": "The Eternal Dream, Ever Lush",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "The Dirge of Bilqis"
   },
   {
     "name": "The Exile: Blooming",
     "region": "Sumeru",
     "thaiName": "ผู้ถูกเนรเทศ: ผลิดอก",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "The Exile (World Quest Series)"
   },
   {
     "name": "The Exile: Sprouting",
     "region": "Sumeru",
     "thaiName": "ผู้ถูกเนรเทศ: ผลิต้น",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "The Exile (World Quest Series)"
   },
   {
     "name": "The Fallen Falcon",
@@ -7403,14 +8359,16 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Agnihotra Sutra"
   },
   {
     "name": "The Final Judgment",
     "region": "Other",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "A Long Day in the Mountains"
   },
   {
     "name": "The Final Question",
@@ -7459,21 +8417,24 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Lost Traveler in the Ashen Realm"
   },
   {
     "name": "The Flowing Primal Flame (Part 2)",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Lost Traveler in the Ashen Realm"
   },
   {
     "name": "The Flowing Primal Flame (Part 3)",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Lost Traveler in the Ashen Realm"
   },
   {
     "name": "The Foolish Fatuus",
@@ -7494,14 +8455,16 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 10,
-    "type": "world"
+    "type": "world",
+    "series": "Beyond Silver and Fine Gold"
   },
   {
     "name": "The Forsaken Sea of Wisdom",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Chronicler of the Crumbling City"
   },
   {
     "name": "The Fountain Flows Again",
@@ -7515,7 +8478,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Chronicler of the Crumbling City"
   },
   {
     "name": "The Gardes' Inventor",
@@ -7536,49 +8500,60 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "ทีมสุดยอดนักชิม - ทิ้งท้าย",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "The Gourmet Supremos"
   },
   {
     "name": "The Gourmet Supremos: Of Shrines and Sakura",
     "region": "Inazuma",
     "thaiName": "ทีมสุดยอดนักชิม - ต้นไม้ของศาลเจ้า",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "The Gourmet Supremos"
   },
   {
     "name": "The Gourmet Supremos: On the Road",
     "region": "Inazuma",
     "thaiName": "ทีมสุดยอดนักชิม - การตามล่าอาหาร",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "The Gourmet Supremos"
   },
   {
     "name": "The Gourmet Supremos: The Deep Divers",
     "region": "Inazuma",
     "thaiName": "ทีมสุดยอดนักชิม - ดำดิ่งลึกลงไป",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "The Gourmet Supremos"
   },
   {
     "name": "The Gourmet Supremos: The Importance of Eating Well",
     "region": "Inazuma",
     "thaiName": "ทีมสุดยอดนักชิม - ความสำคัญของการทานให้อิ่ม",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "The Gourmet Supremos",
+    "req": [
+      "The Gourmet Supremos: Breakthrough Thinking"
+    ],
+    "root": "The Gourmet Supremos: Breakthrough Thinking"
   },
   {
     "name": "The Gourmet Supremos: The Seashore Strider",
     "region": "Inazuma",
     "thaiName": "ทีมสุดยอดนักชิม - ท่องไปตามชายเล",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "The Gourmet Supremos"
   },
   {
     "name": "The Great Mage's Journey of Trials",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Homework"
   },
   {
     "name": "The Great Mountain Survey",
@@ -7592,7 +8567,12 @@ const QUEST_DATA = [
     "region": "Dragonspine",
     "thaiName": "การสำรวจภูเขาหิมะอีกครั้ง",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "In the Mountains",
+      "The Great Mountain Survey"
+    ],
+    "root": "In the Mountains"
   },
   {
     "name": "The Haunted Pirate Shipwreck",
@@ -7606,84 +8586,110 @@ const QUEST_DATA = [
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "From Dusk to Dawn in Byakuyakoku"
   },
   {
     "name": "The Heavenly Stone's Debris",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "The Chasm Delvers"
   },
   {
     "name": "The Homebound Moon",
     "region": "Other",
     "thaiName": "ดวงจันทร์ที่กลับบ้าน",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "Come Play With the Moon"
+    ],
+    "root": "Come Play With the Moon"
   },
   {
     "name": "The Hymn of Tir Yazad (Part 1)",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Khvarena of Good and Evil"
   },
   {
     "name": "The Hymn of Tir Yazad (Part 2)",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 60,
-    "type": "world"
+    "type": "world",
+    "series": "Khvarena of Good and Evil"
   },
   {
     "name": "The Illumiscreen: I",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "City of Chores"
+    ],
+    "root": "The Origin of the Lanterns"
   },
   {
     "name": "The Illumiscreen: II",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "The Illumiscreen: I",
+      "Wangshu Once Again"
+    ],
+    "root": "The Origin of the Lanterns"
   },
   {
     "name": "The Illumiscreen: III",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Guests in Qingce"
+    ],
+    "root": "Light Upon the Sea"
   },
   {
     "name": "The Illusion's Finishings",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Ancient Colors"
   },
   {
     "name": "The Joyous Floating Island",
     "region": "Other",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Beyond Silver and Fine Gold"
   },
   {
     "name": "The Last Day of Remuria",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Canticles of Harmony"
   },
   {
     "name": "The Last Night, the First Light",
     "region": "Other",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Nightingale's Song"
   },
   {
     "name": "The Last Step of Testing",
@@ -7697,28 +8703,38 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "ชาว Tenochtzitoc คนสุดท้าย",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Curtain Call for a Colorful Summer Night!"
+    ],
+    "root": "A Curtain Call for a Colorful Summer Night!"
   },
   {
     "name": "The Law of Boundaries",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Homework"
   },
   {
     "name": "The Lone Isle Named Night",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "In the Footsteps of the Chosen of Dragons"
   },
   {
     "name": "The Lone Phantom Sail",
     "region": "Fontaine",
     "thaiName": "เงาเรือผู้โดดเดี่ยว",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "\"Hey, This Isn't Pumpkin Soup...\""
+    ],
+    "root": "\"Hey, This Isn't Pumpkin Soup...\""
   },
   {
     "name": "The Long-Failed \"Graph Adversarial Technology\"...",
@@ -7732,7 +8748,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka"
   },
   {
     "name": "The Lost Child's Tale",
@@ -7753,7 +8770,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 10,
-    "type": "world"
+    "type": "world",
+    "series": "Beyond Silver and Fine Gold"
   },
   {
     "name": "The Lotus Leaf and the Champion",
@@ -7781,7 +8799,11 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "เรื่องต่าง ๆ ของเทศกาล Moonchase",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "One for the Foodies, Two for the Show"
+    ],
+    "root": "One for the Foodies, Two for the Show"
   },
   {
     "name": "The Millennial Mountains",
@@ -7795,7 +8817,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Polkka Beneath the Moon's Oracle"
   },
   {
     "name": "The Misplaced Photo",
@@ -7816,14 +8839,24 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "ดวงจันทร์บนนภาราตรี",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "The Artist By the Moon's Side (II)"
+    ],
+    "root": "The Dark Side of Memory"
   },
   {
     "name": "The Moon Adorning the Night: The Three Moons",
     "region": "Other",
     "thaiName": "ดวงจันทร์บนท้องฟ้ายามค่ำคืน: จันทราทั้งสาม",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "The Artist By the Moon's Side (IV)"
+    ],
+    "root": "Come Play With the Moon"
   },
   {
     "name": "The Moon Has Risen",
@@ -7837,7 +8870,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "The Moon-Bathed Deep"
   },
   {
     "name": "The Moonlit Adeptus's Trail",
@@ -7872,14 +8906,19 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "แสวงหา Narukami",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "World Quest"
+    ],
+    "root": "World Quest"
   },
   {
     "name": "The Narzissenkreuz Adventure",
     "region": "Fontaine",
     "thaiName": "\"การผจญภัยแห่ง Narzissenkreuz\"",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Ann of the Narzissenkreuz"
   },
   {
     "name": "The Ocean Pearl",
@@ -7900,7 +8939,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Lost Traveler in the Ashen Realm"
   },
   {
     "name": "The Path of Papers",
@@ -7935,14 +8975,22 @@ const QUEST_DATA = [
     "region": "Enkanomiya",
     "thaiName": "ระบำแห่ง Phaethon",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "The Subterranean Trials of Drake and Serpent"
+    ],
+    "root": "The Subterranean Trials of Drake and Serpent"
   },
   {
     "name": "The Phantom Toy Master and the Barking Fox",
     "region": "Other",
     "thaiName": "\"ราชาของเล่นมายา\" กับ \"จิ้งจอกน้อยโฮ่โฮ่\"",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Fairground Gathering, Summer Lights Illuminated"
+    ],
+    "root": "Fairground Gathering, Summer Lights Illuminated"
   },
   {
     "name": "The Power of Research",
@@ -7970,7 +9018,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "East of the Moon, West of the Sun"
   },
   {
     "name": "The Recollector's Path (Part 1)",
@@ -8019,42 +9068,63 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Questioning Melusine and Answering Machine"
   },
   {
     "name": "The Replacement's Secret",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "The Very Special Fortune Slip"
   },
   {
     "name": "The Rhythm that Leads to the Gloomy Path",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka",
+    "req": [
+      "Encounter in the Woods"
+    ],
+    "root": "The World of Aranara"
   },
   {
     "name": "The Rhythm that Nurtures the Sprout",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka",
+    "req": [
+      "Encounter in the Woods"
+    ],
+    "root": "The World of Aranara"
   },
   {
     "name": "The Rhythm that Reveals the Beastly Trail",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka",
+    "req": [
+      "Encounter in the Woods"
+    ],
+    "root": "The World of Aranara"
   },
   {
     "name": "The Ritou Road",
     "region": "Inazuma",
     "thaiName": "เส้นทางแห่ง Ritou",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Ritou Escape Plan"
+    ],
+    "root": "Ritou Escape Plan"
   },
   {
     "name": "The Road Ahead",
@@ -8075,21 +9145,27 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "ตำนานของนายขี้ลืม",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Octave of the Maushiro"
+    ],
+    "root": "Octave of the Maushiro"
   },
   {
     "name": "The Sea of Fog and the Rite of the Trees",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Through the Mists"
   },
   {
     "name": "The Secret of Al-Ahmar",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 60,
-    "type": "world"
+    "type": "world",
+    "series": "Golden Slumber"
   },
   {
     "name": "The Secret of Nantianmen",
@@ -8103,21 +9179,27 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Canticles of Harmony"
   },
   {
     "name": "The Shoemaker's Children Go Barefoot",
     "region": "Other",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "East of the Moon, West of the Sun"
   },
   {
     "name": "The Shooting Range and the Deep Shadow Realm",
     "region": "Snezhnaya",
     "thaiName": "สนามยิงปืนและมิติเงาส่วนลึก",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Gunfire in the Silent Lands"
+    ],
+    "root": "Gunfire in the Silent Lands"
   },
   {
     "name": "The Siege of Qingce",
@@ -8138,7 +9220,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Beyond Silver and Fine Gold"
   },
   {
     "name": "The Soft Song She Sang",
@@ -8152,7 +9235,11 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "ความไม่สอดคล้องในเทศกาล",
     "primogems": 20,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Ode to Flower and Cloud"
+    ],
+    "root": "Ode to Flower and Cloud"
   },
   {
     "name": "The Special Support Squad's Tale",
@@ -8166,7 +9253,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Khvarena of Good and Evil"
   },
   {
     "name": "The Spurious Cannot Be Made Genuine",
@@ -8180,21 +9268,27 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "น้ำนิ่งที่ไหลริน",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "\"Heart of Watatsumi\""
+    ],
+    "root": "\"Heart of Watatsumi\""
   },
   {
     "name": "The Stone Beasts, Like Ghouls Seated",
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "On One Side a Palace, On the Other a Tomb"
   },
   {
     "name": "The Story of \"the Princess\" and \"the Adventure Team\"",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Ann of the Narzissenkreuz"
   },
   {
     "name": "The Stress of Changing Careers",
@@ -8208,7 +9302,8 @@ const QUEST_DATA = [
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "From Dusk to Dawn in Byakuyakoku"
   },
   {
     "name": "The Sun Rises Once More",
@@ -8222,14 +9317,16 @@ const QUEST_DATA = [
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Hesperides of Love and Hate"
   },
   {
     "name": "The Sun-Wheel and Mt. Kanna",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Through the Mists"
   },
   {
     "name": "The Sunken Ship Sailed Past, Ringing No Bells",
@@ -8250,14 +9347,16 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Polkka Beneath the Moon's Oracle"
   },
   {
     "name": "The Tale-Telling Heart",
     "region": "Other",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "East of the Moon, West of the Sun"
   },
   {
     "name": "The Tales Behind the Fan",
@@ -8271,7 +9370,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "The Dirge of Bilqis"
   },
   {
     "name": "The Tester Becomes the Tested",
@@ -8285,7 +9385,8 @@ const QUEST_DATA = [
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Erebos' Secret"
   },
   {
     "name": "The Three Primary Colors of the Solar Corona",
@@ -8327,7 +9428,8 @@ const QUEST_DATA = [
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "From Dusk to Dawn in Byakuyakoku"
   },
   {
     "name": "The Tree who Stands Alone",
@@ -8362,21 +9464,24 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "The Unmanned Vessel"
   },
   {
     "name": "The Unmanned Vessel (II)",
     "region": "Other",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "The Unmanned Vessel"
   },
   {
     "name": "The Unmanned Vessel (III)",
     "region": "Other",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "The Unmanned Vessel"
   },
   {
     "name": "The Vanishing Bounty Target",
@@ -8418,7 +9523,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "สายลมหยุดแล้ว",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "A Long Day in the Mountains"
   },
   {
     "name": "The Winding Homeward Way",
@@ -8432,7 +9538,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka"
   },
   {
     "name": "The Yaksha's Wish",
@@ -8446,14 +9553,22 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Ritou Escape Plan"
+    ],
+    "root": "Ritou Escape Plan"
   },
   {
     "name": "Theater Mechanicus/2021-02-10/Story",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "The Origin of the Lanterns"
+    ],
+    "root": "The Origin of the Lanterns"
   },
   {
     "name": "Theater Mechanicus: Stage of Brilliance (Quest)",
@@ -8467,7 +9582,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 60,
-    "type": "world"
+    "type": "world",
+    "series": "Ancient Colors"
   },
   {
     "name": "Thesis Proposal: He Shall not Pass",
@@ -8502,7 +9618,11 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "การทำความสะอาดบนที่สูง",
     "primogems": 20,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Ode to Flower and Cloud"
+    ],
+    "root": "Ode to Flower and Cloud"
   },
   {
     "name": "Those Strange and Intriguing Questions",
@@ -8523,14 +9643,19 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "คาดการณ์สามครั้ง",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Qiaoying of the Sacred Mountain"
+    ],
+    "root": "Qiaoying of the Sacred Mountain"
   },
   {
     "name": "Through the Gates of Ivory",
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Hesperides of Love and Hate"
   },
   {
     "name": "Through the Looking Glass",
@@ -8586,14 +9711,16 @@ const QUEST_DATA = [
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "On One Side a Palace, On the Other a Tomb"
   },
   {
     "name": "To Rest in a Forgotten Field",
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "In the Dwelling of Life"
   },
   {
     "name": "To the Lighthouse",
@@ -8614,7 +9741,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Lost Traveler in the Ashen Realm"
   },
   {
     "name": "To the Winds of Freedom",
@@ -8677,14 +9805,16 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Nightingale's Song"
   },
   {
     "name": "Tracer No Tracing",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Tale of Dreams Plucked From Fire"
   },
   {
     "name": "Traces of Chroma",
@@ -8712,7 +9842,8 @@ const QUEST_DATA = [
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "In the Dwelling of Life"
   },
   {
     "name": "Travelers' Tales: Destiny Drawn",
@@ -8726,7 +9857,11 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "เพื่อนพ้องร่วมเดินทาง",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "To a Carefree Vacation!"
+    ],
+    "root": "To a Carefree Vacation!"
   },
   {
     "name": "Treacherous Light of the Depths",
@@ -8796,7 +9931,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "In the Footsteps of the Chosen of Dragons"
   },
   {
     "name": "Treasures Beneath the Vines",
@@ -8831,7 +9967,11 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "ห้วงความฝันและต้นไม้",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "The World of Aranara"
+    ],
+    "root": "The World of Aranara"
   },
   {
     "name": "Trembling Earth",
@@ -8845,7 +9985,11 @@ const QUEST_DATA = [
     "region": "Enkanomiya",
     "thaiName": "เอกสารสามสี",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "The Subterranean Trials of Drake and Serpent"
+    ],
+    "root": "The Subterranean Trials of Drake and Serpent"
   },
   {
     "name": "Trouble With Letters",
@@ -8866,7 +10010,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "ขจัดอันตราย",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Stygian Onslaught"
   },
   {
     "name": "Tuned to the World's Sounds (Quest)",
@@ -8894,7 +10039,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Canticles of Harmony"
   },
   {
     "name": "Underwater Restoration in Progress...",
@@ -8908,7 +10054,11 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "แฝงตัวเข้าค่ายศัตรูไม่มีใครรู้",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Surreptitious Seven-Star Seal Sundering"
+    ],
+    "root": "Surreptitious Seven-Star Seal Sundering"
   },
   {
     "name": "Unexpected Battle",
@@ -8922,14 +10072,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Homework"
   },
   {
     "name": "Unexpected Commission: Epilogue",
     "region": "Mondstadt",
     "thaiName": "คำขอที่คาดไม่ถึง - บทส่งท้าย",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Homework"
   },
   {
     "name": "Unfinished Story",
@@ -8950,7 +10102,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "A Long Day in the Mountains"
   },
   {
     "name": "Unscrupulous Dealings",
@@ -8964,14 +10117,23 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "น้ำค้างที่ไร้ฝุ่นในฤดูใบไม้ร่วง",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Dandelion, Rose, and Windwheel Aster",
+      "Surrounded by the Aroma of Tea"
+    ],
+    "root": "When They Take Off Their Armor"
   },
   {
     "name": "Until Vana is Healed",
     "region": "Sumeru",
     "thaiName": "จนกระทั่ง \"Vana\" หายป่วย",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "For Fruits, Seeds, and Trees"
+    ],
+    "root": "For Fruits, Seeds, and Trees"
   },
   {
     "name": "Unwritten Rules",
@@ -9013,77 +10175,105 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Questioning Melusine and Answering Machine",
+    "req": [
+      "A Fontainian Message"
+    ],
+    "root": "A Fontainian Message"
   },
   {
     "name": "Valor's Afterglow (Quest)",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Valor's Afterglow"
   },
   {
     "name": "Valor's Afterglow: Return by Sundown",
     "region": "Liyue",
     "thaiName": "รัศมีอันหาญกล้า - ตะวันลับกลับคืน",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Valor's Afterglow"
   },
   {
     "name": "Valor's Afterglow: The Faint Light Remembered",
     "region": "Liyue",
     "thaiName": "รัศมีอันหาญกล้า - จดจำไว้ในแสงเลือนราง",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "series": "Valor's Afterglow"
   },
   {
     "name": "Variations on Belyi and Chernyi (Quest)",
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 10,
-    "type": "world"
+    "type": "world",
+    "series": "Variations on Belyi and Chernyi"
   },
   {
     "name": "Variations on Belyi and Chernyi: Schedule",
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 10,
-    "type": "world"
+    "type": "world",
+    "series": "Variations on Belyi and Chernyi"
   },
   {
     "name": "Varuna Gatha (Quest)",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Varuna Gatha",
+    "req": [
+      "The World of Aranara"
+    ],
+    "root": "The World of Aranara"
   },
   {
     "name": "Vaulting the Wall of Morning Mist",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Lost Traveler in the Ashen Realm"
   },
   {
     "name": "Venture Towards the Moonlight",
     "region": "Other",
     "thaiName": "การผจญภัยสู่แสงจันทร์",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Where the Moon Rises"
+    ],
+    "root": "Where the Moon Rises"
   },
   {
     "name": "Verses and Vistas of Lantern Rite (Part I)",
     "region": "Liyue",
     "thaiName": "บทกวีและภาพวาดของ Lantern Rite (I)",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "City of Chores"
+    ],
+    "root": "The Origin of the Lanterns"
   },
   {
     "name": "Verses and Vistas of Lantern Rite (Part II)",
     "region": "Liyue",
     "thaiName": "บทกวีและภาพวาดของ Lantern Rite (II)",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Guests in Qingce"
+    ],
+    "root": "Light Upon the Sea"
   },
   {
     "name": "Versus Mishima Michitoshi",
@@ -9153,28 +10343,36 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Vimana Agama"
   },
   {
     "name": "Vimana Agama: First Chapter",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Vimana Agama",
+    "req": [
+      "The World of Aranara"
+    ],
+    "root": "The World of Aranara"
   },
   {
     "name": "Vimana Agama: Jazari's Chapter",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Vimana Agama"
   },
   {
     "name": "Vimana Agama: Royinjan's Chapter",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Vimana Agama"
   },
   {
     "name": "Vishaps and Where to Find Them (Quest)",
@@ -9188,14 +10386,16 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Moon Gazing"
   },
   {
     "name": "Visitors From the Stars (Part 2)",
     "region": "Other",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "Moon Gazing"
   },
   {
     "name": "Voyage Prep",
@@ -9209,21 +10409,27 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "In the Footsteps of the Chosen of Dragons"
   },
   {
     "name": "Waking from the Great Dream (Quest)",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "In the Wake of Narcissus"
   },
   {
     "name": "Wangshu Once Again",
     "region": "Liyue",
     "thaiName": "Wangshu อีกครั้ง",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Currents Deep Beneath the Lanterns"
+    ],
+    "root": "Currents Deep Beneath the Lanterns"
   },
   {
     "name": "Warden of Konda",
@@ -9265,7 +10471,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "In the Footsteps of the Chosen of Dragons"
   },
   {
     "name": "Welcome to the Adventurers' Guild",
@@ -9286,14 +10493,22 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "เรื่องดีมักได้มาไม่ง่าย",
     "primogems": 20,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "There Will Come Soft Rains"
+    ],
+    "root": "There Will Come Soft Rains"
   },
   {
     "name": "When Scholar and Legends Meet",
     "region": "Liyue",
     "thaiName": "ความรู้กับตำนาน",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Wangshu Once Again"
+    ],
+    "root": "Currents Deep Beneath the Lanterns"
   },
   {
     "name": "When the Curtains Close",
@@ -9321,7 +10536,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Nightingale's Song"
   },
   {
     "name": "Where Are the Fierce Creatures?",
@@ -9335,7 +10551,12 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "ดวงจันทร์ซ่อนอยู่ที่ไหน",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Silvermoon Hall: Selenic Chronicles",
+    "req": [
+      "The Moon Adorning the Night: The Three Moons"
+    ],
+    "root": "Come Play With the Moon"
   },
   {
     "name": "Where His Life Lies",
@@ -9349,28 +10570,32 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Chronicler of the Crumbling City"
   },
   {
     "name": "Where Once There Was a Calculation Array",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Chronicler of the Crumbling City"
   },
   {
     "name": "Where Once There Were Arms Aplenty",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Chronicler of the Crumbling City"
   },
   {
     "name": "Where the Dandelions Find Rest",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "The Very Special Fortune Slip"
   },
   {
     "name": "Where the Future Stars Fall",
@@ -9384,7 +10609,11 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "ณ จุดที่แสงไฟสลัว",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Wangshu Once Again"
+    ],
+    "root": "Currents Deep Beneath the Lanterns"
   },
   {
     "name": "Where the Treasure Dwells",
@@ -9398,28 +10627,38 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "ที่พักพิงของพิราบขาว",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Lady's Invitation"
+    ],
+    "root": "A Lady's Invitation"
   },
   {
     "name": "Wherefore Did the Spiritstone Descend?",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "The Chasm Delvers"
   },
   {
     "name": "Whisper Beneath the Waves",
     "region": "Other",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "East of the Moon, West of the Sun"
   },
   {
     "name": "Whispers by the Hearth",
     "region": "Fontaine",
     "thaiName": "เสียงกระซิบข้างเตาผิง",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "A Lady's Invitation"
+    ],
+    "root": "A Lady's Invitation"
   },
   {
     "name": "Whither Shall a Member of a \"Secret Organization\" Go?",
@@ -9447,42 +10686,61 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "ความหมายของหิน",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "The Chi of Yore"
+    ],
+    "root": "The Chi of Yore"
   },
   {
     "name": "Wilting Weeping Willow",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 40,
-    "type": "world"
+    "type": "world",
+    "series": "The Wild Fairy of Erinnyes"
   },
   {
     "name": "Wind-Stirred Ripples",
     "region": "Other",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "Nightingale's Song"
   },
   {
     "name": "Windblume Research Report",
     "region": "Mondstadt",
     "thaiName": "รายงานการวิจัยเทศกาล Windblume",
     "primogems": 20,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Dream of Wind and Flowers",
+      "Windblumes and Snowflakes"
+    ],
+    "root": "Dream of Wind and Flowers"
   },
   {
     "name": "Windblumes and Snowflakes",
     "region": "Mondstadt",
     "thaiName": "ดอกไม้สายลมกับเกล็ดหิมะ",
     "primogems": 20,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Ode to Flower and Cloud"
+    ],
+    "root": "Ode to Flower and Cloud"
   },
   {
     "name": "Windbrew",
     "region": "Mondstadt",
     "thaiName": "เครื่องดื่มที่มีรสชาติของ \"สายลม\"",
     "primogems": 20,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Ode to Flower and Cloud"
+    ],
+    "root": "Ode to Flower and Cloud"
   },
   {
     "name": "Windrise, Windfall",
@@ -9524,7 +10782,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 30,
-    "type": "world"
+    "type": "world",
+    "series": "The Dirge of Bilqis"
   },
   {
     "name": "Wisdom of Ancient Civilizations",
@@ -9566,7 +10825,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "แบบฝึกหัดของแม่มด: หน้าที่ของผู้นำทาง...?",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Homework"
   },
   {
     "name": "Witch's Lodge (Quest)",
@@ -9580,70 +10840,111 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "คำพยากรณ์ของแม่มด - ว่าด้วยเรื่องหน้าที่",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Revelation",
+    "req": [
+      "Revelations by Chance"
+    ],
+    "root": "Revelations by Chance"
   },
   {
     "name": "Witch's Revelation: Great Youkai's Instruction",
     "region": "Fontaine",
     "thaiName": "คำพยากรณ์ของแม่มด - ว่าด้วยเรื่องโยไกผู้ยิ่งใหญ่",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Revelation",
+    "req": [
+      "Revelations by Chance"
+    ],
+    "root": "Revelations by Chance"
   },
   {
     "name": "Witch's Revelation: Instruction Beyond Dreams",
     "region": "Fontaine",
     "thaiName": "คำพยากรณ์ของแม่มด - ว่าด้วยเรื่องนอกความฝัน",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Revelation",
+    "req": [
+      "Revelations by Chance"
+    ],
+    "root": "Revelations by Chance"
   },
   {
     "name": "Witch's Revelation: Instruction of Curious Form",
     "region": "Fontaine",
     "thaiName": "คำพยากรณ์ของแม่มด - ว่าด้วยเรื่องร่างกายพิเศษ",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Revelation",
+    "req": [
+      "Revelations by Chance"
+    ],
+    "root": "Revelations by Chance"
   },
   {
     "name": "Witch's Revelation: Special Blend's Instruction",
     "region": "Fontaine",
     "thaiName": "คำพยากรณ์ของแม่มด - ว่าด้วยเรื่องเครื่องดื่มสูตรพิเศษ",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Revelation",
+    "req": [
+      "Revelations by Chance"
+    ],
+    "root": "Revelations by Chance"
   },
   {
     "name": "Witch's Revelation: Voyaging Instruction",
     "region": "Fontaine",
     "thaiName": "คำพยากรณ์ของแม่มด - ว่าด้วยเรื่องโพ้นทะเล",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Revelation",
+    "req": [
+      "Revelations by Chance"
+    ],
+    "root": "Revelations by Chance"
   },
   {
     "name": "Witch's Revelation: Warden's Instruction",
     "region": "Fontaine",
     "thaiName": "คำพยากรณ์ของแม่มด - ว่าด้วยเรื่องเฝ้ารักษาการณ์",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Revelation",
+    "req": [
+      "Revelations by Chance"
+    ],
+    "root": "Revelations by Chance"
   },
   {
     "name": "With Flying (Graffiti) Colors",
     "region": "Natlan",
     "thaiName": "แต่งแต้มสีสันโบยบิน",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "To a Carefree Vacation!"
+    ],
+    "root": "To a Carefree Vacation!"
   },
   {
     "name": "With Lupical...",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Witch's Homework"
   },
   {
     "name": "Within the Depths of Erinnyes",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "The Wild Fairy of Erinnyes"
   },
   {
     "name": "Within the Sequence",
@@ -9657,7 +10958,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Aranyaka"
   },
   {
     "name": "Words Worth Their Weight in Mora",
@@ -9678,28 +10980,38 @@ const QUEST_DATA = [
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Erebos' Secret"
   },
   {
     "name": "Yachimatahime's Trial",
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Erebos' Secret"
   },
   {
     "name": "Yae Publishing House's Invitation",
     "region": "Inazuma",
     "thaiName": "คำเชิญของสำนักพิมพ์ Yae",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "req": [
+      "Ritou Escape Plan"
+    ],
+    "root": "Ritou Escape Plan"
   },
   {
     "name": "Yanxiao's Crazy Kitchen",
     "region": "Liyue",
     "thaiName": "ห้องครัวอันแสนวุ่นวายของ Yanxiao",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Wangshu Once Again"
+    ],
+    "root": "Currents Deep Beneath the Lanterns"
   },
   {
     "name": "Yata Kouki's Order of Ore",
@@ -9720,7 +11032,11 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "โคม Xiao เมื่อปีที่แล้ว กับ Guhua ในวันนี้",
     "primogems": 30,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Wangshu Once Again"
+    ],
+    "root": "Currents Deep Beneath the Lanterns"
   },
   {
     "name": "Yi Zhu's Snack",
@@ -9734,14 +11050,19 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 50,
-    "type": "world"
+    "type": "world",
+    "series": "Sacred Sakura Cleansing Ritual"
   },
   {
     "name": "Zero Hour Invokation",
     "region": "Mondstadt",
     "thaiName": "ช่วงเวลาแห่งการเริ่มต้น",
     "primogems": 0,
-    "type": "event"
+    "type": "event",
+    "req": [
+      "Commence! A Suspect Genesis"
+    ],
+    "root": "Commence! A Suspect Genesis"
   },
   {
     "name": "Black Feathers Scattered at Parting",
@@ -9762,14 +11083,16 @@ const QUEST_DATA = [
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Sandrone"
   },
   {
     "name": "Charlotte: News Team",
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Charlotte"
   },
   {
     "name": "Silence Alone is Disfavored",
@@ -9811,7 +11134,8 @@ const QUEST_DATA = [
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Vodyanitsa"
   },
   {
     "name": "Odette: Practice Day",
@@ -9881,7 +11205,8 @@ const QUEST_DATA = [
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Vodyanitsa"
   },
   {
     "name": "Delusion (Chapter VII)",
@@ -9909,7 +11234,8 @@ const QUEST_DATA = [
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Sandrone"
   },
   {
     "name": "Wraith's Nocturne (Quest)",
@@ -9930,7 +11256,8 @@ const QUEST_DATA = [
     "region": "Snezhnaya",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Lyney"
   },
   {
     "name": "One Move Left to Make",
@@ -9951,7 +11278,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Yupanqui's Turnfire"
   },
   {
     "name": "Journey of Stars and Flames",
@@ -9986,14 +11314,16 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Where the Springs Return"
   },
   {
     "name": "Seven-Hued Ruins",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Memories Flowing With Color"
   },
   {
     "name": "The Surging Darkness",
@@ -10014,28 +11344,32 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Of Fading Flowers and Falling Feathers"
   },
   {
     "name": "Those Searching for the Mysterious Island",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Where the Springs Return"
   },
   {
     "name": "Smokeless War",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Mushroom Realm Mystery"
   },
   {
     "name": "A Commission Catches You in Natlan",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Memories Flowing With Color"
   },
   {
     "name": "Vision of Ashen Desolation",
@@ -10077,7 +11411,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Memories Flowing With Color"
   },
   {
     "name": "The Key That Unlocks Fate",
@@ -10091,7 +11426,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "story"
+    "type": "story",
+    "series": "Sunspray Summer Resort"
   },
   {
     "name": "Kinich: Commission",
@@ -10112,7 +11448,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Of Fading Flowers and Falling Feathers"
   },
   {
     "name": "Where the Moon Rises",
@@ -10126,7 +11463,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Of Fading Flowers and Falling Feathers"
   },
   {
     "name": "Sharpshooter on Hand",
@@ -10154,7 +11492,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "A Prayer for Blessings, Told to Crested Peaks"
   },
   {
     "name": "\"Savior\"",
@@ -10168,21 +11507,24 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Sol Invictus Chapter"
   },
   {
     "name": "Serenity's Reprise",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "A Prayer for Blessings, Told to Crested Peaks"
   },
   {
     "name": "After the Peace",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Sol Invictus Chapter"
   },
   {
     "name": "All Names are Noble",
@@ -10196,7 +11538,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Yupanqui's Turnfire"
   },
   {
     "name": "Where All Hopes Lie",
@@ -10217,7 +11560,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "Sunspray Summer Resort"
   },
   {
     "name": "Hey, Your Letter!",
@@ -10231,14 +11575,16 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "story"
+    "type": "story",
+    "series": "Sunspray Summer Resort"
   },
   {
     "name": "The Legend of the Mysterious Island",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Where the Springs Return"
   },
   {
     "name": "No One Fights Alone",
@@ -10259,21 +11605,24 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Where the Springs Return"
   },
   {
     "name": "A New Pilgrimage",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Sol Invictus Chapter"
   },
   {
     "name": "A Curtain Call for a Colorful Summer Night!",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "story"
+    "type": "story",
+    "series": "Sunspray Summer Resort"
   },
   {
     "name": "As One We Watch the Setting Sun",
@@ -10287,7 +11636,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Of Fading Flowers and Falling Feathers"
   },
   {
     "name": "Cloud-Soaring Saurians",
@@ -10301,14 +11651,16 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Yupanqui's Turnfire"
   },
   {
     "name": "Please, great shaman!",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Memories Flowing With Color"
   },
   {
     "name": "The Flickering Light Splits in Twain",
@@ -10350,7 +11702,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Memories Flowing With Color"
   },
   {
     "name": "Beneath the Secret Source",
@@ -10406,7 +11759,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Yupanqui's Turnfire"
   },
   {
     "name": "Home of the Hot Springs",
@@ -10420,14 +11774,16 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "A Prayer for Blessings, Told to Crested Peaks"
   },
   {
     "name": "A Hero's Rite",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Yupanqui's Turnfire"
   },
   {
     "name": "Prophets of Pop",
@@ -10441,7 +11797,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Mushroom Realm Mystery"
   },
   {
     "name": "As the Sun Rises and Sets",
@@ -10455,7 +11812,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "Sunspray Summer Resort"
   },
   {
     "name": "Grow Up Quickly, Littl'Un",
@@ -10469,21 +11827,24 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Of Fading Flowers and Falling Feathers"
   },
   {
     "name": "Spell of Unity",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "|act           ="
   },
   {
     "name": "The Mysterious Island's Truth",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Where the Springs Return"
   },
   {
     "name": "An Official Mission",
@@ -10504,7 +11865,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "A Prayer for Blessings, Told to Crested Peaks"
   },
   {
     "name": "A Space and Time Without You",
@@ -10532,21 +11894,24 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 30,
-    "type": "story"
+    "type": "story",
+    "series": "Sunspray Summer Resort"
   },
   {
     "name": "To Wavey Bay!",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "Sunspray Summer Resort"
   },
   {
     "name": "Ardent Land of Plenty",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Mushroom Realm Mystery"
   },
   {
     "name": "Iansan: Training Solutions",
@@ -10560,21 +11925,24 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "A Prayer for Blessings, Told to Crested Peaks"
   },
   {
     "name": "Someone Trustworthy",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Where the Springs Return"
   },
   {
     "name": "For Our Saurian Companion",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "|act           ="
   },
   {
     "name": "To Reclaim an Ancient Name",
@@ -10588,14 +11956,16 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "|act           ="
   },
   {
     "name": "To Colorfall Cliffs!",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "Sunspray Summer Resort"
   },
   {
     "name": "Pilgrimage of the Return of the Sacred Flame (Quest)",
@@ -10623,7 +11993,8 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Memories Flowing With Color"
   },
   {
     "name": "Searing",
@@ -10637,14 +12008,16 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Mushroom Realm Mystery"
   },
   {
     "name": "The World Is Your Canvas!",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "Sunspray Summer Resort"
   },
   {
     "name": "Subterranean Ruins",
@@ -10658,14 +12031,16 @@ const QUEST_DATA = [
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "A Prayer for Blessings, Told to Crested Peaks"
   },
   {
     "name": "Orchard Repose",
     "region": "Natlan",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Mushroom Realm Mystery"
   },
   {
     "name": "Steaming Hot Swim",
@@ -10679,7 +12054,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Tempus Fugit Chapter"
   },
   {
     "name": "Afterword (The Chalk Prince and the Dragon)",
@@ -10693,7 +12069,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lupus Majoris Chapter"
   },
   {
     "name": "Cleanup At Dawn II",
@@ -10707,14 +12084,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Amber"
   },
   {
     "name": "Fragrance of Wine",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaeya"
   },
   {
     "name": "Ellin, the Wannabe Knight",
@@ -10735,7 +12114,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Varka"
   },
   {
     "name": "Diluc: Pricing",
@@ -10756,7 +12136,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Bennett"
   },
   {
     "name": "Knights of Favonius (Quest)",
@@ -10770,7 +12151,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Carmen Dei Chapter"
   },
   {
     "name": "When the Wind Dies Down",
@@ -10784,14 +12166,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Trulla Chapter"
   },
   {
     "name": "Glide With the Wind",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lepus Chapter"
   },
   {
     "name": "Ending Note",
@@ -10805,14 +12189,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Noctua Chapter"
   },
   {
     "name": "Darknight Hero's Alibi (Quest)",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Noctua Chapter"
   },
   {
     "name": "Leaves on the Wind",
@@ -10840,7 +12226,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Aphros Delos Chapter"
   },
   {
     "name": "Michelle Never Stops!",
@@ -10861,7 +12248,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Noelle"
   },
   {
     "name": "Dishonorable Trial",
@@ -10875,7 +12263,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Leo Minor Chapter"
   },
   {
     "name": "State of the Holy Lyre der Himmel",
@@ -10896,7 +12285,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lupus Minor Chapter"
   },
   {
     "name": "Winds of the Past",
@@ -10910,14 +12300,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 30,
-    "type": "story"
+    "type": "story",
+    "series": "Windblume Festival (Event Chapter)"
   },
   {
     "name": "A Job Well Done",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 30,
-    "type": "story"
+    "type": "story",
+    "series": "|act           ="
   },
   {
     "name": "Question and Answer (Commission)",
@@ -10938,7 +12330,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Diona"
   },
   {
     "name": "Sounds From Afar (Quest)",
@@ -10966,7 +12359,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Barbara"
   },
   {
     "name": "A Little Booze Doesn't Hurt...",
@@ -10980,28 +12374,32 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Thoma"
   },
   {
     "name": "Diona: Commission",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Diona"
   },
   {
     "name": "Adventurer's Entrance Exam",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Noelle"
   },
   {
     "name": "Healing Is My Job",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Barbara"
   },
   {
     "name": "Crimes One and Two",
@@ -11015,14 +12413,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Aphros Delos Chapter"
   },
   {
     "name": "Outrider Style",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Lepus Chapter"
   },
   {
     "name": "Wind-Riding Knight",
@@ -11043,35 +12443,40 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Princeps Cretaceus Chapter"
   },
   {
     "name": "Kaeya's Gain",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Pavo Ocellus Chapter"
   },
   {
     "name": "Rosaria: Work",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Rosaria"
   },
   {
     "name": "A Very Special Beverage",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Barbara"
   },
   {
     "name": "Something... Other Than Adventure?",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Bennett"
   },
   {
     "name": "Uninvited Guests",
@@ -11085,7 +12490,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Alchemy and Business Operations"
   },
   {
     "name": "Hidden Tears",
@@ -11113,7 +12519,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Carmen Dei Chapter"
   },
   {
     "name": "Archon's Rival",
@@ -11141,7 +12548,8 @@ const QUEST_DATA = [
     "region": "Dragonspine",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Draco Rubedo Chapter"
   },
   {
     "name": "The Shining Warriors Take the Stage (Quest)",
@@ -11155,7 +12563,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Varka"
   },
   {
     "name": "Emergency Supplies",
@@ -11183,35 +12592,40 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Lepus Miles Chapter"
   },
   {
     "name": "Noelle: Path to Improvement",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Noelle"
   },
   {
     "name": "Fischl: Moment of Fate",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Fischl"
   },
   {
     "name": "Amber: An Aerial View",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Amber"
   },
   {
     "name": "Mystery of the Arcadian Ruins",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Pavo Ocellus Chapter"
   },
   {
     "name": "The Crisis Deepens",
@@ -11239,21 +12653,24 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Carmen Dei Chapter"
   },
   {
     "name": "An Ordinary Day for the Knights of Favonius",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaeya"
   },
   {
     "name": "Special Cocktailing Condiments",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Diona"
   },
   {
     "name": "Recuperating From a Severe Illness",
@@ -11274,21 +12691,24 @@ const QUEST_DATA = [
     "region": "Dragonspine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Princeps Cretaceus Chapter"
   },
   {
     "name": "Exchanging Pointers",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Diona"
   },
   {
     "name": "A Very Volatile Treasure",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Trifolium Chapter"
   },
   {
     "name": "Dragon Storm",
@@ -11302,35 +12722,40 @@ const QUEST_DATA = [
     "region": "Dragonspine",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Princeps Cretaceus Chapter"
   },
   {
     "name": "The Mystery of the Girl in Red's Treasure",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Trifolium Chapter"
   },
   {
     "name": "Treacherous Thermadon",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Bennett"
   },
   {
     "name": "Reunion",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaeya"
   },
   {
     "name": "A Breakthrough in Craft (Quest)",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Alchemy and Business Operations"
   },
   {
     "name": "Blocked?",
@@ -11351,7 +12776,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Lupus Minor Chapter"
   },
   {
     "name": "The Shadows Deepen",
@@ -11365,7 +12791,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Barbara"
   },
   {
     "name": "Venti's Plan",
@@ -11379,7 +12806,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Amber"
   },
   {
     "name": "Shadow Over Mondstadt",
@@ -11421,21 +12849,24 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Draco Rubedo Chapter"
   },
   {
     "name": "Amber: Simply a Slime",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Amber"
   },
   {
     "name": "Fischl: Mage",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Fischl"
   },
   {
     "name": "Where Ancient Stars Align",
@@ -11449,14 +12880,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Xianyun"
   },
   {
     "name": "A Knight's Pursuit",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lepus Miles Chapter"
   },
   {
     "name": "Crisis of Shields",
@@ -11477,14 +12910,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Fischl"
   },
   {
     "name": "Noelle's Strength",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Noelle"
   },
   {
     "name": "Reliable Helper",
@@ -11498,14 +12933,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lepus Chapter"
   },
   {
     "name": "Troublesome Work (Quest)",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Tempus Fugit Chapter"
   },
   {
     "name": "A Commission From \"That Guy\"",
@@ -11526,7 +12963,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Trifolium Chapter"
   },
   {
     "name": "Things a Father Can Do",
@@ -11547,14 +12985,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lupus Minor Chapter"
   },
   {
     "name": "The Second Chilibrew Ingredient",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Barbara"
   },
   {
     "name": "Venti's New Plan",
@@ -11568,7 +13008,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Noelle"
   },
   {
     "name": "Promise You Won't Waste Your Youth",
@@ -11589,7 +13030,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Amber"
   },
   {
     "name": "Raiders Amidst Snow Mist",
@@ -11603,7 +13045,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Barbara"
   },
   {
     "name": "Big Pudgy Problem!",
@@ -11624,14 +13067,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Diona"
   },
   {
     "name": "Fate's Accursed Wiles",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Draco Rubedo Chapter"
   },
   {
     "name": "That Green Fellow",
@@ -11652,21 +13097,24 @@ const QUEST_DATA = [
     "region": "Dragonspine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Princeps Cretaceus Chapter"
   },
   {
     "name": "Xianyun: Starsnatch Panorama",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Xianyun"
   },
   {
     "name": "What Is This, a Day Trip?",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Bennett"
   },
   {
     "name": "Chasing Shadows",
@@ -11680,14 +13128,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Rosaria"
   },
   {
     "name": "Mondstadt Glider",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lepus Chapter"
   },
   {
     "name": "A Boy's Letter",
@@ -11708,7 +13158,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Noelle"
   },
   {
     "name": "A Returning Customer",
@@ -11722,7 +13173,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Noelle"
   },
   {
     "name": "Sparks Amongst the Pages",
@@ -11750,28 +13202,32 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Noelle"
   },
   {
     "name": "Cooking Appointment",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Trulla Chapter"
   },
   {
     "name": "Studious Maid",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Noelle"
   },
   {
     "name": "Poems Dedicated to the Wind",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaeya"
   },
   {
     "name": "A Surprise Gift",
@@ -11785,7 +13241,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Noelle"
   },
   {
     "name": "Anna the Adventurer!",
@@ -11799,7 +13256,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Leo Minor Chapter"
   },
   {
     "name": "Pigeons Go AWOL",
@@ -11813,7 +13271,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lepus Chapter"
   },
   {
     "name": "Commence! A Suspect Genesis",
@@ -11827,7 +13286,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Leo Minor Chapter"
   },
   {
     "name": "Stolen Tears",
@@ -11841,14 +13301,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Barbara"
   },
   {
     "name": "The Shadow Over Dadaupa",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Diona"
   },
   {
     "name": "Abyss Mage (Quest)",
@@ -11869,14 +13331,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 30,
-    "type": "story"
+    "type": "story",
+    "series": "Windblume Festival (Event Chapter)"
   },
   {
     "name": "A Knight's Merit",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lepus Miles Chapter"
   },
   {
     "name": "Only Half-Frozen",
@@ -11897,21 +13361,24 @@ const QUEST_DATA = [
     "region": "Dragonspine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Princeps Cretaceus Chapter"
   },
   {
     "name": "Diona: Prey Revealed",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Diona"
   },
   {
     "name": "Samachurl Herbal Soup",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Diona"
   },
   {
     "name": "The Gardener",
@@ -11953,7 +13420,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Xianyun"
   },
   {
     "name": "The Final Riddle: A Secret Uncovered",
@@ -11967,7 +13435,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Noelle"
   },
   {
     "name": "Big Ice-Cold Crisis!",
@@ -11995,14 +13464,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "Alchemy and Business Operations"
   },
   {
     "name": "Cooking Showdown",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Trulla Chapter"
   },
   {
     "name": "Bird's Eye View",
@@ -12037,21 +13508,24 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Diona"
   },
   {
     "name": "To Catch a Kitten",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Diona"
   },
   {
     "name": "Little Chef on a Hunt",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Trulla Chapter"
   },
   {
     "name": "Icy Issues",
@@ -12072,14 +13546,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Leo Minor Chapter"
   },
   {
     "name": "Gift and Intent",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Noelle"
   },
   {
     "name": "Fallen Tears",
@@ -12093,7 +13569,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Barbara"
   },
   {
     "name": "A Secret Born From Ashes",
@@ -12114,7 +13591,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Noelle"
   },
   {
     "name": "Aroma of the Past (Quest)",
@@ -12142,14 +13620,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Aphros Delos Chapter"
   },
   {
     "name": "Varka: A Chivalrous Choosing",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Varka"
   },
   {
     "name": "Ode to Flower and Cloud",
@@ -12184,7 +13664,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Astrolabos Chapter"
   },
   {
     "name": "Homeward, He Who Caught the Wind (Quest)",
@@ -12205,35 +13686,40 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Carmen Dei Chapter"
   },
   {
     "name": "Rosaria: Holiday",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Rosaria"
   },
   {
     "name": "Adventurous Acquaintance",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Bennett"
   },
   {
     "name": "Wolves' Territory",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lupus Minor Chapter"
   },
   {
     "name": "A Prophecy From the Past",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Draco Rubedo Chapter"
   },
   {
     "name": "The Best Audience in All of Mondstadt",
@@ -12247,7 +13733,8 @@ const QUEST_DATA = [
     "region": "Dragonspine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Princeps Cretaceus Chapter"
   },
   {
     "name": "Realm of Fog and Wind",
@@ -12261,7 +13748,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Noelle"
   },
   {
     "name": "Urgent Repairs",
@@ -12282,7 +13770,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Leo Minor Chapter"
   },
   {
     "name": "Return to Days of Winter",
@@ -12317,14 +13806,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Diona"
   },
   {
     "name": "Joy Above the Clouds",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 30,
-    "type": "story"
+    "type": "story",
+    "series": "Windblume Festival (Event Chapter)"
   },
   {
     "name": "A Long Shot",
@@ -12338,7 +13829,8 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Noctua Chapter"
   },
   {
     "name": "Going Upon the Breeze",
@@ -12394,14 +13886,16 @@ const QUEST_DATA = [
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Pavo Ocellus Chapter"
   },
   {
     "name": "Taste of Home",
     "region": "Mondstadt",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaeya"
   },
   {
     "name": "Pirate Invasion, in Liyue Harbor!",
@@ -12429,7 +13923,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Yaoyao"
   },
   {
     "name": "Turning Point",
@@ -12450,14 +13945,16 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Ningguang"
   },
   {
     "name": "First Glimpse of Meaning",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Yun Jin"
   },
   {
     "name": "Heart of Glaze",
@@ -12485,7 +13982,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Beidou"
   },
   {
     "name": "One Ship, Two Ships, Three Ships...",
@@ -12513,21 +14011,24 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Fabulae Textile Chapter"
   },
   {
     "name": "Sinister Undercurrent",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Crystallina Chapter"
   },
   {
     "name": "Insights of Drifting Dreams",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Alatus Chapter"
   },
   {
     "name": "Business in a Marsh",
@@ -12541,7 +14042,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Fabulae Textile Chapter"
   },
   {
     "name": "Gaming: Yummy!",
@@ -12576,14 +14078,16 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Ningguang"
   },
   {
     "name": "Ever Deeper",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Chongyun"
   },
   {
     "name": "On White Wings Pierce Through Cloud and Fog (Quest)",
@@ -12604,63 +14108,72 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Historia Antiqua Chapter"
   },
   {
     "name": "Zhongli: Avid Reader",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Zhongli"
   },
   {
     "name": "Shifting Earth and Lost Threads Come to Light",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Historia Antiqua Chapter"
   },
   {
     "name": "Distant Gaze",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Chongyun"
   },
   {
     "name": "Business as Usual",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Ningguang"
   },
   {
     "name": "Special Training (Story Quest)",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Crystallina Chapter"
   },
   {
     "name": "Exchanging Intelligence",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Ningguang"
   },
   {
     "name": "While the Millelith Stands Guard",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Noelle"
   },
   {
     "name": "Popsicles and Their Curious Uses",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Chongyun"
   },
   {
     "name": "Wine, with a Taste of Freedom",
@@ -12674,7 +14187,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Yun Jin"
   },
   {
     "name": "Three Poignant Perfumes",
@@ -12688,7 +14202,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Grus Serena Chapter"
   },
   {
     "name": "This Novel Is Amazing!",
@@ -12702,7 +14217,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Chongyun"
   },
   {
     "name": "Jade Chamber Rising",
@@ -12716,7 +14232,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Grus Serena Chapter"
   },
   {
     "name": "The Lost Relic",
@@ -12730,7 +14247,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Xingqiu"
   },
   {
     "name": "The Orioles Bask in Spring, the Heavens Present Auspices (Quest)",
@@ -12744,14 +14262,16 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Historia Antiqua Chapter"
   },
   {
     "name": "Independent Actions",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Chongyun"
   },
   {
     "name": "The Essence of Poetry",
@@ -12772,7 +14292,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Noelle"
   },
   {
     "name": "Uninvited Guests (Commission)",
@@ -12786,14 +14307,16 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Trulla Chapter"
   },
   {
     "name": "Friendships, Wishes, and Regrets",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Papilio Charontis Chapter"
   },
   {
     "name": "Geo Travel Diary",
@@ -12807,14 +14330,16 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Ningguang"
   },
   {
     "name": "To Mondstadt",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Astrolabos Chapter"
   },
   {
     "name": "Seagaze Sunset",
@@ -12842,21 +14367,24 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Xingqiu"
   },
   {
     "name": "Calm Before the Storm (Story Quest)",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Fabulae Textile Chapter"
   },
   {
     "name": "Countryside Wandering",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Yun Jin"
   },
   {
     "name": "A Bottomless Appetite",
@@ -12870,35 +14398,40 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Ningguang"
   },
   {
     "name": "Xingqiu: Words of Gold",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Xingqiu"
   },
   {
     "name": "A Secretary in a Sea of Humanity",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Sinae Unicornis Chapter"
   },
   {
     "name": "Seven-Star Selection",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Umbrabilis Orchis Chapter"
   },
   {
     "name": "Sudden Discomfort",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Chongyun"
   },
   {
     "name": "The Sparrow Studies the Blade",
@@ -12933,14 +14466,16 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Beidou"
   },
   {
     "name": "The Realm of People",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "A Lanternlit Ode to the Silver Moon"
   },
   {
     "name": "Chasmic Maze",
@@ -12954,7 +14489,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Alatus Chapter"
   },
   {
     "name": "The Origin of the Lanterns",
@@ -12968,14 +14504,16 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Xianyun"
   },
   {
     "name": "Qingce Village Treasure Hunt",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Beidou"
   },
   {
     "name": "Good Sign",
@@ -12989,7 +14527,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Ningguang"
   },
   {
     "name": "Follow the Wind",
@@ -13017,7 +14556,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lagenaria Chapter"
   },
   {
     "name": "Downtown",
@@ -13038,28 +14578,32 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Umbrabilis Orchis Chapter"
   },
   {
     "name": "The Illuminated Beast of the Sea of Clouds",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Sinae Unicornis Chapter"
   },
   {
     "name": "Kirara: Icy Cool",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Kirara"
   },
   {
     "name": "Kaedehara Kazuha: Of Blades and Wine",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Kaedehara Kazuha"
   },
   {
     "name": "At Tunnel's End, Light",
@@ -13094,7 +14638,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Historia Antiqua Chapter"
   },
   {
     "name": "Dust to Dust",
@@ -13108,21 +14653,24 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Zhongli"
   },
   {
     "name": "Lucky Find",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Trulla Chapter"
   },
   {
     "name": "Killjoy",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Chongyun"
   },
   {
     "name": "Sky-Gazers, Land-Walkers",
@@ -13136,7 +14684,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Lagenaria Chapter"
   },
   {
     "name": "Moulder of Mountains",
@@ -13150,7 +14699,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Fabulae Textile Chapter"
   },
   {
     "name": "Fishing Jiangxue",
@@ -13171,28 +14721,32 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Umbrabilis Orchis Chapter"
   },
   {
     "name": "Shadow of Yore",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Historia Antiqua Chapter"
   },
   {
     "name": "Defender of Childhood Dreams",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Monoceros Caeli Chapter"
   },
   {
     "name": "The Exorcist's Path",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Chongyun"
   },
   {
     "name": "Moonfinger",
@@ -13213,21 +14767,24 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Chongyun"
   },
   {
     "name": "The Quest for a Cure",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lagenaria Chapter"
   },
   {
     "name": "Teucer's Terrific Tour",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Monoceros Caeli Chapter"
   },
   {
     "name": "Ahoy! A Pirate's Growth for Ye!",
@@ -13269,7 +14826,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "A Lanternlit Ode to the Silver Moon"
   },
   {
     "name": "Currents Deep Beneath the Lanterns",
@@ -13304,7 +14862,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "A Lanternlit Ode to the Silver Moon"
   },
   {
     "name": "The Glede Returns to the Pavilion (Quest)",
@@ -13318,7 +14877,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Yun Jin"
   },
   {
     "name": "Troubles Traveling Through Tributaries",
@@ -13332,14 +14892,16 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Crystallina Chapter"
   },
   {
     "name": "Zhongli: Time for Tea",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Zhongli"
   },
   {
     "name": "A Novel Idea",
@@ -13353,7 +14915,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Grus Serena Chapter"
   },
   {
     "name": "Ningguang: Solemn Duty",
@@ -13367,7 +14930,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Chongyun"
   },
   {
     "name": "The Crux Clash (Quest)",
@@ -13388,42 +14952,48 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Monoceros Caeli Chapter"
   },
   {
     "name": "What Shape Does the Self Hold",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Sapientia Oromasdis Chapter"
   },
   {
     "name": "The First Chilibrew Ingredient",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Barbara"
   },
   {
     "name": "Yaoyao: Trip to the Country",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Yaoyao"
   },
   {
     "name": "A Pact That Crosses Time",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Sinae Unicornis Chapter"
   },
   {
     "name": "Kaedehara Kazuha: Gazing at Sky and Earth",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Kaedehara Kazuha"
   },
   {
     "name": "A Thousand Miles for an Enigmatic Tune",
@@ -13444,14 +15014,16 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Crystallina Chapter"
   },
   {
     "name": "Feathers Adrift in a Spring Breeze",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaeya"
   },
   {
     "name": "In the Depths, an Unexpected Reunion",
@@ -13465,7 +15037,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Alatus Chapter"
   },
   {
     "name": "Wangshu",
@@ -13486,7 +15059,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Papilio Charontis Chapter"
   },
   {
     "name": "The Little Pirate Goes Out to Sea",
@@ -13507,7 +15081,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Kaedehara Kazuha"
   },
   {
     "name": "A Path Through the Storm",
@@ -13521,7 +15096,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Astrolabos Chapter"
   },
   {
     "name": "Next Year's Moon, Just as Bright (Quest)",
@@ -13542,7 +15118,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Alatus Chapter"
   },
   {
     "name": "Roll! A Sea of New Acquaintances",
@@ -13598,7 +15175,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Papilio Charontis Chapter"
   },
   {
     "name": "Where Is the Unseen Razor?",
@@ -13612,7 +15190,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Historia Antiqua Chapter"
   },
   {
     "name": "Having Met You, My Heart is Gladdened (Quest)",
@@ -13626,14 +15205,16 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Xianyun"
   },
   {
     "name": "Yun Jin: All Visitors Are Guests",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Yun Jin"
   },
   {
     "name": "Another Auspicious Moonlit Night Rolls Around (Quest)",
@@ -13661,7 +15242,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Historia Antiqua Chapter"
   },
   {
     "name": "Guizhong (Quest)",
@@ -13703,7 +15285,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Yun Jin"
   },
   {
     "name": "Where the Heart Finds Rest",
@@ -13717,7 +15300,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Chongyun"
   },
   {
     "name": "Zibai: The Adeptus Arts, Once More",
@@ -13731,28 +15315,32 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Beidou"
   },
   {
     "name": "Kirara: Steaming Hot",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Kirara"
   },
   {
     "name": "Auction Games",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Ningguang"
   },
   {
     "name": "A Record of All Things",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Historia Antiqua Chapter"
   },
   {
     "name": "Bygones Times Like Dust Passing",
@@ -13766,7 +15354,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Noelle"
   },
   {
     "name": "Why Hit Rocks?",
@@ -13780,7 +15369,8 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Beidou"
   },
   {
     "name": "Diamond in the Rough...",
@@ -13815,21 +15405,24 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Xingqiu"
   },
   {
     "name": "The Mysterious Wangsheng Parlor",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Papilio Charontis Chapter"
   },
   {
     "name": "The Realm of Clouds",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "A Lanternlit Ode to the Silver Moon"
   },
   {
     "name": "Shenhe: Inner Musings",
@@ -13857,49 +15450,56 @@ const QUEST_DATA = [
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Historia Antiqua Chapter"
   },
   {
     "name": "After the Curtain Falls",
     "region": "Liyue",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Yun Jin"
   },
   {
     "name": "Upon the Plain, a Purple Shadow",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Acer Palmatum Chapter"
   },
   {
     "name": "Radiant Sakura",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Imperatrix Umbrosa Chapter"
   },
   {
     "name": "Sleep Alone Can't Wait",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Sayu"
   },
   {
     "name": "A New Painting in Pale Scarlet (Quest)",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "True Tales of the Violet Garden"
   },
   {
     "name": "Operation Substitution",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Sayu"
   },
   {
     "name": "The Meaning of Meaningless Waiting",
@@ -13920,7 +15520,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "|act           = The Forest Boar and the Little Witch"
   },
   {
     "name": "Away With Obsessions and Falsehood",
@@ -13934,35 +15535,40 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Sayu"
   },
   {
     "name": "The Fabric of Constancy",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Imperatrix Umbrosa Chapter"
   },
   {
     "name": "Under the Same Shade",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Thoma"
   },
   {
     "name": "Rumors Abound",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Dracaena Somnolenta Chapter"
   },
   {
     "name": "Banquet of Parting",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Divina Vulpes Chapter"
   },
   {
     "name": "The Taste of Home",
@@ -13976,21 +15582,24 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Divina Vulpes Chapter"
   },
   {
     "name": "Ere the End, a Glance Back",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Acer Palmatum Chapter"
   },
   {
     "name": "Yumemizuki Mizuki: Treatment",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Yumemizuki Mizuki"
   },
   {
     "name": "Sayu: The Art of... Growing Tall?",
@@ -14011,14 +15620,16 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Thoma"
   },
   {
     "name": "Shuumatsuban Suspicions",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Sayu"
   },
   {
     "name": "Amidst Stormy Judgment",
@@ -14053,21 +15664,24 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Sayu"
   },
   {
     "name": "Start Spreadin' the News",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Thoma"
   },
   {
     "name": "Sangonomiya Kokomi: Solitary Dreams",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Sangonomiya Kokomi"
   },
   {
     "name": "Path of the Taishou",
@@ -14088,7 +15702,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kuki Shinobu"
   },
   {
     "name": "Operation Thunderous Ignition",
@@ -14102,28 +15717,32 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Taurus Iracundus Chapter"
   },
   {
     "name": "Three Realms Gateway Offering: Part I",
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "Aphotic Diffusal"
   },
   {
     "name": "What the Blue Flowers Left Behind (Quest)",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "True Tales of the Violet Garden"
   },
   {
     "name": "Three Realms Gateway Offering: Part II",
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "Aphotic Diffusal"
   },
   {
     "name": "A Crackling Crisis",
@@ -14137,7 +15756,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Gorou"
   },
   {
     "name": "Ritou Escape Plan",
@@ -14158,7 +15778,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "True Tales of the Violet Garden"
   },
   {
     "name": "Yae Miko: Good Fortune",
@@ -14172,14 +15793,16 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Taurus Iracundus Chapter"
   },
   {
     "name": "Victory Banquet",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Dracaena Somnolenta Chapter"
   },
   {
     "name": "Archery Demonstration",
@@ -14193,7 +15816,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Divina Vulpes Chapter"
   },
   {
     "name": "This Novel Seems... Problematic?",
@@ -14207,7 +15831,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "True Tales of the Violet Garden"
   },
   {
     "name": "Wishes (Quest)",
@@ -14235,14 +15860,16 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Divina Vulpes Chapter"
   },
   {
     "name": "Behind His Back",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Thoma"
   },
   {
     "name": "The Gourmet Supremos: Extreme Cookery",
@@ -14263,21 +15890,24 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Shikanoin Heizou"
   },
   {
     "name": "New Shoots from Old Branches",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Cypressus Custos Chapter"
   },
   {
     "name": "Expectations Not to Be Betrayed",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Carassius Auratus Chapter"
   },
   {
     "name": "Duel Before the Throne",
@@ -14291,7 +15921,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Imperatrix Umbrosa Chapter"
   },
   {
     "name": "The Gourmet Supremos: Where'd the Ingredients Go?",
@@ -14312,7 +15943,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Acer Palmatum Chapter"
   },
   {
     "name": "Perilous Watersport",
@@ -14326,14 +15958,16 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "|act           = The Forest Boar and the Little Witch"
   },
   {
     "name": "Thanks for Your Hospitality!",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Thoma"
   },
   {
     "name": "Haunted Tales",
@@ -14347,7 +15981,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Thoma"
   },
   {
     "name": "Wandering Evil",
@@ -14361,7 +15996,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Dracaena Somnolenta Chapter"
   },
   {
     "name": "To Make Cat Ornaments",
@@ -14375,7 +16011,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "|act           = The Forest Boar and the Little Witch"
   },
   {
     "name": "To Make a Cat Carving",
@@ -14389,7 +16026,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Imperatrix Umbrosa Chapter"
   },
   {
     "name": "Bantan Sango Case File: The Search",
@@ -14410,7 +16048,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Kirara"
   },
   {
     "name": "A Fishy Flavor",
@@ -14452,14 +16091,16 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kuki Shinobu"
   },
   {
     "name": "The Truth Is Also a Lie",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Cypressus Custos Chapter"
   },
   {
     "name": "O Shrine, Show Your Power Once Again!",
@@ -14480,7 +16121,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Grus Nivis Chapter"
   },
   {
     "name": "Delusion (Chapter II)",
@@ -14501,21 +16143,24 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "True Tales of the Violet Garden"
   },
   {
     "name": "Descendant of Nightmares",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Tapirus Somniator Chapter"
   },
   {
     "name": "Special Training",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Gorou"
   },
   {
     "name": "The Currents of Life",
@@ -14536,14 +16181,16 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "Aphotic Diffusal"
   },
   {
     "name": "Give It Up!",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Sayu"
   },
   {
     "name": "Voltage Charge",
@@ -14571,28 +16218,32 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Taurus Iracundus Chapter"
   },
   {
     "name": "Shikanoin Heizou: The Truth",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Shikanoin Heizou"
   },
   {
     "name": "Food From Afar",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Grus Nivis Chapter"
   },
   {
     "name": "Farewell to the Past",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Imperatrix Umbrosa Chapter"
   },
   {
     "name": "Lightning Bottler",
@@ -14606,7 +16257,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Thoma"
   },
   {
     "name": "Ceaseless Training",
@@ -14620,7 +16272,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Cypressus Custos Chapter"
   },
   {
     "name": "Crash Course on Inazuman Fashion",
@@ -14641,21 +16294,24 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Dracaena Somnolenta Chapter"
   },
   {
     "name": "The Firework Girl's Strange Stories",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Carassius Auratus Chapter"
   },
   {
     "name": "Temporary Escape",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kuki Shinobu"
   },
   {
     "name": "The Cat's Trail",
@@ -14676,7 +16332,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "|act           = The Forest Boar and the Little Witch"
   },
   {
     "name": "As Though Surrounded by Thunder",
@@ -14697,7 +16354,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kuki Shinobu"
   },
   {
     "name": "The Gourmet Supremos: Breakthrough Thinking",
@@ -14718,14 +16376,16 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Carassius Auratus Chapter"
   },
   {
     "name": "Shikanoin Heizou: An Unusual Case",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Shikanoin Heizou"
   },
   {
     "name": "Bantan Sango Case File: Case-Closing Time",
@@ -14739,7 +16399,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Yumemizuki Mizuki"
   },
   {
     "name": "A Tricky Situation",
@@ -14753,21 +16414,24 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Grus Nivis Chapter"
   },
   {
     "name": "The Missing Thing",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Shikanoin Heizou"
   },
   {
     "name": "Ninken by the Shore",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Thoma"
   },
   {
     "name": "To Treat the Well-Meaning Well",
@@ -14781,7 +16445,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Carassius Auratus Chapter"
   },
   {
     "name": "The Servant's Path",
@@ -14809,7 +16474,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Shikanoin Heizou"
   },
   {
     "name": "Shadow of the Cat",
@@ -14823,7 +16489,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Shikanoin Heizou"
   },
   {
     "name": "Three Wishes",
@@ -14837,77 +16504,88 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Grus Nivis Chapter"
   },
   {
     "name": "Hunting Training",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "|act           = The Forest Boar and the Little Witch"
   },
   {
     "name": "Her Secret",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Dracaena Somnolenta Chapter"
   },
   {
     "name": "Ways and Means",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kuki Shinobu"
   },
   {
     "name": "Three Realms Gateway Offering: Aftermath",
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "Aphotic Diffusal"
   },
   {
     "name": "Ordinary Memorial",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Gorou"
   },
   {
     "name": "Shikanoin Heizou: Case Closed",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Shikanoin Heizou"
   },
   {
     "name": "Gang Bylaws",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kuki Shinobu"
   },
   {
     "name": "A Trip for Two in Ritou",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Thoma"
   },
   {
     "name": "Heizou Talks Fraud",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Shikanoin Heizou"
   },
   {
     "name": "Shrine Maiden for a Day",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kuki Shinobu"
   },
   {
     "name": "Bantan Sango Case File: The Right Identity",
@@ -14928,7 +16606,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Tapirus Somniator Chapter"
   },
   {
     "name": "Blind Loyalty, Reckless Courage",
@@ -14956,7 +16635,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Imperatrix Umbrosa Chapter"
   },
   {
     "name": "A Dance of Destruction",
@@ -14970,7 +16650,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Gorou"
   },
   {
     "name": "Bad Doggies",
@@ -14984,7 +16665,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Gorou"
   },
   {
     "name": "Bantan Sango Case File",
@@ -14998,7 +16680,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Carassius Auratus Chapter"
   },
   {
     "name": "Is This Novel Amazing?",
@@ -15012,7 +16695,8 @@ const QUEST_DATA = [
     "region": "Enkanomiya",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "Aphotic Diffusal"
   },
   {
     "name": "Sword, Fish, Resistance",
@@ -15026,14 +16710,16 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Tapirus Somniator Chapter"
   },
   {
     "name": "Thoma: Training Exam",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Thoma"
   },
   {
     "name": "In the Name of the Resistance",
@@ -15047,14 +16733,16 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kuki Shinobu"
   },
   {
     "name": "Crisis at the Aisa Bathhouse",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Tapirus Somniator Chapter"
   },
   {
     "name": "This Novel... Seems Familiar?",
@@ -15068,21 +16756,24 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Tapirus Somniator Chapter"
   },
   {
     "name": "Report back",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Shikanoin Heizou"
   },
   {
     "name": "Sangonomiya Kokomi: Reunion",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Sangonomiya Kokomi"
   },
   {
     "name": "Proof of Guilt",
@@ -15096,7 +16787,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 40,
-    "type": "story"
+    "type": "story",
+    "series": "True Tales of the Violet Garden"
   },
   {
     "name": "Shrine Cleanup",
@@ -15110,14 +16802,16 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Thoma"
   },
   {
     "name": "Woven Wishes",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Grus Nivis Chapter"
   },
   {
     "name": "Felonious Floaters",
@@ -15138,7 +16832,8 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Imperatrix Umbrosa Chapter"
   },
   {
     "name": "Cards Out! Grievances Begone",
@@ -15152,14 +16847,16 @@ const QUEST_DATA = [
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Shikanoin Heizou"
   },
   {
     "name": "A Friend's Path",
     "region": "Inazuma",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Gorou"
   },
   {
     "name": "Desert Bloom",
@@ -15201,7 +16898,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Vulpes Zerda Chapter"
   },
   {
     "name": "Project Baby",
@@ -15222,7 +16920,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Cyno"
   },
   {
     "name": "Give Her Surprises",
@@ -15236,7 +16935,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Pomum de Ambra Chapter"
   },
   {
     "name": "A Toast to Victory",
@@ -15257,7 +16957,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Sapientia Oromasdis Chapter"
   },
   {
     "name": "Vine Collector",
@@ -15271,7 +16972,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lupus Aureus Chapter"
   },
   {
     "name": "Gold Devouring and Mora Gathering",
@@ -15285,28 +16987,32 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaveh"
   },
   {
     "name": "All Things Flawless and Pure",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Carassius Auratus Chapter"
   },
   {
     "name": "Further Investigation",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Layla"
   },
   {
     "name": "Sincerity's Facade",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Mantichora Chapter"
   },
   {
     "name": "Soloist's Prologue",
@@ -15327,14 +17033,16 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Layla"
   },
   {
     "name": "One Final Step",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Layla"
   },
   {
     "name": "The Most Fantastic Tournament You've Never Heard Of?",
@@ -15362,14 +17070,16 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaeya"
   },
   {
     "name": "Dream of Awakening",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Sapientia Oromasdis Chapter"
   },
   {
     "name": "Eat and Learn",
@@ -15404,14 +17114,16 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Pomum de Ambra Chapter"
   },
   {
     "name": "Dream of Farewell",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Sapientia Oromasdis Chapter"
   },
   {
     "name": "The Night-Bird Falls at the Curtain's Call",
@@ -15432,7 +17144,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 30,
-    "type": "story"
+    "type": "story",
+    "series": "Ruins Exploration"
   },
   {
     "name": "Suspicions Aroused",
@@ -15453,21 +17166,24 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Faruzan"
   },
   {
     "name": "Fragmented Testimony",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Vultur Volans Chapter"
   },
   {
     "name": "Return From the Mysterious Realm",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 10,
-    "type": "story"
+    "type": "story",
+    "series": "Ruins Exploration"
   },
   {
     "name": "As Though Morning Dew",
@@ -15481,7 +17197,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Vulpes Zerda Chapter"
   },
   {
     "name": "Warehousing Business",
@@ -15502,14 +17219,16 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaveh"
   },
   {
     "name": "All the World's a Stage",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaeya"
   },
   {
     "name": "The Trail of the God of Wisdom",
@@ -15523,14 +17242,16 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Layla"
   },
   {
     "name": "The Warm Rhythm of the Streets",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lotos Somno Chapter"
   },
   {
     "name": "Price Comparison",
@@ -15544,7 +17265,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Lupus Aureus Chapter"
   },
   {
     "name": "Your Past Is Like a Garden",
@@ -15579,14 +17301,16 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Lupus Aureus Chapter"
   },
   {
     "name": "Wealthy Merchant",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaveh"
   },
   {
     "name": "Concresoil",
@@ -15600,7 +17324,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Vulpes Zerda Chapter"
   },
   {
     "name": "Truth Amongst the Pages of Purana (Quest)",
@@ -15628,7 +17353,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Lotos Somno Chapter"
   },
   {
     "name": "The Hook's Unexpected Adventure",
@@ -15670,14 +17396,16 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Sapientia Oromasdis Chapter"
   },
   {
     "name": "Pride and Prejudice",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Vultur Volans Chapter"
   },
   {
     "name": "To Measure the World!",
@@ -15691,7 +17419,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaveh"
   },
   {
     "name": "Dual Missions: Progress and Probe!",
@@ -15719,7 +17448,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lupus Aureus Chapter"
   },
   {
     "name": "The Continuation of the Sabzeruz Festival",
@@ -15740,14 +17470,16 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Layla"
   },
   {
     "name": "The Sixth Proposal",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaveh"
   },
   {
     "name": "Problem Conversion",
@@ -15761,7 +17493,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Cyno"
   },
   {
     "name": "The Four at Loggerheads",
@@ -15782,14 +17515,16 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Faruzan"
   },
   {
     "name": "A Change of Pace",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Layla"
   },
   {
     "name": "A Lamenter at Fate's End",
@@ -15803,7 +17538,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaveh"
   },
   {
     "name": "Farewell, My Shroom Buddies",
@@ -15817,7 +17553,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lupus Aureus Chapter"
   },
   {
     "name": "Destined Encounter",
@@ -15852,7 +17589,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lupus Aureus Chapter"
   },
   {
     "name": "Dawn (Quest)",
@@ -15866,7 +17604,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lotos Somno Chapter"
   },
   {
     "name": "Garcia's Paean: Key Items",
@@ -15901,14 +17640,16 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Layla"
   },
   {
     "name": "Past Mementos",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaveh"
   },
   {
     "name": "Cry From the Eleazar Hospital",
@@ -15936,7 +17677,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Faruzan"
   },
   {
     "name": "The Great Tree: Statistical State",
@@ -15985,7 +17727,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Vultur Volans Chapter"
   },
   {
     "name": "Clean and Healthy",
@@ -16034,14 +17777,16 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Carassius Auratus Chapter"
   },
   {
     "name": "Shade Upon Red Silk",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Mantichora Chapter"
   },
   {
     "name": "The Other Applications of Concresoil",
@@ -16076,14 +17821,16 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Cyno"
   },
   {
     "name": "The Wisdom Seelie",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Layla"
   },
   {
     "name": "Where the Boat of Consciousness Lies",
@@ -16097,7 +17844,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaeya"
   },
   {
     "name": "As by a God's Side",
@@ -16111,7 +17859,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaveh"
   },
   {
     "name": "Ancient Shadows Re-Emerge",
@@ -16125,7 +17874,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Pomum de Ambra Chapter"
   },
   {
     "name": "Portended Fate",
@@ -16139,7 +17889,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Layla"
   },
   {
     "name": "Lost in Prosperity",
@@ -16160,7 +17911,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Kaveh"
   },
   {
     "name": "Blooming Sands: Lasting Scent",
@@ -16174,7 +17926,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Layla"
   },
   {
     "name": "Cold Case Commission",
@@ -16195,7 +17948,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Mantichora Chapter"
   },
   {
     "name": "Opening Festivities",
@@ -16244,7 +17998,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lupus Aureus Chapter"
   },
   {
     "name": "The Missing Village Keepers",
@@ -16272,7 +18027,8 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Layla"
   },
   {
     "name": "World-Order Narration",
@@ -16286,21 +18042,24 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Faruzan"
   },
   {
     "name": "Footprints Sunken Beneath the Sands",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Lupus Aureus Chapter"
   },
   {
     "name": "Taking the Opposite Route",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Layla"
   },
   {
     "name": "Chronic Illness",
@@ -16328,28 +18087,32 @@ const QUEST_DATA = [
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Vulpes Zerda Chapter"
   },
   {
     "name": "Drowsy Evening Star",
     "region": "Sumeru",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Layla"
   },
   {
     "name": "The Truth of What Was",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Nereides Chapter"
   },
   {
     "name": "Those We Have Kept (Quest)",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Sunny Summer Fontinalia"
   },
   {
     "name": "Meeting Is Also Parting",
@@ -16370,7 +18133,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Lyney"
   },
   {
     "name": "Interactive Tour",
@@ -16384,7 +18148,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Neuvillette"
   },
   {
     "name": "A Wish For Smooth Sailing",
@@ -16405,14 +18170,16 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Animula Choragi Chapter"
   },
   {
     "name": "A Familiar Threat",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Diluvies Chapter"
   },
   {
     "name": "Time to Drink",
@@ -16454,7 +18221,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Felis Fuscus Chapter"
   },
   {
     "name": "An Overnight Fantasyland",
@@ -16468,7 +18236,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Rapperia Chapter"
   },
   {
     "name": "Thinking Outside Every Box...",
@@ -16482,14 +18251,16 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Sunny Summer Fontinalia"
   },
   {
     "name": "Break",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Lynette"
   },
   {
     "name": "The Opera of Noirceur and Blancheur",
@@ -16503,14 +18274,16 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Rapperia Chapter"
   },
   {
     "name": "Birds in a Cage",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Ignis Purgatorius Chapter"
   },
   {
     "name": "Chevreuse: A Little Harder",
@@ -16538,7 +18311,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Ignis Purgatorius Chapter"
   },
   {
     "name": "The Price of Every Price",
@@ -16552,14 +18326,16 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Diluvies Chapter"
   },
   {
     "name": "The Interview",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Felis Fuscus Chapter"
   },
   {
     "name": "Aesthetic Critique: Practice of Aesthetics",
@@ -16580,14 +18356,16 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Felis Fuscus Chapter"
   },
   {
     "name": "Lost and Inherited",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Rosa Multiflora Chapter"
   },
   {
     "name": "A Series of Twists and Turns",
@@ -16615,7 +18393,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Nereides Chapter"
   },
   {
     "name": "Fiction and Reality Inside and Outside the Frame (Quest)",
@@ -16629,7 +18408,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Cisoria Chapter"
   },
   {
     "name": "Their Childhood: Good Times",
@@ -16650,7 +18430,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Lynette"
   },
   {
     "name": "Down Time",
@@ -16678,14 +18459,16 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Neuvillette"
   },
   {
     "name": "An Opportunity for Rebirth",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Cerberus Chapter"
   },
   {
     "name": "The City of Rains and Remembrance",
@@ -16713,42 +18496,48 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Dulciaria Structura Chapter"
   },
   {
     "name": "Roasted by Flames",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Dulciaria Structura Chapter"
   },
   {
     "name": "A Decision (Hangout Event)",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Lynette"
   },
   {
     "name": "The Phantom Thief's Reappearance",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Felis Fuscus Chapter"
   },
   {
     "name": "Neuvillette: Gift",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Neuvillette"
   },
   {
     "name": "Dehya: Mechanical Dancer",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Dehya"
   },
   {
     "name": "The Proscribed, Hidden in Plain Sight",
@@ -16762,7 +18551,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Rapperia Chapter"
   },
   {
     "name": "Alright, Iaune, Alright",
@@ -16790,35 +18580,40 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Nereides Chapter"
   },
   {
     "name": "The Child Who Doesn't Exist",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Ignis Purgatorius Chapter"
   },
   {
     "name": "The Woven and the Cut",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Cisoria Chapter"
   },
   {
     "name": "Charlotte: Patience",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Charlotte"
   },
   {
     "name": "Shimmering Memories",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Rosa Multiflora Chapter"
   },
   {
     "name": "The Lone Isle Glimpsed Through Fog (Quest)",
@@ -16860,7 +18655,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Lynette"
   },
   {
     "name": "Secret Keepers and Forbidden Zones",
@@ -16888,7 +18684,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Charlotte"
   },
   {
     "name": "Calamitous Tread",
@@ -16937,21 +18734,24 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Sunny Summer Fontinalia"
   },
   {
     "name": "\"Judgment Day\"",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Rapperia Chapter"
   },
   {
     "name": "Switcheroo",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Nereides Chapter"
   },
   {
     "name": "Lynette: Fix...?",
@@ -16979,7 +18779,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Charlotte"
   },
   {
     "name": "Prince's Country (Quest)",
@@ -16993,21 +18794,24 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Rosa Multiflora Chapter"
   },
   {
     "name": "The Proud \"Beret Society\"",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Cerberus Chapter"
   },
   {
     "name": "Detectives",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Hangout Event: Lynette"
   },
   {
     "name": "Get a Drink at Least!",
@@ -17035,21 +18839,24 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Cerberus Chapter"
   },
   {
     "name": "In a New Light",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Diluvies Chapter"
   },
   {
     "name": "To Yesterday",
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Animula Choragi Chapter"
   },
   {
     "name": "Freminet: A Story",
@@ -17077,7 +18884,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 60,
-    "type": "story"
+    "type": "story",
+    "series": "Animula Choragi Chapter"
   },
   {
     "name": "The Truth, Lost With the Rain",
@@ -17098,7 +18906,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Dulciaria Structura Chapter"
   },
   {
     "name": "What is the Meaning of Work?",
@@ -17126,7 +18935,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Cisoria Chapter"
   },
   {
     "name": "Traces of Back Pain",
@@ -17147,7 +18957,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "story"
+    "type": "story",
+    "series": "Ignis Purgatorius Chapter"
   },
   {
     "name": "Into the Deepwater Murk",
@@ -17175,7 +18986,8 @@ const QUEST_DATA = [
     "region": "Fontaine",
     "thaiName": "",
     "primogems": 0,
-    "type": "world"
+    "type": "world",
+    "series": "Anecdote Chronicles: Dehya"
   },
   {
     "name": "Reunion Beneath the Moonlight",
@@ -17371,7 +19183,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "type": "story",
-    "primogems": 0
+    "primogems": 0,
+    "series": "|chapterSep    ="
   },
   {
     "name": "Ding Ding Dinggg! A Great Feast!",
@@ -17399,28 +19212,32 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "type": "story",
-    "primogems": 0
+    "primogems": 0,
+    "series": "Lupus Majoris Chapter"
   },
   {
     "name": "A Mother's Last Wish",
     "region": "Other",
     "thaiName": "",
     "type": "story",
-    "primogems": 0
+    "primogems": 0,
+    "series": "Draco Rubedo Chapter"
   },
   {
     "name": "Interlude: A Moment's Rest (1)",
     "region": "Other",
     "thaiName": "",
     "type": "story",
-    "primogems": 0
+    "primogems": 0,
+    "series": "Draco Rubedo Chapter"
   },
   {
     "name": "The Championship Begins",
     "region": "Other",
     "thaiName": "",
     "type": "story",
-    "primogems": 0
+    "primogems": 0,
+    "series": "Alcyon Chapter"
   },
   {
     "name": "Glaze Domain, Multum in Parvo",
@@ -17434,7 +19251,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "type": "story",
-    "primogems": 0
+    "primogems": 0,
+    "series": "Draco Rubedo Chapter"
   },
   {
     "name": "Blazin' Trails (Part 2)",
@@ -17455,7 +19273,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "type": "story",
-    "primogems": 0
+    "primogems": 0,
+    "series": "|chapterSep    ="
   },
   {
     "name": "The Ancient Azure Stars (Part 3)",
@@ -17469,14 +19288,16 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "type": "story",
-    "primogems": 0
+    "primogems": 0,
+    "series": "|chapterSep    ="
   },
   {
     "name": "Twice Upon a Gaze",
     "region": "Other",
     "thaiName": "",
     "type": "story",
-    "primogems": 0
+    "primogems": 0,
+    "series": "Alcyon Chapter"
   },
   {
     "name": "A Commission From the Curatorium of Secrets (Quest)",
@@ -17490,7 +19311,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "type": "story",
-    "primogems": 0
+    "primogems": 0,
+    "series": "Draco Rubedo Chapter"
   },
   {
     "name": "Back to Normal: The Story Hidden in the Bottle",
@@ -17511,14 +19333,16 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "type": "story",
-    "primogems": 0
+    "primogems": 0,
+    "series": "Crystallina Chapter"
   },
   {
     "name": "Tread the Right Path",
     "region": "Other",
     "thaiName": "",
     "type": "story",
-    "primogems": 0
+    "primogems": 0,
+    "series": "Alcyon Chapter"
   },
   {
     "name": "Dun Dun Dunnn! A Major Crisis!",
@@ -17553,7 +19377,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "type": "story",
-    "primogems": 0
+    "primogems": 0,
+    "series": "|chapterSep    ="
   },
   {
     "name": "The Ancient Azure Stars (Part 1)",
@@ -17602,7 +19427,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "type": "story",
-    "primogems": 0
+    "primogems": 0,
+    "series": "Lupus Majoris Chapter"
   },
   {
     "name": "Treehouse Theater: Candlelit Shadows Dancing",
@@ -17693,7 +19519,8 @@ const QUEST_DATA = [
     "region": "Other",
     "thaiName": "",
     "type": "story",
-    "primogems": 0
+    "primogems": 0,
+    "series": "Draco Rubedo Chapter"
   },
   {
     "name": "Moonlit Dash",
