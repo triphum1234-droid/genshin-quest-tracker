@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="referrer" content="no-referrer">
   <title>Genshin Impact — World Quest Tracker</title>
   <style>
     /* ── Reset & Base ── */
@@ -462,7 +463,7 @@
   cursor: pointer; font-size: 0.85rem; color: var(--text);
 }
 .custom-option:hover { background: rgba(255,255,255,0.1); }
-</style>
+/* Restore prototype watermarks without hiding NEW labels. */ .quest-card[data-type="world"]:not(.is-new)::after{content:'';background-image:url('https://static.wikia.nocookie.net/gensin-impact/images/6/67/Icon_World_Quest.png/revision/latest?cb=20210615060104');opacity:.07}.quest-card[data-type="hidden"]:not(.is-new)::after{content:'';background-image:none;opacity:.07}</style>
 </head>
 <body>
 
